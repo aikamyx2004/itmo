@@ -1,0 +1,3 @@
+[ 6177.589948] oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/user@1000.service,task=bash,pid=54610,uid=1000
+[ 6177.589960] Out of memory: Killed process 54610 (bash) total-vm:13370532kB, anon-rss:13360436kB, file-rss:0kB, shmem-rss:0kB, UID:1000 pgtables:26200kB oom_score_adj:0
+

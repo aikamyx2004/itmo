@@ -1,0 +1,203 @@
+11:31:44,375 INF core.configuration.profile: Loading information about profiles from /etc/anaconda/profile.d.
+11:31:44,377 INF core.configuration.profile: Found the 'almalinux' profile at /etc/anaconda/profile.d/almalinux.conf.
+11:31:44,377 INF core.configuration.profile: Found the 'centos' profile at /etc/anaconda/profile.d/centos.conf.
+11:31:44,377 INF core.configuration.profile: Found the 'fedora-eln' profile at /etc/anaconda/profile.d/fedora-eln.conf.
+11:31:44,378 INF core.configuration.profile: Found the 'fedora-iot' profile at /etc/anaconda/profile.d/fedora-iot.conf.
+11:31:44,378 INF core.configuration.profile: Found the 'fedora-kde' profile at /etc/anaconda/profile.d/fedora-kde.conf.
+11:31:44,378 INF core.configuration.profile: Found the 'fedora-kinoite' profile at /etc/anaconda/profile.d/fedora-kinoite.conf.
+11:31:44,379 INF core.configuration.profile: Found the 'fedora-server' profile at /etc/anaconda/profile.d/fedora-server.conf.
+11:31:44,379 INF core.configuration.profile: Found the 'fedora-silverblue' profile at /etc/anaconda/profile.d/fedora-silverblue.conf.
+11:31:44,379 INF core.configuration.profile: Found the 'fedora-workstation' profile at /etc/anaconda/profile.d/fedora-workstation.conf.
+11:31:44,380 INF core.configuration.profile: Found the 'fedora' profile at /etc/anaconda/profile.d/fedora.conf.
+11:31:44,380 INF core.configuration.profile: Found the 'ovirt' profile at /etc/anaconda/profile.d/ovirt.conf.
+11:31:44,380 INF core.configuration.profile: Found the 'rhel' profile at /etc/anaconda/profile.d/rhel.conf.
+11:31:44,381 INF core.configuration.profile: Found the 'rhvh' profile at /etc/anaconda/profile.d/rhvh.conf.
+11:31:44,381 INF core.configuration.profile: Found the 'rocky' profile at /etc/anaconda/profile.d/rocky.conf.
+11:31:44,381 INF core.configuration.profile: Found the 'scientific-linux' profile at /etc/anaconda/profile.d/scientific-linux.conf.
+11:31:44,381 INF core.configuration.profile: The 'fedora-workstation' profile is detected.
+11:31:44,381 INF core.configuration.anaconda: Load the 'fedora-workstation' profile configuration.
+11:31:44,384 INF main: /sbin/anaconda 36.16.5-1.fc36
+11:31:44,393 INF core.util: Reporting the IPMI event: 7
+11:31:44,967 INF isys: 4143708 kB (4046 MB) are available
+11:31:44,972 INF startup_utils: check_memory(): total:4046, needed:320, graphical:410
+11:31:44,978 INF main: anaconda called with cmdline = ['/sbin/anaconda', '--liveinst', '--graphical']
+11:31:44,978 INF main: Default encoding = utf-8 
+11:31:44,978 INF misc: Configuration loaded from: ['/etc/anaconda/anaconda.conf', '/etc/anaconda/profile.d/fedora.conf', '/etc/anaconda/profile.d/fedora-workstation.conf', '/etc/anaconda/conf.d/00-do-nothing.conf', '/etc/anaconda/conf.d/01-still-do-nothing.conf']
+11:31:44,978 INF misc: Writing the runtime configuration to: /run/anaconda/anaconda.conf
+11:31:44,996 INF core.dbus: Connecting to the Anaconda bus at unix:abstract=/tmp/dbus-alf6M5MgHS,guid=73ad2cbfa924a40a89010468632b2e60.
+11:31:47,162 INF main: Found a kickstart file: /usr/share/anaconda/interactive-defaults.ks
+11:31:47,199 INF startup_utils: Parsing kickstart: /usr/share/anaconda/interactive-defaults.ks
+11:31:47,321 INF threading: Running Thread: AnaWaitForConnectingNMThread (140163604153920)
+11:31:47,327 INF anaconda: Display mode is set to 'interactive graphical mode'.
+11:31:47,328 INF isys: 4143708 kB (4046 MB) are available
+11:31:47,331 INF startup_utils: check_memory(): total:4046, needed:320, graphical:410
+11:31:47,333 INF network: got 0 NTP servers from DHCP
+11:31:47,337 INF threading: Thread Done: AnaWaitForConnectingNMThread (140163604153920)
+11:31:47,501 INF threading: Running Thread: AnaStorageThread (140163604153920)
+11:31:47,504 INF threading: Running Thread: AnaTimeInitThread (140163304912448)
+11:31:47,515 INF threading: Running Thread: AnaPayloadRestartThread (140163296519744)
+11:31:47,515 INF geoloc: Geolocation is enabled.
+11:31:47,516 INF threading: Running Thread: AnaPayloadThread (140163288127040)
+11:31:47,516 INF threading: Thread Done: AnaPayloadRestartThread (140163296519744)
+11:31:47,516 INF threading: Running Thread: AnaGeolocationRefreshThread (140163296519744)
+11:31:47,516 INF geoloc: Starting geolocation lookup
+11:31:47,516 INF geoloc: Geolocation provider: Fedora GeoIP
+11:31:48,351 INF geoloc: Geolocation lookup finished in 0.8 seconds
+11:31:48,351 INF geoloc: got results from geolocation
+11:31:48,351 INF geoloc: Waited 0.39 seconds for Geolocation
+11:31:48,351 INF threading: Thread Done: AnaGeolocationRefreshThread (140163296519744)
+11:31:48,511 INF threading: Thread Done: AnaStorageThread (140163604153920)
+11:31:49,001 INF threading: Thread Done: AnaTimeInitThread (140163304912448)
+11:31:49,501 INF threading: Thread Done: AnaPayloadThread (140163288127040)
+11:31:50,060 INF ui.gui.spokes.welcome: using timezone determined by geolocation
+11:31:50,096 INF ui.common: Spoke NetworkSpoke will not be displayed because it is hidden by the Anaconda configuration file.
+11:31:50,096 INF ui.common: Spoke UserSpoke will not be displayed because it is hidden by the Anaconda configuration file.
+11:31:50,096 INF ui.common: Spoke PasswordSpoke will not be displayed because it is hidden by the Anaconda configuration file.
+11:31:50,097 INF lifecycle: Adding controller: SummaryHub
+11:31:50,334 INF threading: Running Thread: AnaAddLayoutsInitThread (140163288127040)
+11:31:50,405 INF threading: Running Thread: AnaGtkBatchPre1 (140163304912448)
+11:31:50,406 INF threading: Thread Done: AnaGtkBatchPre1 (140163304912448)
+11:31:50,428 INF threading: Running Thread: AnaKeyboardThread (140163304912448)
+11:31:50,581 INF threading: Running Thread: AnaDateTimeThread (140163279734336)
+11:31:50,634 INF threading: Running Thread: AnaStorageWatcher (140163604153920)
+11:31:50,645 INF lifecycle: Module initialized: StorageSpoke
+11:31:50,645 INF threading: Thread Done: AnaStorageWatcher (140163604153920)
+11:31:50,661 INF lifecycle: Module initialized: CustomPartitioningSpoke
+11:31:50,684 INF lifecycle: Module initialized: BlivetGuiSpoke
+11:31:50,710 INF lifecycle: Module initialized: FilterSpoke
+11:31:50,712 INF lifecycle: Initialization of all modules (6) has been started.
+11:31:50,749 INF threading: Thread Done: AnaAddLayoutsInitThread (140163288127040)
+11:31:50,753 INF lifecycle: Module initialized: KeyboardSpoke
+11:31:50,753 INF threading: Thread Done: AnaKeyboardThread (140163304912448)
+18:31:50,895 INF lifecycle: Module initialized: DatetimeSpoke
+18:31:50,895 INF lifecycle: All modules have been initialized.
+18:31:50,895 INF threading: Thread Done: AnaDateTimeThread (140163279734336)
+18:31:54,046 INF threading: Running Thread: AnaExecuteStorageThread (140163304912448)
+18:31:56,084 INF threading: Thread Done: AnaExecuteStorageThread (140163304912448)
+18:32:00,888 INF core.storage: Detected 3,95 ГиБ of memory
+18:32:00,888 INF core.storage: Swap attempt of 3,95 ГиБ
+18:32:00,899 INF threading: Running Thread: AnaExecuteStorageThread (140163304912448)
+18:32:02,937 INF threading: Thread Done: AnaExecuteStorageThread (140163304912448)
+18:32:03,724 INF ui.lib.space: fs space: 15,2 ГиБ  needed: 5,55 ГиБ
+18:32:03,724 INF core.util: Skipping detection of SMT.
+18:32:04,520 INF threading: Running Thread: AnaInstallThread (140163271341632)
+18:32:04,677 INF installation: Top-level task queue: Complete installation queue
+18:32:04,678 INF installation: Queue started: Installation queue (1/17)
+18:32:04,678 INF progress: Setting up the installation environment
+18:32:04,678 INF installation: Queue started: Installation environment setup (2/17)
+18:32:04,678 INF installation: Task started: Get missing keyboard settings. (1/38)
+18:32:04,686 INF progress: Get missing keyboard settings.
+18:32:04,687 INF progress: Configuring storage
+18:32:04,687 INF installation: Queue started: Early storage configuration (3/17)
+18:32:04,687 INF installation: Task started: Create storage layout (2/38)
+18:32:04,853 INF progress: Создание disklabel на /dev/vda
+18:32:05,118 INF progress: Создание ext4 на /dev/vda1
+18:32:05,381 INF progress: Создание btrfs на /dev/vda2
+18:32:05,635 INF progress: Создание btrfs на /dev/vda2
+18:32:06,695 INF progress: Create storage layout
+18:32:06,695 INF installation: Task started: Mount filesystems (3/38)
+18:32:08,702 INF progress: Mount filesystems
+18:32:08,703 INF progress: Running pre-installation scripts
+18:32:08,703 INF installation: Queue started: Pre-install scripts (4/17)
+18:32:08,703 INF installation: Task started: Run %pre-install scripts (4/38)
+18:32:08,703 INF progress: Run %pre-install scripts
+18:32:08,703 INF progress: Running pre-installation tasks
+18:32:08,704 INF installation: Queue started: Pre install tasks (5/17)
+18:32:08,704 INF installation: Task started: Discover information about a realm (5/38)
+18:32:08,707 INF progress: Discover information about a realm
+18:32:08,707 INF installation: Task started: Set up FIPS for the payload installation (6/38)
+18:32:08,708 INF progress: Set up FIPS for the payload installation
+18:32:08,709 INF installation: Task started: Find additional packages & run pre_install() (7/38)
+18:32:08,709 INF progress: Find additional packages & run pre_install()
+18:32:08,709 INF progress: Installing.
+18:32:08,709 INF installation: Queue started: Payload installation (6/17)
+18:32:08,709 INF installation: Task started: Install the payload (8/38)
+18:33:55,966 INF progress: Install the payload
+18:33:56,017 INF progress: Configuring storage
+18:33:56,018 INF installation: Queue started: Late storage configuration (7/17)
+18:33:56,018 INF installation: Task started: Write the storage configuration (9/38)
+18:33:57,065 INF progress: Write the storage configuration
+18:33:57,066 INF progress: Installing boot loader
+18:33:57,066 INF installation: Queue started: Bootloader installation (8/17)
+18:33:57,067 INF installation: Task started: Configure bootloader (10/38)
+18:33:57,080 INF progress: Configure bootloader
+18:33:57,081 INF installation: Task started: Install bootloader (11/38)
+18:34:42,261 INF progress: Install bootloader
+18:34:42,262 INF progress: Performing post-installation setup tasks
+18:34:42,262 INF installation: Queue started: Post-installation setup tasks (9/17)
+18:34:42,263 INF installation: Task started: Run post-installation setup tasks (12/38)
+18:34:42,274 INF progress: Run post-installation setup tasks
+18:34:42,274 INF installation: Queue started: Configuration queue (10/17)
+18:34:42,274 INF progress: Configuring installed system
+18:34:42,274 INF installation: Queue started: Installed system configuration (11/17)
+18:34:42,274 INF installation: Task started: Configure SELinux (13/38)
+18:34:42,281 INF progress: Configure SELinux
+18:34:42,282 INF installation: Task started: Configure fingerprint authentication (14/38)
+18:34:43,294 INF progress: Configure fingerprint authentication
+18:34:43,294 INF installation: Task started: Authselect configuration (15/38)
+18:34:43,303 INF progress: Authselect configuration
+18:34:43,303 INF installation: Task started: Configure time zone (16/38)
+18:34:44,316 INF progress: Configure time zone
+18:34:44,316 INF installation: Task started: Configure NTP (17/38)
+18:34:45,324 INF progress: Configure NTP
+18:34:45,325 INF installation: Task started: Configure Initial Setup (18/38)
+18:34:46,341 INF progress: Configure Initial Setup
+18:34:46,342 INF installation: Task started: Configure post-installation tools (19/38)
+18:34:47,350 INF progress: Configure post-installation tools
+18:34:47,351 INF installation: Task started: Configure services (20/38)
+18:34:47,355 INF progress: Configure services
+18:34:47,356 INF installation: Task started: Configure systemd default target (21/38)
+18:34:48,369 INF progress: Configure systemd default target
+18:34:48,370 INF installation: Task started: Configure default desktop (22/38)
+18:34:48,372 INF progress: Configure default desktop
+18:34:48,373 INF installation: Task started: Configure language (23/38)
+18:34:49,386 INF progress: Configure language
+18:34:49,387 INF installation: Task started: Configure keyboard (24/38)
+18:34:50,392 INF progress: Configure keyboard
+18:34:50,393 INF installation: Task started: Configure firewall (25/38)
+18:34:51,416 INF progress: Configure firewall
+18:34:51,417 INF progress: Writing network configuration
+18:34:51,417 INF installation: Queue started: Network configuration (12/17)
+18:34:51,417 INF installation: Task started: Network configuration (26/38)
+18:34:52,484 INF progress: Network configuration
+18:34:52,484 INF progress: Creating users
+18:34:52,484 INF installation: Queue started: User creation (13/17)
+18:34:52,484 INF installation: Task started: Create groups (27/38)
+18:34:52,499 INF progress: Create groups
+18:34:52,500 INF installation: Task started: Create users (28/38)
+18:34:52,504 INF progress: Create users
+18:34:52,505 INF installation: Task started: Configure root password (29/38)
+18:34:53,515 INF progress: Configure root password
+18:34:53,515 INF installation: Task started: Set SSH keys (30/38)
+18:34:53,518 INF progress: Set SSH keys
+18:34:53,518 INF installation: Task started: Configure optional root password SSH login (31/38)
+18:34:53,520 INF progress: Configure optional root password SSH login
+18:34:53,521 INF progress: Configuring addons
+18:34:53,521 INF installation: Queue started: Anaconda addon configuration (14/17)
+18:34:53,522 INF progress: Generating initramfs
+18:34:53,522 INF installation: Queue started: Initramfs generation (15/17)
+18:34:53,522 INF installation: Task started: Generate initramfs (32/38)
+18:35:11,599 INF progress: Generate initramfs
+18:35:11,599 INF installation: Task started: Configure FIPS (33/38)
+18:35:11,602 INF progress: Configure FIPS
+18:35:11,602 INF installation: Task started: Join a realm (34/38)
+18:35:11,604 INF progress: Join a realm
+18:35:11,604 INF progress: Storing configuration files and kickstarts
+18:35:11,604 INF installation: Queue started: Write configs and kickstarts (16/17)
+18:35:11,605 INF installation: Task started: Store kickstarts (35/38)
+18:35:11,736 INF progress: Store kickstarts
+18:35:11,736 INF progress: Running post-installation scripts
+18:35:11,736 INF installation: Queue started: Post installation scripts (17/17)
+18:35:11,737 INF installation: Task started: Run post installation scripts (36/38)
+18:35:11,737 INF progress: Run post installation scripts
+18:35:11,737 INF installation: Task started: Set file contexts (37/38)
+18:35:19,761 INF progress: Set file contexts
+18:35:19,762 INF installation: Task started: Copy installation logs (38/38)
+13:51:54,835 WARNING systemd:rhsm.service: start operation timed out. Terminating.
+13:51:54,840 WARNING systemd:rhsm.service: Failed with result 'timeout'.
+13:51:54,841 ERR systemd:Failed to start RHSM dbus service.
+13:51:54,874 NOTICE audit:SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:kernel_t:s0 msg='unit=rhsm comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=failed'
+13:51:54,874 NOTICE systemd:rhsm.service: Consumed 2.385s CPU time.
+13:51:54,874 INF systemd:Reached target Anaconda System Services.
+13:51:54,877 INF systemd:Starting Anaconda...
+13:51:54,884 NOTICE kernel:audit: type=1130 audit(1638193914.870:184): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:kernel_t:s0 msg='unit=rhsm comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=failed'

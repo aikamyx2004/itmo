@@ -1,0 +1,13 @@
+#!/bin/bash
+
+>data.txt
+for ((i=1;i<=20;i++))
+do
+	echo "$i"
+	echo "$i---------------" >> data.txt
+	for ((j=0;j<3;j++))
+	do
+		/usr/bin/time -a -f "%e" -o data.txt  bash ~/lab6/second/run.sh $i
+	done
+done
+

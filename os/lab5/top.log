@@ -1,0 +1,1602 @@
+МиБ Mem :  15328,1 total,   9825,4 free,   2965,5 used,   2537,2 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.  11939,7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4258 inoor     39  19   97008  83500  62780 R  93,8   0,5   0:00.46 apt-che+
+   4048 inoor     20   0 3417564 648076 218980 S  31,2   4,1   0:32.88 Isolate+
+   2408 inoor     20   0 5522756 330536 128512 S  25,0   2,1   0:16.41 gnome-s+
+   3709 inoor     20   0 4068600 444136 230656 S  25,0   2,8   0:34.83 firefox
+   2092 inoor     20   0 1756532 124988  69344 S   6,2   0,8   0:06.19 Xorg
+МиБ Mem :  15328,1 total,   9695,8 free,   3085,2 used,   2547,2 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.  11819,9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   2408 inoor     20   0 5522756 330768 128512 S  23,5   2,1   0:16.86 gnome-s+
+   3709 inoor     20   0 4068600 442972 230656 S  23,5   2,8   0:35.32 firefox
+   4048 inoor     20   0 3417564 651136 218980 S  17,6   4,1   0:33.37 Isolate+
+     17 root      20   0       0      0      0 R   5,9   0,0   0:00.16 kworker+
+   2092 inoor     20   0 1752436 124988  69344 S   5,9   0,8   0:06.30 Xorg
+МиБ Mem :  15328,1 total,   9526,6 free,   3249,6 used,   2551,9 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.  11650,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   3709 inoor     20   0 4078172 448040 235404 S  40,0   2,9   0:35.97 firefox
+   4048 inoor     20   0 3422368 662640 223844 R  40,0   4,2   0:34.12 Isolate+
+   2408 inoor     20   0 5522756 330768 128512 R  26,7   2,1   0:17.26 gnome-s+
+   2092 inoor     20   0 1756532 124988  69344 R  13,3   0,8   0:06.52 Xorg
+   4241 inoor     20   0  243940 236788   1948 S   6,7   1,5   0:04.11 bash
+МиБ Mem :  15328,1 total,   9372,0 free,   3404,3 used,   2551,8 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.  11496,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   3709 inoor     20   0 4078064 453124 240240 S  37,5   2,9   0:36.58 firefox
+   4048 inoor     20   0 3422244 660148 223800 S  37,5   4,2   0:34.77 Isolate+
+   2408 inoor     20   0 5522756 330768 128512 S  25,0   2,1   0:17.65 gnome-s+
+     64 root      20   0       0      0      0 S   6,2   0,0   0:00.02 ksoftir+
+   2092 inoor     20   0 1756532 124988  69344 S   6,2   0,8   0:06.67 Xorg
+МиБ Mem :  15328,1 total,   9210,4 free,   3566,0 used,   2551,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.  11334,7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4048 inoor     20   0 3422244 662752 223800 S  37,5   4,2   0:35.46 Isolate+
+   3709 inoor     20   0 4078048 452656 240240 R  18,8   2,9   0:37.17 firefox
+   2092 inoor     20   0 1756532 125036  69364 S  12,5   0,8   0:06.86 Xorg
+   2963 inoor     20   0 4001388 230656 138592 S  12,5   1,5   0:05.94 spotify
+     17 root      20   0       0      0      0 I   6,2   0,0   0:00.17 kworker+
+МиБ Mem :  15328,1 total,   9033,9 free,   3742,3 used,   2552,0 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.  11158,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4048 inoor     20   0 3429412 684312 223800 S 212,5   4,4   0:36.47 Isolate+
+   3709 inoor     20   0 4078048 453948 240444 S  31,2   2,9   0:37.55 firefox
+   2092 inoor     20   0 1756532 125036  69364 S  12,5   0,8   0:07.00 Xorg
+   2408 inoor     20   0 5522756 330768 128512 S   6,2   2,1   0:18.15 gnome-s+
+   2551 inoor     20   0 1073608  88356  48832 S   6,2   0,6   0:02.48 nautilus
+МиБ Mem :  15328,1 total,   8874,6 free,   3896,8 used,   2556,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.  10999,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4048 inoor     20   0 3434216 689564 228604 R  75,0   4,4   0:37.82 Isolate+
+   2408 inoor     20   0 5522756 330616 128512 R  37,5   2,1   0:18.53 gnome-s+
+   3709 inoor     20   0 4080788 458704 245248 S  37,5   2,9   0:38.08 firefox
+   2551 inoor     20   0 1073608  88356  48832 S  12,5   0,6   0:02.53 nautilus
+   4241 inoor     20   0  556516 549296   1948 S  12,5   3,5   0:09.67 bash
+МиБ Mem :  15328,1 total,   8723,0 free,   4048,5 used,   2556,6 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.  10847,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4048 inoor     20   0 3438320 695904 228612 R  80,0   4,4   0:38.71 Isolate+
+   3709 inoor     20   0 4080796 458808 245248 S  46,7   2,9   0:38.47 firefox
+   2408 inoor     20   0 5522756 330648 128512 S  33,3   2,1   0:18.77 gnome-s+
+   2092 inoor     20   0 1754484 125040  69364 S  13,3   0,8   0:07.22 Xorg
+    589 root      20   0       0      0      0 I   6,7   0,0   0:00.18 kworker+
+МиБ Mem :  15328,1 total,   8565,1 free,   4206,3 used,   2556,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.  10689,5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4048 inoor     20   0 3438320 696548 228612 S  25,0   4,4   0:39.15 Isolate+
+   3709 inoor     20   0 4080780 458560 245256 S  12,5   2,9   0:38.75 firefox
+   4241 inoor     20   0  712804 705548   1948 S  12,5   4,5   0:11.44 bash
+    642 root      20   0       0      0      0 I   6,2   0,0   0:00.16 kworker+
+   2092 inoor     20   0 1756532 125040  69364 S   6,2   0,8   0:07.30 Xorg
+МиБ Mem :  15328,1 total,   8402,9 free,   4368,5 used,   2556,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.  10527,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4048 inoor     20   0 3439344 709068 228612 S  31,2   4,5   0:39.82 Isolate+
+   3709 inoor     20   0 4080748 458440 245256 R  18,8   2,9   0:38.95 firefox
+   2408 inoor     20   0 5522756 330748 128512 S  12,5   2,1   0:19.04 gnome-s+
+    592 root      20   0       0      0      0 I   6,2   0,0   0:00.04 kworker+
+   2092 inoor     20   0 1756532 125040  69364 S   6,2   0,8   0:07.36 Xorg
+МиБ Mem :  15328,1 total,   8256,1 free,   4521,4 used,   2550,6 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.  10381,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   3709 inoor     20   0 4075648 463908 243188 S  43,8   3,0   0:39.55 firefox
+   4048 inoor     20   0 3432180 700712 221452 R  43,8   4,5   0:40.13 Isolate+
+   2408 inoor     20   0 5522756 330748 128512 S  31,2   2,1   0:19.14 gnome-s+
+   2092 inoor     20   0 1754484 125040  69364 R  12,5   0,8   0:07.46 Xorg
+   4241 inoor     20   0  868960 861804   1948 S  12,5   5,5   0:13.21 bash
+МиБ Mem :  15328,1 total,   8090,8 free,   4686,6 used,   2550,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.  10216,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   2963 inoor     20   0 4001388 230656 138592 S  18,8   1,5   0:06.03 spotify
+   2551 inoor     20   0 1073608  88356  48832 S  12,5   0,6   0:02.71 nautilus
+   3203 inoor     20   0   30,4g 225676 104508 S  12,5   1,4   0:06.45 spotify
+   4389 inoor     20   0   12192   3984   3264 S  12,5   0,0   0:00.02 top
+   3132 inoor     20   0 1221876 100528  84060 S   6,2   0,6   0:00.87 spotify
+МиБ Mem :  15328,1 total,   7990,7 free,   4786,7 used,   2550,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.  10116,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   2551 inoor     20   0 1073608  88356  48832 S  13,3   0,6   0:02.74 nautilus
+   4401 inoor     20   0   12192   3840   3120 S  13,3   0,0   0:00.02 top
+   3709 inoor     20   0 4075648 463204 243188 S   6,7   3,0   0:39.72 firefox
+   4048 inoor     20   0 3432180 699908 221456 S   6,7   4,5   0:40.31 Isolate+
+   4398 inoor     20   0   12192   3932   3212 R   6,7   0,0   0:00.03 top
+МиБ Mem :  15328,1 total,   7748,2 free,   5020,9 used,   2559,0 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   9881,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   3709 inoor     20   0 4075680 482320 243188 S  87,5   3,1   0:39.87 firefox
+   3989 inoor     20   0 2917528 373032  85632 S  43,8   2,4   0:06.61 WebExte+
+   4411 inoor     20   0   12192   4008   3288 S  12,5   0,0   0:00.02 top
+   4412 inoor     20   0    8940    716    616 S  12,5   0,0   0:00.02 grep
+     41 root      20   0       0      0      0 I   6,2   0,0   0:00.15 kworker+
+МиБ Mem :  15328,1 total,   7539,6 free,   5237,3 used,   2551,2 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   9665,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   2408 inoor     20   0 5522756 330684 128512 S  18,8   2,1   0:19.39 gnome-s+
+   2551 inoor     20   0 1073608  88356  48832 S   6,2   0,6   0:02.80 nautilus
+   4221 inoor     20   0  815144  52128  39760 S   6,2   0,3   0:00.42 gnome-t+
+   4423 inoor     20   0    8624    584    516 S   6,2   0,0   0:00.02 tail
+   4424 inoor     20   0   12192   3848   3124 S   6,2   0,0   0:00.01 top
+МиБ Mem :  15328,1 total,   7448,6 free,   5337,6 used,   2542,0 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   9574,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4433 inoor     20   0   12192   3908   3184 R  13,3   0,0   0:00.04 top
+   4436 inoor     20   0    8624    580    516 S  13,3   0,0   0:00.02 tail
+   2551 inoor     20   0 1073608  88356  48832 S   6,7   0,6   0:02.83 nautilus
+   4432 inoor     20   0   12192   4000   3276 R   6,7   0,0   0:00.03 top
+   4434 inoor     20   0    8940    648    552 S   6,7   0,0   0:00.02 grep
+МиБ Mem :  15328,1 total,   7294,8 free,   5491,4 used,   2542,0 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   9420,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 1340860   1,3g   1948 R  31,2   8,5   0:18.70 bash
+   2092 inoor     20   0 1750388 125048  69372 S   6,2   0,8   0:07.62 Xorg
+   2408 inoor     20   0 5522756 330716 128512 S   6,2   2,1   0:19.45 gnome-s+
+   2551 inoor     20   0 1073608  88356  48832 S   6,2   0,6   0:02.87 nautilus
+   4446 inoor     20   0    8624    576    512 S   6,2   0,0   0:00.02 tail
+МиБ Mem :  15328,1 total,   7144,6 free,   5641,5 used,   2542,0 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   9270,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 1421776   1,3g   1948 R  62,5   9,0   0:20.03 bash
+   2092 inoor     20   0 1750388 125048  69372 S   6,2   0,8   0:07.64 Xorg
+   4221 inoor     20   0  815144  52128  39760 S   6,2   0,3   0:00.44 gnome-t+
+   4454 inoor     20   0   12192   3988   3264 R   6,2   0,0   0:00.04 top
+   4456 inoor     20   0    8624    580    512 S   6,2   0,0   0:00.02 tail
+МиБ Mem :  15328,1 total,   6999,6 free,   5786,6 used,   2542,0 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   9125,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 1497544   1,4g   1948 R  31,2   9,5   0:21.27 bash
+   4465 inoor     20   0   12192   3848   3124 R  12,5   0,0   0:00.04 top
+    185 root      20   0       0      0      0 I   6,2   0,0   0:00.18 kworker+
+   2408 inoor     20   0 5522756 330716 128512 S   6,2   2,1   0:19.52 gnome-s+
+   2551 inoor     20   0 1073608  88356  48832 S   6,2   0,6   0:02.96 nautilus
+МиБ Mem :  15328,1 total,   6837,3 free,   5948,7 used,   2542,1 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   8963,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 1574764   1,5g   1948 R  20,0  10,0   0:22.29 bash
+   2551 inoor     20   0 1073608  88356  48832 S  13,3   0,6   0:03.00 nautilus
+   2092 inoor     20   0 1750388 125048  69372 S   6,7   0,8   0:07.67 Xorg
+   2408 inoor     20   0 5522756 330716 128512 R   6,7   2,1   0:19.55 gnome-s+
+   4221 inoor     20   0  815144  52128  39760 S   6,7   0,3   0:00.45 gnome-t+
+МиБ Mem :  15328,1 total,   6686,8 free,   6099,2 used,   2542,1 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   8812,7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 1654096   1,6g   1948 R  31,2  10,5   0:23.27 bash
+     88 root      20   0       0      0      0 S   6,2   0,0   0:00.03 ksoftir+
+   2408 inoor     20   0 5522756 330716 128512 S   6,2   2,1   0:19.58 gnome-s+
+   2551 inoor     20   0 1073608  88356  48832 S   6,2   0,6   0:03.04 nautilus
+   4048 inoor     20   0 3420524 667180 211848 S   6,2   4,3   0:40.46 Isolate+
+МиБ Mem :  15328,1 total,   6532,9 free,   6253,1 used,   2542,1 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   8658,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   2408 inoor     20   0 5521732 328412 128512 S  37,5   2,1   0:19.66 gnome-s+
+   4241 inoor     20   0 1732768   1,6g   1948 R  31,2  11,0   0:24.25 bash
+     76 root      20   0       0      0      0 S   6,2   0,0   0:00.02 ksoftir+
+   2092 inoor     20   0 1750388 125048  69372 S   6,2   0,8   0:07.70 Xorg
+   2551 inoor     20   0 1073608  88356  48832 S   6,2   0,6   0:03.07 nautilus
+МиБ Mem :  15328,1 total,   6394,9 free,   6391,2 used,   2542,1 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   8520,7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 1810252   1,7g   1948 R  26,7  11,5   0:25.22 bash
+   4507 inoor     20   0    8624    516    448 S  13,3   0,0   0:00.02 tail
+    708 root     -51   0       0      0      0 S   6,7   0,0   0:00.97 irq/88-+
+   1146 root      20   0 2161520  41044  28776 S   6,7   0,3   0:00.28 contain+
+   2408 inoor     20   0 5521732 328496 128512 S   6,7   2,1   0:19.71 gnome-s+
+МиБ Mem :  15328,1 total,   6238,3 free,   6547,7 used,   2542,1 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   8364,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 1888660   1,8g   1948 R  33,3  12,0   0:26.20 bash
+   2551 inoor     20   0 1073608  88356  48832 S  13,3   0,6   0:03.16 nautilus
+   4517 inoor     20   0    8624    516    448 S  13,3   0,0   0:00.02 tail
+   2092 inoor     20   0 1750604 125220  69372 S   6,7   0,8   0:07.73 Xorg
+   2408 inoor     20   0 5521732 328540 128512 S   6,7   2,1   0:19.74 gnome-s+
+МиБ Mem :  15328,1 total,   6086,9 free,   6699,2 used,   2542,1 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   8212,7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 1968388   1,9g   1948 R  40,0  12,5   0:27.20 bash
+     13 root      20   0       0      0      0 S   6,7   0,0   0:00.03 ksoftir+
+   2408 inoor     20   0 5521732 328540 128512 S   6,7   2,1   0:19.77 gnome-s+
+   3709 inoor     20   0 4065000 447752 233644 S   6,7   2,9   0:40.29 firefox
+   3989 inoor     20   0 2954408 407120  86312 S   6,7   2,6   0:07.24 WebExte+
+МиБ Mem :  15328,1 total,   5941,3 free,   6844,8 used,   2542,1 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   8067,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 2047984   1,9g   1948 R  56,2  13,0   0:28.24 bash
+    708 root     -51   0       0      0      0 S   6,2   0,0   0:00.99 irq/88-+
+   2092 inoor     20   0 1750604 125220  69372 S   6,2   0,8   0:07.75 Xorg
+   4535 inoor     20   0   12192   3972   3252 R   6,2   0,0   0:00.04 top
+   4537 inoor     20   0    8624    584    516 S   6,2   0,0   0:00.02 tail
+МиБ Mem :  15328,1 total,   5794,2 free,   6991,6 used,   2542,4 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   7920,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 2124808   2,0g   1948 R  46,7  13,5   0:29.14 bash
+   3709 inoor     20   0 4063976 446744 234004 S  20,0   2,8   0:40.38 firefox
+   4048 inoor     20   0 3420524 665812 211848 S  13,3   4,2   0:40.50 Isolate+
+    708 root     -51   0       0      0      0 S   6,7   0,0   0:01.00 irq/88-+
+   4547 inoor     20   0   12192   3904   3184 R   6,7   0,0   0:00.04 top
+МиБ Mem :  15328,1 total,   5645,0 free,   7140,8 used,   2542,3 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   7771,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 2202424   2,1g   1948 R  37,5  14,0   0:30.04 bash
+   4559 inoor     20   0    8624    516    452 S  12,5   0,0   0:00.02 tail
+   2408 inoor     20   0 5521732 328540 128512 S   6,2   2,1   0:19.86 gnome-s+
+      1 root      20   0  168500  11808   8368 S   0,0   0,1   0:01.47 systemd
+      2 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kthreadd
+МиБ Mem :  15328,1 total,   5490,2 free,   7295,6 used,   2542,3 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   7616,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 2282152   2,2g   1948 R  50,0  14,5   0:30.95 bash
+   2551 inoor     20   0 1073608  88356  48832 S   6,2   0,6   0:03.34 nautilus
+   4569 inoor     20   0    8624    584    516 S   6,2   0,0   0:00.02 tail
+      1 root      20   0  168500  11808   8368 S   0,0   0,1   0:01.47 systemd
+      2 root      20   0       0      0      0 S   0,0   0,0   0:00.00 kthreadd
+МиБ Mem :  15328,1 total,   5331,8 free,   7454,0 used,   2542,3 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   7458,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 2361880   2,2g   1948 R  56,2  15,0   0:31.87 bash
+   4579 inoor     20   0    8624    580    516 S  12,5   0,0   0:00.02 tail
+   2408 inoor     20   0 5521732 328552 128512 S   6,2   2,1   0:19.94 gnome-s+
+   4578 inoor     20   0    8600    576    512 S   6,2   0,0   0:00.03 head
+      1 root      20   0  168500  11808   8368 S   0,0   0,1   0:01.47 systemd
+МиБ Mem :  15328,1 total,   5225,3 free,   7560,5 used,   2542,3 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   7351,5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 2439100   2,3g   1948 R  56,2  15,5   0:32.78 bash
+   4589 inoor     20   0    8624    520    452 S  12,5   0,0   0:00.02 tail
+   3709 inoor     20   0 4063976 447236 234064 S   6,2   2,8   0:40.44 firefox
+   4587 inoor     20   0   12192   3972   3248 R   6,2   0,0   0:00.04 top
+   4588 inoor     20   0    8600    584    516 S   6,2   0,0   0:00.02 head
+МиБ Mem :  15328,1 total,   5080,0 free,   7705,8 used,   2542,3 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   7206,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 2515924   2,4g   1948 R  43,8  16,0   0:33.68 bash
+   4221 inoor     20   0  815144  52128  39760 S   6,2   0,3   0:00.51 gnome-t+
+   4598 inoor     20   0    8600    580    516 S   6,2   0,0   0:00.03 head
+   4599 inoor     20   0    8624    576    512 S   6,2   0,0   0:00.02 tail
+      1 root      20   0  168500  11808   8368 S   0,0   0,1   0:01.47 systemd
+МиБ Mem :  15328,1 total,   4921,9 free,   7863,9 used,   2542,3 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   7048,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 2593936   2,5g   1948 R  46,7  16,5   0:34.59 bash
+   4609 inoor     20   0    8624    580    512 S  13,3   0,0   0:00.02 tail
+     41 root      20   0       0      0      0 I   6,7   0,0   0:00.16 kworker+
+   2408 inoor     20   0 5521732 328552 128512 S   6,7   2,1   0:20.03 gnome-s+
+   4607 inoor     20   0   12192   4004   3280 R   6,7   0,0   0:00.04 top
+МиБ Mem :  15328,1 total,   4765,7 free,   8020,1 used,   2542,3 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   6891,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 2671816   2,5g   1948 R  50,0  17,0   0:35.50 bash
+   4619 inoor     20   0    8624    584    516 S  12,5   0,0   0:00.02 tail
+    761 root      -2   0       0      0      0 S   6,2   0,0   0:00.74 gfx
+   2963 inoor     20   0 4001388 230656 138592 S   6,2   1,5   0:06.29 spotify
+   4617 inoor     20   0   12192   3996   3276 R   6,2   0,0   0:00.04 top
+МиБ Mem :  15328,1 total,   4615,9 free,   8169,7 used,   2542,5 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   6742,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 2749828   2,6g   1948 R  43,8  17,5   0:36.41 bash
+   2408 inoor     20   0 5521732 328600 128512 S  18,8   2,1   0:20.13 gnome-s+
+   2092 inoor     20   0 1750604 125220  69372 S  12,5   0,8   0:07.90 Xorg
+   4631 inoor     20   0    8624    580    512 S  12,5   0,0   0:00.02 tail
+   4629 inoor     20   0   12192   4000   3276 R   6,2   0,0   0:00.05 top
+МиБ Mem :  15328,1 total,   4456,3 free,   8329,3 used,   2542,5 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   6582,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 2826124   2,7g   1948 R  31,2  18,0   0:37.33 bash
+   2092 inoor     20   0 1757256 125768  69388 S  12,5   0,8   0:08.01 Xorg
+   2408 inoor     20   0 5523780 328680 128512 R  12,5   2,1   0:20.29 gnome-s+
+   4642 inoor     20   0    8624    580    512 S  12,5   0,0   0:00.03 tail
+     77 root      20   0       0      0      0 I   6,2   0,0   0:00.18 kworker+
+МиБ Mem :  15328,1 total,   4303,1 free,   8482,5 used,   2542,6 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   6429,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 2902816   2,8g   1948 R  25,0  18,4   0:38.26 bash
+   4670 inoor     20   0    8624    516    448 S  18,8   0,0   0:00.03 tail
+   2092 inoor     20   0 1755116 125768  69388 S   6,2   0,8   0:08.05 Xorg
+   2408 inoor     20   0 5523780 328680 128512 S   6,2   2,1   0:20.36 gnome-s+
+   2453 inoor     20   0  385084   8564   7092 S   6,2   0,1   0:00.19 ibus-da+
+МиБ Mem :  15328,1 total,   4148,5 free,   8636,4 used,   2543,2 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   6275,5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 2984128   2,8g   1948 R  43,8  19,0   0:39.22 bash
+   3174 inoor     20   0 1805604 393352 181424 R  37,5   2,5   0:05.75 telegra+
+   2092 inoor     20   0 1764904 125768  69388 S  18,8   0,8   0:08.16 Xorg
+   2408 inoor     20   0 5523780 328696 128512 S  18,8   2,1   0:20.51 gnome-s+
+   4681 inoor     20   0    8624    580    516 S  18,8   0,0   0:00.03 tail
+МиБ Mem :  15328,1 total,   3986,9 free,   8797,8 used,   2543,4 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   6114,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 3064912   2,9g   1948 R  56,2  19,5   0:40.17 bash
+   4695 inoor     20   0    8624    512    448 S  18,8   0,0   0:00.03 tail
+   2092 inoor     20   0 1762992 125772  69388 S   6,2   0,8   0:08.30 Xorg
+   2408 inoor     20   0 5523780 328676 128512 S   6,2   2,1   0:20.73 gnome-s+
+   2963 inoor     20   0 3993192 230736 138696 S   6,2   1,5   0:06.39 spotify
+МиБ Mem :  15328,1 total,   3796,1 free,   8985,5 used,   2546,5 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   5925,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 3144376   3,0g   1948 R  62,5  20,0   0:41.13 bash
+   4722 inoor     20   0    8624    512    448 S  18,8   0,0   0:00.03 tail
+   2092 inoor     20   0 1772744 126532  69900 S  12,5   0,8   0:08.43 Xorg
+   2408 inoor     20   0 5521736 328916 128576 S  12,5   2,1   0:20.96 gnome-s+
+   4701 inoor     20   0  905720  64792  41824 S  12,5   0,4   0:00.32 evince
+МиБ Mem :  15328,1 total,   3644,6 free,   9137,0 used,   2546,5 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   5774,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 3226348   3,1g   1948 R 100,0  20,5   0:42.09 bash
+   2408 inoor     20   0 5521736 328916 128576 S  20,0   2,1   0:21.13 gnome-s+
+   4732 inoor     20   0    8624    576    512 S  20,0   0,0   0:00.03 tail
+   2092 inoor     20   0 1767068 126532  69900 S  13,3   0,8   0:08.60 Xorg
+   3132 inoor     20   0 1221876 100528  84060 S   6,7   0,6   0:00.92 spotify
+МиБ Mem :  15328,1 total,   3432,0 free,   9343,1 used,   2553,0 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   5561,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 3305416   3,1g   1948 R 100,0  21,0   0:43.03 bash
+   2092 inoor     20   0 1845264 133104  76472 S  40,0   0,8   0:08.73 Xorg
+   4701 inoor     20   0 1003616  96548  48664 S  33,3   0,6   0:00.48 evince
+   2408 inoor     20   0 5522872 329044 128636 S  26,7   2,1   0:21.25 gnome-s+
+   4742 inoor     20   0    8624    580    512 S  20,0   0,0   0:00.03 tail
+МиБ Mem :  15328,1 total,   3267,5 free,   9501,7 used,   2558,9 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   5397,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 3388312   3,2g   1948 R 100,0  21,5   0:44.01 bash
+   2408 inoor     20   0 5522872 329044 128636 S  18,8   2,1   0:21.49 gnome-s+
+   4752 inoor     20   0    8624    512    448 S  18,8   0,0   0:00.03 tail
+   2092 inoor     20   0 1847932 139052  82420 S  12,5   0,9   0:08.93 Xorg
+   2551 inoor     20   0 1073608  88360  48836 S   6,2   0,6   0:03.88 nautilus
+МиБ Mem :  15328,1 total,   3093,9 free,   9672,6 used,   2561,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   5224,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 3467248   3,3g   1948 R 100,0  22,0   0:44.95 bash
+   4770 inoor     20   0    8624    580    512 S  20,0   0,0   0:00.03 tail
+   2408 inoor     20   0 5522872 329044 128636 S   6,7   2,1   0:21.56 gnome-s+
+   2551 inoor     20   0 1073608  88360  48836 S   6,7   0,6   0:03.93 nautilus
+   4768 inoor     20   0   12192   3844   3124 R   6,7   0,0   0:00.05 top
+МиБ Mem :  15328,1 total,   2935,1 free,   9831,4 used,   2561,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   5065,5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 3546712   3,4g   1948 R 100,0  22,6   0:45.89 bash
+   4780 inoor     20   0    8624    580    512 S  18,8   0,0   0:00.03 tail
+   2551 inoor     20   0 1073608  88360  48836 S  12,5   0,6   0:03.97 nautilus
+   4778 inoor     20   0   12192   3804   3084 R  12,5   0,0   0:00.06 top
+   2408 inoor     20   0 5522872 329064 128636 R   6,2   2,1   0:21.62 gnome-s+
+МиБ Mem :  15328,1 total,   2801,9 free,   9964,6 used,   2561,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   4932,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 3625648   3,5g   1948 R 100,0  23,1   0:46.84 bash
+   4788 inoor     20   0   12192   3996   3276 R  13,3   0,0   0:00.06 top
+   4790 inoor     20   0    8624    584    516 S  13,3   0,0   0:00.03 tail
+    708 root     -51   0       0      0      0 S   6,7   0,0   0:01.11 irq/88-+
+   2408 inoor     20   0 5521312 328976 128636 S   6,7   2,1   0:21.68 gnome-s+
+МиБ Mem :  15328,1 total,   2645,8 free,  10120,7 used,   2561,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   4776,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 3704848   3,5g   1948 R 100,0  23,6   0:47.78 bash
+   4800 inoor     20   0    8624    580    516 S  26,7   0,0   0:00.04 tail
+   2092 inoor     20   0 1833752 141280  84648 S  13,3   0,9   0:09.16 Xorg
+   2408 inoor     20   0 5521312 328976 128636 S  13,3   2,1   0:21.80 gnome-s+
+   4798 inoor     20   0   12192   3844   3120 R  13,3   0,0   0:00.06 top
+МиБ Mem :  15328,1 total,   2493,6 free,  10272,8 used,   2561,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   4624,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 3783124   3,6g   1948 R 100,0  24,1   0:48.72 bash
+   4810 inoor     20   0    8624    576    512 S  18,8   0,0   0:00.03 tail
+   2408 inoor     20   0 5521312 328976 128636 S   6,2   2,1   0:21.93 gnome-s+
+   2551 inoor     20   0 1073608  88360  48836 S   6,2   0,6   0:04.10 nautilus
+   4809 inoor     20   0    8600    512    448 S   6,2   0,0   0:00.04 head
+МиБ Mem :  15328,1 total,   2345,6 free,  10420,9 used,   2561,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   4476,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 3861532   3,7g   1948 R 100,0  24,6   0:49.68 bash
+   1937 root      20   0 2259508  65576  43684 S  18,8   0,4   0:00.29 dockerd
+   4820 inoor     20   0    8624    512    448 S  18,8   0,0   0:00.03 tail
+    188 root      20   0       0      0      0 I   6,2   0,0   0:00.18 kworker+
+   2408 inoor     20   0 5521312 328976 128636 S   6,2   2,1   0:21.97 gnome-s+
+МиБ Mem :  15328,1 total,   2184,2 free,  10582,1 used,   2561,9 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   4314,7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 3938224   3,7g   1948 R 100,0  25,0   0:50.61 bash
+   4833 inoor     20   0    8624    516    448 S  26,7   0,0   0:00.04 tail
+   3203 inoor     20   0   30,4g 226192 104508 S  20,0   1,4   0:06.69 spotify
+   2551 inoor     20   0 1073608  88360  48836 S  13,3   0,6   0:04.19 nautilus
+   4832 inoor     20   0    8600    580    512 S  13,3   0,0   0:00.04 head
+МиБ Mem :  15328,1 total,   2031,6 free,  10734,7 used,   2561,8 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   4162,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 4016104   3,8g   1948 R 100,0  25,5   0:51.57 bash
+   2092 inoor     20   0 1833752 141280  84648 S  25,0   0,9   0:09.40 Xorg
+   2408 inoor     20   0 5521312 328976 128636 S  18,8   2,1   0:22.08 gnome-s+
+   4843 inoor     20   0    8624    516    448 S  12,5   0,0   0:00.03 tail
+    197 root      20   0       0      0      0 D   6,2   0,0   0:00.39 kworker+
+МиБ Mem :  15328,1 total,   1875,7 free,  10890,5 used,   2561,8 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   4006,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 4096888   3,9g   1948 R 100,0  26,1   0:52.54 bash
+   4853 inoor     20   0    8624    512    448 S  26,7   0,0   0:00.04 tail
+   4852 inoor     20   0    8600    576    512 S  13,3   0,0   0:00.04 head
+   4851 inoor     20   0   12192   3832   3112 R   6,7   0,0   0:00.05 top
+      1 root      20   0  168500  11808   8368 S   0,0   0,1   0:01.47 systemd
+МиБ Mem :  15328,1 total,   1730,7 free,  11035,6 used,   2561,8 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   3861,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 4175560   4,0g   1948 R 100,0  26,6   0:53.49 bash
+   4863 inoor     20   0    8624    580    512 S  18,8   0,0   0:00.03 tail
+   3174 inoor     20   0 1808444 394424 181520 S   6,2   2,5   0:06.28 telegra+
+   4861 inoor     20   0   12192   3856   3136 R   6,2   0,0   0:00.05 top
+   4862 inoor     20   0    8600    576    512 S   6,2   0,0   0:00.04 head
+МиБ Mem :  15328,1 total,   1577,3 free,  11189,0 used,   2561,8 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   3707,9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 4254100   4,1g   1948 R 100,0  27,1   0:54.45 bash
+   4873 inoor     20   0    8624    516    448 S  26,7   0,0   0:00.04 tail
+   4871 inoor     20   0   12192   3920   3200 R  13,3   0,0   0:00.06 top
+   4872 inoor     20   0    8600    584    516 S  13,3   0,0   0:00.04 head
+   2408 inoor     20   0 5521312 329016 128636 S   6,7   2,1   0:22.35 gnome-s+
+МиБ Mem :  15328,1 total,   1423,1 free,  11343,2 used,   2561,8 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   3553,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 4333564   4,1g   1948 R 100,0  27,6   0:55.42 bash
+   4883 inoor     20   0    8624    512    448 S  25,0   0,0   0:00.04 tail
+   2408 inoor     20   0 5521312 329016 128636 S  12,5   2,1   0:22.40 gnome-s+
+   4881 inoor     20   0   12192   3904   3184 R  12,5   0,0   0:00.06 top
+   4882 inoor     20   0    8600    580    516 S  12,5   0,0   0:00.04 head
+МиБ Mem :  15328,1 total,   1287,6 free,  11478,7 used,   2561,8 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   3418,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 4410256   4,2g   1948 R 100,0  28,1   0:56.37 bash
+   4893 inoor     20   0    8624    516    452 S  26,7   0,0   0:00.04 tail
+   2092 inoor     20   0 1833752 141280  84648 S   6,7   0,9   0:09.67 Xorg
+   2408 inoor     20   0 5521312 329076 128636 S   6,7   2,1   0:22.45 gnome-s+
+   4048 inoor     20   0 3401052 627968 211848 S   6,7   4,0   0:41.01 Isolate+
+МиБ Mem :  15328,1 total,   1135,4 free,  11631,0 used,   2561,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   3266,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 4489192   4,3g   1948 R 100,0  28,6   0:57.33 bash
+   4903 inoor     20   0    8624    576    512 S  26,7   0,0   0:00.04 tail
+   3709 inoor     20   0 4063796 446232 233916 S  13,3   2,8   0:40.61 firefox
+   4701 inoor     20   0  989688  90736  56744 S  13,3   0,6   0:00.89 evince
+    708 root     -51   0       0      0      0 S   6,7   0,0   0:01.18 irq/88-+
+МиБ Mem :  15328,1 total,    955,5 free,  11810,9 used,   2561,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   3086,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 4567600   4,3g   1948 R 100,0  29,1   0:58.31 bash
+   4913 inoor     20   0    8624    516    448 S  26,7   0,0   0:00.04 tail
+    589 root      20   0       0      0      0 I   6,7   0,0   0:00.25 kworker+
+    708 root     -51   0       0      0      0 S   6,7   0,0   0:01.19 irq/88-+
+   4911 inoor     20   0   12192   3896   3176 R   6,7   0,0   0:00.06 top
+МиБ Mem :  15328,1 total,    807,3 free,  11959,1 used,   2561,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   2938,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 4645876   4,4g   1948 R  88,2  29,6   0:59.27 bash
+   4923 inoor     20   0    8624    520    452 S  23,5   0,0   0:00.04 tail
+   2092 inoor     20   0 1831704 141280  84648 S  17,6   0,9   0:09.85 Xorg
+   2408 inoor     20   0 5521312 329076 128636 S  11,8   2,1   0:22.64 gnome-s+
+   4922 inoor     20   0    8600    576    512 S  11,8   0,0   0:00.05 head
+МиБ Mem :  15328,1 total,    651,5 free,  12114,9 used,   2561,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   2782,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 4724812   4,5g   1948 R 100,0  30,1   1:00.25 bash
+   4933 inoor     20   0    8624    512    448 S  25,0   0,0   0:00.04 tail
+   4932 inoor     20   0    8600    576    512 S  12,5   0,0   0:00.04 head
+   4931 inoor     20   0   12192   3936   3212 R   6,2   0,0   0:00.06 top
+      1 root      20   0  168500  11808   8368 S   0,0   0,1   0:01.47 systemd
+МиБ Mem :  15328,1 total,    505,5 free,  12261,0 used,   2561,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   2636,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 4803616   4,6g   1948 R 100,0  30,6   1:01.22 bash
+   4943 inoor     20   0    8624    512    448 S  25,0   0,0   0:00.04 tail
+   2408 inoor     20   0 5521312 329012 128636 S  18,8   2,1   0:22.79 gnome-s+
+    708 root     -51   0       0      0      0 S   6,2   0,0   0:01.21 irq/88-+
+   3989 inoor     20   0 2954376 405788  86312 S   6,2   2,6   0:07.28 WebExte+
+МиБ Mem :  15328,1 total,    467,9 free,  12298,6 used,   2561,7 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   2598,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 4882816   4,6g   1948 R 100,0  31,1   1:02.21 bash
+   4954 inoor     20   0    8624    580    516 S  26,7   0,0   0:00.04 tail
+   4952 inoor     20   0   12192   3952   3228 R   6,7   0,0   0:00.06 top
+   4953 inoor     20   0    8600    580    516 S   6,7   0,0   0:00.04 head
+      1 root      20   0  168500  11808   8368 S   0,0   0,1   0:01.47 systemd
+МиБ Mem :  15328,1 total,    280,9 free,  12474,6 used,   2572,6 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   2412,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 4961620   4,7g   1948 R 100,0  31,6   1:03.20 bash
+   3203 inoor     20   0   30,4g 229848 107676 S  66,7   1,5   0:06.88 spotify
+   4964 inoor     20   0    8624    512    448 S  33,3   0,0   0:00.05 tail
+   2408 inoor     20   0 5521736 329140 128636 S  26,7   2,1   0:23.16 gnome-s+
+   2092 inoor     20   0 1851032 148432  90268 S  20,0   0,9   0:10.17 Xorg
+МиБ Mem :  15328,1 total,    157,1 free,  12620,5 used,   2550,5 buff/cache
+МиБ Swap:   1359,1 total,   1359,1 free,      0,0 used.   2263,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   3203 inoor     20   0   30,4g 238544 109972 S 181,2   1,5   0:08.01 spotify
+   4241 inoor     20   0 5042140   4,8g   1948 R  93,8  32,1   1:04.23 bash
+   3072 inoor     20   0 2857740 126464  90224 R  43,8   0,8   0:03.51 spotify
+   2408 inoor     20   0 5521736 329152 128636 S  31,2   2,1   0:23.45 gnome-s+
+   4976 inoor     20   0    8624    516    448 S  31,2   0,0   0:00.06 tail
+МиБ Mem :  15328,1 total,    168,1 free,  12742,2 used,   2417,8 buff/cache
+МиБ Swap:   1359,1 total,   1358,1 free,      1,0 used.   2142,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 5121604   4,9g   1456 R 100,0  32,6   1:05.29 bash
+   5000 inoor     20   0    8624    512    448 S  31,2   0,0   0:00.05 tail
+   3203 inoor     20   0   30,5g 248188 110300 S  25,0   1,6   0:09.67 spotify
+   4999 inoor     20   0    8600    580    512 S  12,5   0,0   0:00.05 head
+     14 root      20   0       0      0      0 I   6,2   0,0   0:00.22 rcu_sch+
+МиБ Mem :  15328,1 total,    171,1 free,  12877,0 used,   2280,0 buff/cache
+МиБ Swap:   1359,1 total,   1356,1 free,      3,0 used.   2010,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 5197240   4,9g   1800 R 100,0  33,1   1:06.29 bash
+   5010 inoor     20   0    8624    576    512 S  31,2   0,0   0:00.05 tail
+   3203 inoor     20   0   30,5g 252252 109012 S  18,8   1,6   0:10.14 spotify
+   2963 inoor     20   0 4000204 236884 140428 S  12,5   1,5   0:07.54 spotify
+   3072 inoor     20   0 2855180 122832  86592 R  12,5   0,8   0:03.87 spotify
+МиБ Mem :  15328,1 total,    148,9 free,  13040,7 used,   2138,6 buff/cache
+МиБ Swap:   1359,1 total,   1351,6 free,      7,5 used.   1849,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 5273668   5,0g   1800 R 100,0  33,6   1:07.34 bash
+   5020 inoor     20   0    8624    580    512 S  33,3   0,0   0:00.05 tail
+   2408 inoor     20   0 5527880 324180 123496 S  20,0   2,1   0:24.17 gnome-s+
+   3072 inoor     20   0 2855036 124752  88512 S  20,0   0,8   0:04.13 spotify
+   3203 inoor     20   0   30,5g 253424 109100 S  13,3   1,6   0:10.57 spotify
+МиБ Mem :  15328,1 total,    160,9 free,  13201,2 used,   1966,0 buff/cache
+МиБ Swap:   1359,1 total,   1344,4 free,     14,8 used.   1697,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 5353660   5,1g   1800 R 100,0  34,1   1:08.38 bash
+   5031 inoor     20   0    8624    580    512 S  31,2   0,0   0:00.05 tail
+   2408 inoor     20   0 5525832 323628 122860 S  25,0   2,1   0:24.57 gnome-s+
+   3072 inoor     20   0 2854396 124372  88132 S  12,5   0,8   0:04.32 spotify
+   3203 inoor     20   0   30,5g 253096 108460 S  12,5   1,6   0:10.74 spotify
+МиБ Mem :  15328,1 total,    172,1 free,  13347,2 used,   1808,8 buff/cache
+МиБ Swap:   1359,1 total,   1343,4 free,     15,8 used.   1553,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 5430088   5,2g   1800 R 100,0  34,5   1:09.41 bash
+   5041 inoor     20   0    8624    576    512 S  33,3   0,0   0:00.05 tail
+   2408 inoor     20   0 5523784 323344 122676 S  26,7   2,1   0:24.91 gnome-s+
+   2963 inoor     20   0 3998156 239060 141368 S  13,3   1,5   0:07.99 spotify
+   5040 inoor     20   0    8600    580    516 S  13,3   0,0   0:00.05 head
+МиБ Mem :  15328,1 total,    165,1 free,  13514,8 used,   1648,2 buff/cache
+МиБ Swap:   1359,1 total,   1343,4 free,     15,8 used.   1384,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 5510872   5,2g   1800 R 100,0  35,1   1:10.51 bash
+   5051 inoor     20   0    8624    520    452 S  33,3   0,0   0:00.05 tail
+   5049 inoor     20   0   12192   3968   3244 R   6,7   0,0   0:00.07 top
+   5050 inoor     20   0    8600    580    516 S   6,7   0,0   0:00.05 head
+      1 root      20   0  168500  11808   8368 S   0,0   0,1   0:01.47 systemd
+МиБ Mem :  15328,1 total,    161,0 free,  13659,0 used,   1508,1 buff/cache
+МиБ Swap:   1359,1 total,   1343,1 free,     16,0 used.   1242,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 5588620   5,3g   1800 R 100,0  35,6   1:11.54 bash
+   5069 inoor     20   0    8624    516    452 S  33,3   0,0   0:00.05 tail
+   5068 inoor     20   0    8600    516    448 S  20,0   0,0   0:00.06 head
+   1954 inoor      9 -11 2343032  19408  15308 S   6,7   0,1   0:00.34 pulseau+
+   2408 inoor     20   0 5519688 321004 120224 S   6,7   2,0   0:25.39 gnome-s+
+МиБ Mem :  15328,1 total,    172,4 free,  13783,3 used,   1372,5 buff/cache
+МиБ Swap:   1359,1 total,   1342,9 free,     16,2 used.   1114,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 5664124   5,4g   1800 R 100,0  36,0   1:12.56 bash
+   5080 inoor     20   0    8624    516    452 S  33,3   0,0   0:00.05 tail
+   2963 inoor     20   0 3998156 236712 138732 S  13,3   1,5   0:08.31 spotify
+   5079 inoor     20   0    8600    584    516 S  13,3   0,0   0:00.06 head
+   1954 inoor      9 -11 2343032  18764  14664 S   6,7   0,1   0:00.38 pulseau+
+МиБ Mem :  15328,1 total,    204,5 free,  13944,3 used,   1179,4 buff/cache
+МиБ Swap:   1359,1 total,   1342,9 free,     16,2 used.    958,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 5742136   5,5g   1800 R  93,8  36,5   1:13.59 bash
+   5090 inoor     20   0    8624    584    516 S  31,2   0,0   0:00.05 tail
+   5089 inoor     20   0    8600    516    448 S  18,8   0,0   0:00.06 head
+    708 root     -51   0       0      0      0 S   6,2   0,0   0:01.34 irq/88-+
+   2963 inoor     20   0 3998156 236700 138720 S   6,2   1,5   0:08.35 spotify
+МиБ Mem :  15328,1 total,    166,4 free,  14078,2 used,   1083,6 buff/cache
+МиБ Swap:   1359,1 total,   1342,9 free,     16,2 used.    820,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 5820016   5,5g   1800 R 100,0  37,0   1:14.62 bash
+   5100 inoor     20   0    8624    512    448 S  33,3   0,0   0:00.05 tail
+   5099 inoor     20   0    8600    576    512 S  20,0   0,0   0:00.06 head
+   2963 inoor     20   0 3998156 231828 133848 S  13,3   1,5   0:08.43 spotify
+   1954 inoor      9 -11 2343032  17596  13496 S   6,7   0,1   0:00.45 pulseau+
+МиБ Mem :  15328,1 total,    168,7 free,  14228,8 used,    930,6 buff/cache
+МиБ Swap:   1359,1 total,   1342,4 free,     16,8 used.    669,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 5900800   5,6g   1800 R 100,0  37,5   1:15.70 bash
+   5110 inoor     20   0    8624    580    516 S  33,3   0,0   0:00.05 tail
+   5109 inoor     20   0    8600    576    512 S  20,0   0,0   0:00.06 head
+    708 root     -51   0       0      0      0 S   6,7   0,0   0:01.35 irq/88-+
+      1 root      20   0  168500   9984   6544 S   0,0   0,1   0:01.47 systemd
+МиБ Mem :  15328,1 total,    162,8 free,  14380,8 used,    784,6 buff/cache
+МиБ Swap:   1359,1 total,   1342,1 free,     17,0 used.    519,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 5976568   5,7g   1800 R 100,0  38,0   1:16.76 bash
+   5120 inoor     20   0    8624    512    448 S  37,5   0,0   0:00.06 tail
+   2092 inoor     20   0 1831208 128608  70420 S  12,5   0,8   0:11.33 Xorg
+   4221 inoor     20   0  815524  39640  26956 S  12,5   0,3   0:00.90 gnome-t+
+   5119 inoor     20   0    8600    580    512 S  12,5   0,0   0:00.06 head
+МиБ Mem :  15328,1 total,    169,2 free,  14530,6 used,    628,3 buff/cache
+МиБ Swap:   1359,1 total,   1341,6 free,     17,5 used.    369,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 6052204   5,8g   1800 R 100,0  38,5   1:17.80 bash
+   5130 inoor     20   0    8624    512    448 S  37,5   0,0   0:00.06 tail
+   2408 inoor     20   0 5521736 260740  60108 S  12,5   1,7   0:25.76 gnome-s+
+   5129 inoor     20   0    8600    580    516 S  12,5   0,0   0:00.07 head
+    177 root      20   0       0      0      0 S   6,2   0,0   0:01.96 kswapd0
+МиБ Mem :  15328,1 total,    183,5 free,  14575,2 used,    569,4 buff/cache
+МиБ Swap:   1359,1 total,   1220,9 free,    138,2 used.    328,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 6130876   5,8g   1800 R  93,8  39,0   1:18.88 bash
+   5140 inoor     20   0    8624    512    448 S  37,5   0,0   0:00.06 tail
+   5139 inoor     20   0    8600    576    512 S  25,0   0,0   0:00.07 head
+   2092 inoor     20   0 1837352 112692  54504 S  12,5   0,7   0:11.55 Xorg
+   1954 inoor      9 -11 2343032  11724   9832 S   6,2   0,1   0:00.58 pulseau+
+МиБ Mem :  15328,1 total,    165,0 free,  14601,3 used,    561,8 buff/cache
+МиБ Swap:   1359,1 total,   1073,6 free,    285,5 used.    301,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 6214960   5,9g   1800 R 100,0  39,5   1:20.04 bash
+   5152 inoor     20   0    8624    516    448 S  43,8   0,0   0:00.07 tail
+   2408 inoor     20   0 5521736 196076  49680 S  37,5   1,2   0:26.37 gnome-s+
+    115 root      20   0       0      0      0 S  18,8   0,0   0:00.12 kcompac+
+   5151 inoor     20   0    8600    516    448 S  18,8   0,0   0:00.07 head
+МиБ Mem :  15328,1 total,    156,3 free,  14623,9 used,    548,0 buff/cache
+МиБ Swap:   1359,1 total,    932,1 free,    427,0 used.    279,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 6293236   6,0g   1800 R 100,0  40,0   1:21.13 bash
+   2408 inoor     20   0 5521736 126956  47692 S  37,5   0,8   0:26.81 gnome-s+
+   5162 inoor     20   0    8624    580    516 S  37,5   0,0   0:00.06 tail
+   5161 inoor     20   0    8600    580    512 S  18,8   0,0   0:00.07 head
+   2963 inoor     20   0 3998156 137456  39476 R  12,5   0,9   0:08.91 spotify
+МиБ Mem :  15328,1 total,    168,6 free,  14562,1 used,    597,4 buff/cache
+МиБ Swap:   1359,1 total,    723,9 free,    635,2 used.    341,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 6371512   6,1g   1800 R 100,0  40,5   1:22.20 bash
+   5180 inoor     20   0    8624    580    512 S  37,5   0,0   0:00.06 tail
+   2408 inoor     20   0 5521736 112892  44988 S  12,5   0,7   0:26.90 gnome-s+
+   5179 inoor     20   0    8600    516    448 S  12,5   0,0   0:00.07 head
+    177 root      20   0       0      0      0 S   6,2   0,0   0:02.90 kswapd0
+МиБ Mem :  15328,1 total,    178,8 free,  14555,3 used,    594,0 buff/cache
+МиБ Swap:   1359,1 total,    565,6 free,    793,5 used.    352,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 6453748   6,1g   1800 R 100,0  41,1   1:23.32 bash
+   5192 inoor     20   0    8624    576    512 S  37,5   0,0   0:00.06 tail
+   2408 inoor     20   0 5521736 102844  43096 S  12,5   0,7   0:27.10 gnome-s+
+   5190 inoor     20   0   12192   3844   3124 R  12,5   0,0   0:00.10 top
+   5191 inoor     20   0    8600    580    516 S  12,5   0,0   0:00.07 head
+МиБ Mem :  15328,1 total,    164,1 free,  14586,8 used,    577,2 buff/cache
+МиБ Swap:   1359,1 total,    440,9 free,    918,2 used.    324,9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 6532420   6,2g   1800 R 100,0  41,6   1:24.40 bash
+   5202 inoor     20   0    8624    584    516 S  43,8   0,0   0:00.07 tail
+   5201 inoor     20   0    8600    580    512 S  18,8   0,0   0:00.07 head
+     17 root      20   0       0      0      0 I   6,2   0,0   0:00.30 kworker+
+     41 root      20   0       0      0      0 I   6,2   0,0   0:00.22 kworker+
+МиБ Mem :  15328,1 total,    174,1 free,  14585,9 used,    568,2 buff/cache
+МиБ Swap:   1359,1 total,    294,4 free,   1064,8 used.    325,9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 6609640   6,3g   1800 R 100,0  42,1   1:25.47 bash
+   5212 inoor     20   0    8624    576    512 S  40,0   0,0   0:00.06 tail
+   5211 inoor     20   0    8600    576    512 S  26,7   0,0   0:00.08 head
+   3709 inoor     20   0 4062096 217488 103348 S  20,0   1,4   0:41.09 firefox
+   1954 inoor      9 -11 2343032  10616   8836 S  13,3   0,1   0:00.81 pulseau+
+МиБ Mem :  15328,1 total,    169,9 free,  14600,9 used,    557,3 buff/cache
+МиБ Swap:   1359,1 total,    156,1 free,   1203,0 used.    311,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 6686200   6,4g   1800 R 100,0  42,6   1:26.54 bash
+   5222 inoor     20   0    8624    572    508 S  46,7   0,0   0:00.07 tail
+   5221 inoor     20   0    8600    520    452 S  20,0   0,0   0:00.07 head
+   2092 inoor     20   0 1835308  98624  41584 S  13,3   0,6   0:12.09 Xorg
+   2408 inoor     20   0 5521740  94852  36196 S   6,7   0,6   0:27.27 gnome-s+
+МиБ Mem :  15328,1 total,    165,1 free,  14619,4 used,    543,6 buff/cache
+МиБ Swap:   1359,1 total,     10,7 free,   1348,5 used.    297,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 6764608   6,4g   1800 R 100,0  43,1   1:27.63 bash
+   5232 inoor     20   0    8624    516    448 S  37,5   0,0   0:00.06 tail
+   5231 inoor     20   0    8600    580    512 S  12,5   0,0   0:00.07 head
+   2963 inoor     20   0 3998156  75968  39220 S   6,2   0,5   0:09.26 spotify
+   5230 inoor     20   0   12192   3952   3232 R   6,2   0,0   0:00.10 top
+МиБ Mem :  15328,1 total,    175,4 free,  14755,5 used,    397,2 buff/cache
+МиБ Swap:   1359,1 total,      0,0 free,   1359,1 used.    169,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 6845788   6,5g   1748 R  93,8  43,6   1:28.75 bash
+   5242 inoor     20   0    8624    584    516 S  37,5   0,0   0:00.07 tail
+   3203 inoor     20   0   30,5g  92792  25348 S   6,2   0,6   0:12.05 spotify
+   5240 inoor     20   0   12192   3952   3232 R   6,2   0,0   0:00.10 top
+   5241 inoor     20   0    8600    580    516 S   6,2   0,0   0:00.07 head
+МиБ Mem :  15328,1 total,    175,1 free,  14911,2 used,    241,8 buff/cache
+МиБ Swap:   1359,1 total,      0,0 free,   1359,1 used.     77,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4241 inoor     20   0 6924460   6,6g   1636 R 100,0  44,1   1:29.87 bash
+   5252 inoor     20   0    8624    576    512 S  37,5   0,0   0:00.07 tail
+   5251 inoor     20   0    8600    508    440 S  18,8   0,0   0:00.09 head
+    708 root     -51   0       0      0      0 S   6,2   0,0   0:01.43 irq/88-+
+   1954 inoor      9 -11 2343032   6460   4680 S   6,2   0,0   0:00.94 pulseau+
+МиБ Mem :  15328,1 total,   6773,5 free,   8217,0 used,    337,6 buff/cache
+МиБ Swap:   1359,1 total,      0,2 free,   1359,0 used.   6723,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   3174 inoor     20   0 1726484  19612   7672 D 100,0   0,1   0:08.75 telegra+
+   5262 inoor     20   0    8624    572    508 S  37,5   0,0   0:00.08 tail
+   3203 inoor     20   0   30,5g  68796    532 D  31,2   0,4   0:12.95 spotify
+   2963 inoor     20   0 3998156  38520   1208 S  25,0   0,2   0:12.06 spotify
+   3132 inoor     20   0 1221880   5504     12 S  18,8   0,0   0:01.98 spotify
+МиБ Mem :  15328,1 total,   6463,8 free,   8303,2 used,    561,1 buff/cache
+МиБ Swap:   1359,1 total,      1,5 free,   1357,7 used.   6630,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   3203 inoor     20   0   30,5g 124720  47080 S  75,0   0,8   0:13.69 spotify
+   5267 inoor     20   0    8624    508    444 S  50,0   0,0   0:00.08 tail
+   5266 inoor     20   0    8600    572    508 S  25,0   0,0   0:00.09 head
+      8 root      20   0       0      0      0 I   6,2   0,0   0:00.33 kworker+
+   2408 inoor     20   0 5521736  77348  18684 S   6,2   0,5   0:28.68 gnome-s+
+МиБ Mem :  15328,1 total,   6367,3 free,   8389,1 used,    571,7 buff/cache
+МиБ Swap:   1359,1 total,      2,3 free,   1356,8 used.   6543,7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5272 inoor     20   0    8624    516    448 S  43,8   0,0   0:00.07 tail
+   2963 inoor     20   0 3998156  78416  40072 S  25,0   0,5   0:12.97 spotify
+   3203 inoor     20   0   30,5g 125636  50400 S  25,0   0,8   0:13.79 spotify
+   5271 inoor     20   0    8600    516    448 S  18,8   0,0   0:00.08 head
+   2092 inoor     20   0 1831208  93616  37456 S  12,5   0,6   0:13.49 Xorg
+МиБ Mem :  15328,1 total,   6291,7 free,   8461,6 used,    574,8 buff/cache
+МиБ Swap:   1359,1 total,      3,9 free,   1355,2 used.   6471,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5277 inoor     20   0    8624    576    508 S  50,0   0,0   0:00.08 tail
+   5276 inoor     20   0    8600    512    448 S  18,8   0,0   0:00.08 head
+    987 syslog    20   0  224352    772      0 S  12,5   0,0   0:00.15 rsyslogd
+     41 root      20   0       0      0      0 I   6,2   0,0   0:00.30 kworker+
+   2963 inoor     20   0 3998156  78988  40636 S   6,2   0,5   0:13.06 spotify
+МиБ Mem :  15328,1 total,   6212,3 free,   8534,1 used,    581,7 buff/cache
+МиБ Swap:   1359,1 total,      4,0 free,   1355,2 used.   6399,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5282 inoor     20   0    8624    576    508 S  68,8   0,0   0:00.11 tail
+   5281 inoor     20   0    8600    572    508 S  31,2   0,0   0:00.11 head
+   3203 inoor     20   0   30,5g 119920  51276 S  12,5   0,8   0:13.86 spotify
+   5280 inoor     20   0   12196   3932   3152 R  12,5   0,0   0:00.14 top
+     17 root      20   0       0      0      0 I   6,2   0,0   0:00.36 kworker+
+МиБ Mem :  15328,1 total,   6122,6 free,   8614,0 used,    591,6 buff/cache
+МиБ Swap:   1359,1 total,      4,4 free,   1354,8 used.   6319,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5287 inoor     20   0    8624    572    508 S  62,5   0,0   0:00.10 tail
+   5286 inoor     20   0    8600    576    508 S  25,0   0,0   0:00.11 head
+    486 root      20   0       0      0      0 I   6,2   0,0   0:00.29 kworker+
+   2408 inoor     20   0 5521736  79472  20772 S   6,2   0,5   0:28.96 gnome-s+
+   2963 inoor     20   0 3998156  78988  40636 S   6,2   0,5   0:13.26 spotify
+МиБ Mem :  15328,1 total,   5987,3 free,   8703,6 used,    637,2 buff/cache
+МиБ Swap:   1359,1 total,      8,1 free,   1351,0 used.   6229,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5292 inoor     20   0    8624    572    508 S  68,8   0,0   0:00.11 tail
+   5291 inoor     20   0    8600    572    508 S  25,0   0,0   0:00.11 head
+    589 root      20   0       0      0      0 I   6,2   0,0   0:00.37 kworker+
+    708 root     -51   0       0      0      0 S   6,2   0,0   0:01.52 irq/88-+
+   1146 root      20   0 2161520  12256      0 S   6,2   0,1   0:00.94 contain+
+МиБ Mem :  15328,1 total,   5900,3 free,   8783,1 used,    644,8 buff/cache
+МиБ Swap:   1359,1 total,     10,5 free,   1348,7 used.   6150,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5301 inoor     20   0    8624    512    448 S  68,8   0,0   0:00.11 tail
+   5300 inoor     20   0    8600    576    508 S  25,0   0,0   0:00.11 head
+   2408 inoor     20   0 5521740  83760  25016 S  12,5   0,5   0:29.48 gnome-s+
+   2963 inoor     20   0 3998156  78988  40636 S  12,5   0,5   0:13.49 spotify
+   1954 inoor      9 -11 2343032   5096   3304 S   6,2   0,0   0:01.41 pulseau+
+МиБ Mem :  15328,1 total,   5767,2 free,   8904,2 used,    656,8 buff/cache
+МиБ Swap:   1359,1 total,     47,2 free,   1312,0 used.   6021,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4048 inoor     20   0 3400236 436200 124148 S 106,2   2,8   0:43.83 Isolate+
+   3709 inoor     20   0 4057596 187092  95372 D  81,2   1,2   0:42.35 firefox
+   5306 inoor     20   0    8624    576    508 S  75,0   0,0   0:00.12 tail
+   5305 inoor     20   0    8600    572    508 S  37,5   0,0   0:00.13 head
+   2408 inoor     20   0 5521740  84096  25320 S  18,8   0,5   0:29.78 gnome-s+
+МиБ Mem :  15328,1 total,   5646,2 free,   9008,8 used,    673,1 buff/cache
+МиБ Swap:   1359,1 total,     67,9 free,   1291,2 used.   5921,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5314 inoor     20   0    8624    516    448 S  68,8   0,0   0:00.11 tail
+   3709 inoor     20   0 4052840 190128  98068 S  25,0   1,2   0:43.25 firefox
+   5313 inoor     20   0    8600    508    444 S  25,0   0,0   0:00.12 head
+   2408 inoor     20   0 5521740  84096  25320 S  12,5   0,5   0:30.14 gnome-s+
+   3930 inoor     20   0 2448732  73564  53924 S  12,5   0,5   0:01.26 Privile+
+МиБ Mem :  15328,1 total,   5565,4 free,   9087,2 used,    675,6 buff/cache
+МиБ Swap:   1359,1 total,     68,7 free,   1290,5 used.   5843,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5320 inoor     20   0    8624    516    448 S  60,0   0,0   0:00.09 tail
+   5319 inoor     20   0    8600    576    508 S  26,7   0,0   0:00.10 head
+   2092 inoor     20   0 1833388  93808  37648 S   6,7   0,6   0:14.45 Xorg
+   3709 inoor     20   0 4052856 190856  98320 S   6,7   1,2   0:43.62 firefox
+   4048 inoor     20   0 3395432 436876 120708 S   6,7   2,8   0:44.02 Isolate+
+МиБ Mem :  15328,1 total,   5492,1 free,   9158,1 used,    677,8 buff/cache
+МиБ Swap:   1359,1 total,     70,6 free,   1288,6 used.   5771,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   3709 inoor     20   0 4052888 192436 101472 S  68,8   1,2   0:44.13 firefox
+   5326 inoor     20   0    8624    572    508 S  56,2   0,0   0:00.09 tail
+   5325 inoor     20   0    8600    572    508 S  25,0   0,0   0:00.09 head
+   2092 inoor     20   0 1831336  93984  37824 S   6,2   0,6   0:14.59 Xorg
+   3203 inoor     20   0   30,5g 118884  51664 S   6,2   0,8   0:14.15 spotify
+МиБ Mem :  15328,1 total,   5414,0 free,   9234,9 used,    679,2 buff/cache
+МиБ Swap:   1359,1 total,     71,2 free,   1288,0 used.   5695,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5332 inoor     20   0    8624    572    508 S  56,2   0,0   0:00.09 tail
+   5331 inoor     20   0    8600    512    444 S  31,2   0,0   0:00.10 head
+   3709 inoor     20   0 4052888 192216 101476 S  12,5   1,2   0:44.74 firefox
+   3930 inoor     20   0 2448732  74296  54096 S  12,5   0,5   0:01.80 Privile+
+   4240 inoor     20   0 7900468   7,5g   1640 S  12,5  50,3   1:49.64 bash
+МиБ Mem :  15328,1 total,   5339,7 free,   9308,6 used,    679,8 buff/cache
+МиБ Swap:   1359,1 total,     72,1 free,   1287,1 used.   5622,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5337 inoor     20   0    8624    576    508 S  56,2   0,0   0:00.09 tail
+   3709 inoor     20   0 4052888 192468 101476 S  25,0   1,2   0:45.13 firefox
+   5336 inoor     20   0    8600    576    508 S  25,0   0,0   0:00.11 head
+   3930 inoor     20   0 2448732  74064  54672 S  18,8   0,5   0:02.00 Privile+
+   2408 inoor     20   0 5521736  84152  25360 S  12,5   0,5   0:30.96 gnome-s+
+МиБ Mem :  15328,1 total,   5260,0 free,   9386,8 used,    681,4 buff/cache
+МиБ Swap:   1359,1 total,     72,2 free,   1287,0 used.   5543,7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5342 inoor     20   0    8624    576    508 S  60,0   0,0   0:00.09 tail
+   5341 inoor     20   0    8600    576    508 S  26,7   0,0   0:00.10 head
+   3709 inoor     20   0 4052888 192756 101476 S  20,0   1,2   0:45.58 firefox
+   2092 inoor     20   0 1831336  93984  37824 S  13,3   0,6   0:15.07 Xorg
+   2963 inoor     20   0 3998156  82728  44280 S  13,3   0,5   0:14.05 spotify
+МиБ Mem :  15328,1 total,   5181,0 free,   9465,4 used,    681,7 buff/cache
+МиБ Swap:   1359,1 total,     72,5 free,   1286,6 used.   5465,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5347 inoor     20   0    8624    576    508 S  60,0   0,0   0:00.09 tail
+   5346 inoor     20   0    8600    572    508 S  33,3   0,0   0:00.10 head
+   3709 inoor     20   0 4052888 192828 101476 R  26,7   1,2   0:46.11 firefox
+   2092 inoor     20   0 1831336  93984  37824 R  13,3   0,6   0:15.27 Xorg
+   2408 inoor     20   0 5521736  84152  25360 S  13,3   0,5   0:31.48 gnome-s+
+МиБ Mem :  15328,1 total,   5097,5 free,   9548,9 used,    681,7 buff/cache
+МиБ Swap:   1359,1 total,     72,8 free,   1286,4 used.   5381,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5352 inoor     20   0    8624    516    448 S  56,2   0,0   0:00.09 tail
+   3709 inoor     20   0 4052888 192880 101476 S  31,2   1,2   0:46.68 firefox
+   5351 inoor     20   0    8600    572    508 S  31,2   0,0   0:00.10 head
+   2092 inoor     20   0 1831336  93984  37824 S  12,5   0,6   0:15.46 Xorg
+   2408 inoor     20   0 5521736  84152  25360 S  12,5   0,5   0:31.78 gnome-s+
+МиБ Mem :  15328,1 total,   5025,8 free,   9620,0 used,    682,3 buff/cache
+МиБ Swap:   1359,1 total,     73,0 free,   1286,2 used.   5310,5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5357 inoor     20   0    8624    572    508 S  66,7   0,0   0:00.10 tail
+   3709 inoor     20   0 4052888 192996 101476 S  40,0   1,2   0:47.20 firefox
+   5356 inoor     20   0    8600    512    448 S  33,3   0,0   0:00.10 head
+   2408 inoor     20   0 5521736  84152  25360 S  20,0   0,5   0:32.04 gnome-s+
+   2963 inoor     20   0 3998156  83316  44764 S  13,3   0,5   0:14.24 spotify
+МиБ Mem :  15328,1 total,   4944,6 free,   9700,2 used,    683,3 buff/cache
+МиБ Swap:   1359,1 total,     73,9 free,   1285,3 used.   5230,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5362 inoor     20   0    8624    512    448 S  60,0   0,0   0:00.09 tail
+   3709 inoor     20   0 4052888 194148 101628 S  40,0   1,2   0:47.69 firefox
+   5361 inoor     20   0    8600    512    448 S  26,7   0,0   0:00.10 head
+   2408 inoor     20   0 5521736  84152  25360 S  20,0   0,5   0:32.27 gnome-s+
+   2092 inoor     20   0 1831336  93984  37824 S  13,3   0,6   0:15.81 Xorg
+МиБ Mem :  15328,1 total,   4865,1 free,   9779,3 used,    683,7 buff/cache
+МиБ Swap:   1359,1 total,     74,5 free,   1284,7 used.   5151,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5367 inoor     20   0    8624    572    508 S  62,5   0,0   0:00.10 tail
+   3709 inoor     20   0 4052888 194164 101628 S  43,8   1,2   0:48.18 firefox
+   5366 inoor     20   0    8600    572    508 S  31,2   0,0   0:00.11 head
+   2408 inoor     20   0 5521736  84152  25360 S  25,0   0,5   0:32.55 gnome-s+
+   3930 inoor     20   0 2448700  75548  56228 S  25,0   0,5   0:03.47 Privile+
+МиБ Mem :  15328,1 total,   4791,8 free,   9852,6 used,    683,7 buff/cache
+МиБ Swap:   1359,1 total,     74,5 free,   1284,7 used.   5077,9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5372 inoor     20   0    8624    516    448 S  62,5   0,0   0:00.10 tail
+   3709 inoor     20   0 4052888 193912 101628 S  50,0   1,2   0:48.61 firefox
+   2408 inoor     20   0 5521736  84152  25360 S  37,5   0,5   0:32.81 gnome-s+
+   5371 inoor     20   0    8600    572    508 S  31,2   0,0   0:00.11 head
+   3930 inoor     20   0 2448700  75560  56228 S  18,8   0,5   0:03.68 Privile+
+МиБ Mem :  15328,1 total,   4717,0 free,   9927,3 used,    683,9 buff/cache
+МиБ Swap:   1359,1 total,     74,8 free,   1284,3 used.   5003,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5377 inoor     20   0    8624    572    508 S  60,0   0,0   0:00.09 tail
+   5376 inoor     20   0    8600    572    508 S  40,0   0,0   0:00.12 head
+   3709 inoor     20   0 4052888 194320 101980 S  20,0   1,2   0:49.10 firefox
+   2408 inoor     20   0 5521736  84152  25360 S  13,3   0,5   0:33.08 gnome-s+
+   3930 inoor     20   0 2448700  75560  56228 S  13,3   0,5   0:03.92 Privile+
+МиБ Mem :  15328,1 total,   4640,8 free,  10003,5 used,    683,9 buff/cache
+МиБ Swap:   1359,1 total,     75,2 free,   1283,9 used.   4927,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5382 inoor     20   0    8624    572    508 S  62,5   0,0   0:00.10 tail
+   3709 inoor     20   0 4052888 194436 101980 S  50,0   1,2   0:49.58 firefox
+   3930 inoor     20   0 2448700  75560  56228 S  37,5   0,5   0:04.18 Privile+
+   5381 inoor     20   0    8600    572    508 S  37,5   0,0   0:00.12 head
+   2408 inoor     20   0 5521736  84152  25360 S  25,0   0,5   0:33.28 gnome-s+
+МиБ Mem :  15328,1 total,   4561,2 free,  10082,7 used,    684,3 buff/cache
+МиБ Swap:   1359,1 total,     75,4 free,   1283,8 used.   4847,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5387 inoor     20   0    8624    572    508 S  56,2   0,0   0:00.09 tail
+   5386 inoor     20   0    8600    572    508 S  31,2   0,0   0:00.11 head
+   3709 inoor     20   0 4052888 194440 101980 S  12,5   1,2   0:49.92 firefox
+   3930 inoor     20   0 2448700  75560  56228 S  12,5   0,5   0:04.35 Privile+
+    708 root     -51   0       0      0      0 S   6,2   0,0   0:01.67 irq/88-+
+МиБ Mem :  15328,1 total,   4484,6 free,  10159,2 used,    684,3 buff/cache
+МиБ Swap:   1359,1 total,     75,5 free,   1283,7 used.   4771,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5392 inoor     20   0    8624    512    448 S  60,0   0,0   0:00.09 tail
+   5391 inoor     20   0    8600    576    508 S  33,3   0,0   0:00.11 head
+   3709 inoor     20   0 4052888 195272 101980 S  26,7   1,2   0:50.06 firefox
+   2092 inoor     20   0 1831336  93984  37824 S  20,0   0,6   0:16.74 Xorg
+     77 root      20   0       0      0      0 I   6,7   0,0   0:00.36 kworker+
+МиБ Mem :  15328,1 total,   4310,4 free,  10312,6 used,    705,1 buff/cache
+МиБ Swap:   1359,1 total,     91,6 free,   1267,5 used.   4599,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5397 inoor     20   0    8624    508    444 S  62,5   0,0   0:00.10 tail
+   4048 inoor     20   0 3408972 470428 138508 R  43,8   3,0   0:44.64 Isolate+
+   5396 inoor     20   0    8600    572    508 S  31,2   0,0   0:00.11 head
+   3709 inoor     20   0 4081624 225800 122456 R  25,0   1,4   0:50.72 firefox
+   2092 inoor     20   0 1831336  93984  37824 S  12,5   0,6   0:16.88 Xorg
+МиБ Mem :  15328,1 total,   4221,3 free,  10394,3 used,    712,5 buff/cache
+МиБ Swap:   1359,1 total,     93,2 free,   1265,9 used.   4517,7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5404 inoor     20   0    8624    572    508 S  68,8   0,0   0:00.11 tail
+   3709 inoor     20   0 4081128 253852 150156 S  62,5   1,6   0:51.30 firefox
+   4048 inoor     20   0 3408972 473052 138520 S  37,5   3,0   0:45.06 Isolate+
+   5403 inoor     20   0    8600    512    448 S  37,5   0,0   0:00.12 head
+   2408 inoor     20   0 5523784  84540  25716 S  18,8   0,5   0:34.00 gnome-s+
+МиБ Mem :  15328,1 total,   4137,3 free,  10472,5 used,    718,4 buff/cache
+МиБ Swap:   1359,1 total,     99,2 free,   1260,0 used.   4436,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5410 inoor     20   0    8624    572    508 S  68,8   0,0   0:00.11 tail
+   3709 inoor     20   0 4081624 258460 153868 S  56,2   1,6   0:51.90 firefox
+   5409 inoor     20   0    8600    516    448 S  43,8   0,0   0:00.13 head
+   2408 inoor     20   0 5523784  84552  25716 S  31,2   0,5   0:34.22 gnome-s+
+   4048 inoor     20   0 3408972 485888 147452 S  31,2   3,1   0:45.35 Isolate+
+МиБ Mem :  15328,1 total,   4038,7 free,  10569,8 used,    719,7 buff/cache
+МиБ Swap:   1359,1 total,    100,4 free,   1258,8 used.   4338,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5415 inoor     20   0    8624    572    508 S  62,5   0,0   0:00.10 tail
+   5414 inoor     20   0    8600    508    444 S  37,5   0,0   0:00.12 head
+   2408 inoor     20   0 5523784  85640  26560 S  31,2   0,5   0:34.60 gnome-s+
+   4048 inoor     20   0 3408972 485956 147744 S  25,0   3,1   0:45.61 Isolate+
+   2092 inoor     20   0 1843332  94036  37876 S  12,5   0,6   0:17.32 Xorg
+МиБ Mem :  15328,1 total,   3961,9 free,  10657,6 used,    708,6 buff/cache
+МиБ Swap:   1359,1 total,    100,5 free,   1258,7 used.   4264,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5420 inoor     20   0    8624    576    508 S  62,5   0,0   0:00.10 tail
+   5419 inoor     20   0    8600    516    448 S  37,5   0,0   0:00.12 head
+   2092 inoor     20   0 1843332  94036  37876 R   6,2   0,6   0:17.50 Xorg
+   2408 inoor     20   0 5523784  85640  26560 S   6,2   0,5   0:34.89 gnome-s+
+   3709 inoor     20   0 4062784 252876 147852 S   6,2   1,6   0:52.60 firefox
+МиБ Mem :  15328,1 total,   3866,2 free,  10742,3 used,    719,6 buff/cache
+МиБ Swap:   1359,1 total,    100,6 free,   1258,5 used.   4178,7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5426 inoor     20   0    8624    512    448 S  73,3   0,0   0:00.11 tail
+   5425 inoor     20   0    8600    572    508 S  46,7   0,0   0:00.13 head
+   3203 inoor     20   0   30,4g 136148  59892 S  33,3   0,9   0:14.84 spotify
+   2092 inoor     20   0 1839456  94072  37876 S  20,0   0,6   0:17.65 Xorg
+   2408 inoor     20   0 5523784  85724  26560 S  20,0   0,5   0:35.19 gnome-s+
+МиБ Mem :  15328,1 total,   3783,5 free,  10815,8 used,    728,8 buff/cache
+МиБ Swap:   1359,1 total,    101,4 free,   1257,8 used.   4102,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5431 inoor     20   0    8624    516    448 S  68,8   0,0   0:00.11 tail
+   5430 inoor     20   0    8600    572    508 S  37,5   0,0   0:00.13 head
+   3203 inoor     20   0   30,4g 149064  67524 R  31,2   0,9   0:15.42 spotify
+   2408 inoor     20   0 5523784  85724  26560 R  25,0   0,5   0:35.61 gnome-s+
+   3072 inoor     20   0 2855996  26824  21092 S  25,0   0,2   0:06.33 spotify
+МиБ Mem :  15328,1 total,   3705,9 free,  10892,3 used,    730,0 buff/cache
+МиБ Swap:   1359,1 total,    104,4 free,   1254,7 used.   4026,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5438 inoor     20   0    8624    512    448 S  73,3   0,0   0:00.11 tail
+   5437 inoor     20   0    8600    576    508 S  40,0   0,0   0:00.13 head
+   2408 inoor     20   0 5523784  86732  27716 S  20,0   0,6   0:35.97 gnome-s+
+   3072 inoor     20   0 2852348  24580  18816 R  20,0   0,2   0:06.66 spotify
+   3203 inoor     20   0   30,4g 150072  68116 S  20,0   1,0   0:15.80 spotify
+МиБ Mem :  15328,1 total,   3624,8 free,  10961,1 used,    742,2 buff/cache
+МиБ Swap:   1359,1 total,    107,3 free,   1251,8 used.   3957,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5446 inoor     20   0    8624    572    508 S  68,8   0,0   0:00.11 tail
+   5445 inoor     20   0    8600    572    508 S  43,8   0,0   0:00.13 head
+   2408 inoor     20   0 5523784  86760  27716 R  18,8   0,6   0:36.26 gnome-s+
+   3072 inoor     20   0 2852348  24072  18308 S  12,5   0,2   0:06.89 spotify
+   3203 inoor     20   0   30,4g 146372  67936 S  12,5   0,9   0:16.00 spotify
+МиБ Mem :  15328,1 total,   3553,0 free,  11031,5 used,    743,6 buff/cache
+МиБ Swap:   1359,1 total,    107,5 free,   1251,7 used.   3887,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5451 inoor     20   0    8624    512    448 S  68,8   0,0   0:00.11 tail
+   5450 inoor     20   0    8600    576    508 S  37,5   0,0   0:00.13 head
+   2408 inoor     20   0 5523784  86800  27716 S  31,2   0,6   0:36.61 gnome-s+
+   3072 inoor     20   0 2852732  24404  18640 S  25,0   0,2   0:07.19 spotify
+   3203 inoor     20   0   30,4g 147012  68360 S  25,0   0,9   0:16.34 spotify
+МиБ Mem :  15328,1 total,   3471,6 free,  11110,8 used,    745,7 buff/cache
+МиБ Swap:   1359,1 total,    107,6 free,   1251,6 used.   3805,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5456 inoor     20   0    8624    572    508 S  81,2   0,0   0:00.13 tail
+   3203 inoor     20   0   30,4g 141916  70048 R  75,0   0,9   0:16.69 spotify
+   5455 inoor     20   0    8600    512    448 S  50,0   0,0   0:00.14 head
+   2408 inoor     20   0 5521736  86856  27716 S  37,5   0,6   0:37.05 gnome-s+
+   3072 inoor     20   0 2854652  26472  20704 S  25,0   0,2   0:07.48 spotify
+МиБ Mem :  15328,1 total,   3401,0 free,  11183,8 used,    743,3 buff/cache
+МиБ Swap:   1359,1 total,    108,0 free,   1251,1 used.   3735,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5461 inoor     20   0    8624    516    448 S  68,8   0,0   0:00.11 tail
+   4048 inoor     20   0 3395432 474288 134204 R  56,2   3,0   0:46.76 Isolate+
+   3709 inoor     20   0 4062768 264244 159092 S  43,8   1,7   0:54.05 firefox
+   5460 inoor     20   0    8600    572    508 S  37,5   0,0   0:00.13 head
+   2408 inoor     20   0 5521736  86956  27716 R  31,2   0,6   0:37.49 gnome-s+
+МиБ Mem :  15328,1 total,   3323,1 free,  11261,7 used,    743,4 buff/cache
+МиБ Swap:   1359,1 total,    109,1 free,   1250,0 used.   3657,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5466 inoor     20   0    8624    572    508 S  75,0   0,0   0:00.12 tail
+   3709 inoor     20   0 4062768 264440 159124 R  56,2   1,7   0:54.71 firefox
+   4048 inoor     20   0 3395432 476136 134296 R  50,0   3,0   0:47.27 Isolate+
+   5465 inoor     20   0    8600    572    508 S  50,0   0,0   0:00.15 head
+   2092 inoor     20   0 1831336  94412  38196 S  18,8   0,6   0:18.66 Xorg
+МиБ Mem :  15328,1 total,   3219,1 free,  11364,9 used,    744,1 buff/cache
+МиБ Swap:   1359,1 total,    111,2 free,   1247,9 used.   3553,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5471 inoor     20   0    8624    576    508 S  68,8   0,0   0:00.11 tail
+   5470 inoor     20   0    8600    576    508 S  37,5   0,0   0:00.12 head
+   2963 inoor     20   0 3998156  98152  59456 S  12,5   0,6   0:15.89 spotify
+    188 root      20   0       0      0      0 I   6,2   0,0   0:00.34 kworker+
+   1954 inoor      9 -11 2343032   5096   3304 S   6,2   0,0   0:02.81 pulseau+
+МиБ Mem :  15328,1 total,   3137,2 free,  11445,7 used,    745,2 buff/cache
+МиБ Swap:   1359,1 total,    111,6 free,   1247,5 used.   3472,5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5476 inoor     20   0    8624    516    448 S  68,8   0,0   0:00.11 tail
+   5475 inoor     20   0    8600    508    444 S  43,8   0,0   0:00.13 head
+   4048 inoor     20   0 3396068 481664 135668 S  25,0   3,1   0:48.17 Isolate+
+   3709 inoor     20   0 4059652 267864 162968 S  12,5   1,7   0:55.44 firefox
+   4240 inoor     20   0 9775,2m   9,5g   1640 S  12,5  63,7   2:22.56 bash
+МиБ Mem :  15328,1 total,   3030,6 free,  11543,4 used,    754,0 buff/cache
+МиБ Swap:   1359,1 total,    118,0 free,   1241,2 used.   3367,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5481 inoor     20   0    8624    576    508 S  68,8   0,0   0:00.11 tail
+   5480 inoor     20   0    8600    576    508 S  37,5   0,0   0:00.13 head
+     14 root      20   0       0      0      0 I   6,2   0,0   0:00.35 rcu_sch+
+    708 root     -51   0       0      0      0 S   6,2   0,0   0:01.79 irq/88-+
+   1954 inoor      9 -11 2343032   5096   3304 S   6,2   0,0   0:02.91 pulseau+
+МиБ Mem :  15328,1 total,   2943,0 free,  11624,6 used,    760,5 buff/cache
+МиБ Swap:   1359,1 total,    121,7 free,   1237,4 used.   3281,5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5487 inoor     20   0    8624    516    448 S  68,8   0,0   0:00.11 tail
+   5486 inoor     20   0    8600    576    508 S  43,8   0,0   0:00.15 head
+   3709 inoor     20   0 4078108 282716 176268 S  31,2   1,8   0:56.07 firefox
+   4048 inoor     20   0 3409772 519720 152656 S  25,0   3,3   0:49.05 Isolate+
+   2408 inoor     20   0 5521736  86800  27716 S  12,5   0,6   0:38.50 gnome-s+
+МиБ Mem :  15328,1 total,   2859,6 free,  11707,8 used,    760,8 buff/cache
+МиБ Swap:   1359,1 total,    123,8 free,   1235,3 used.   3198,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5492 inoor     20   0    8624    572    508 S  75,0   0,0   0:00.12 tail
+   4048 inoor     20   0 3410796 522512 152656 S  56,2   3,3   0:49.67 Isolate+
+   5491 inoor     20   0    8600    512    444 S  50,0   0,0   0:00.15 head
+   3709 inoor     20   0 4072316 283796 176360 R  37,5   1,8   0:56.64 firefox
+   2092 inoor     20   0 1831336  94412  38196 S  18,8   0,6   0:19.14 Xorg
+МиБ Mem :  15328,1 total,   2789,5 free,  11781,5 used,    757,1 buff/cache
+МиБ Swap:   1359,1 total,    124,3 free,   1234,9 used.   3128,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5497 inoor     20   0    8624    572    508 S  80,0   0,0   0:00.12 tail
+   5496 inoor     20   0    8600    576    508 S  46,7   0,0   0:00.14 head
+   3709 inoor     20   0 4072236 280756 172528 S  26,7   1,8   0:57.11 firefox
+   4048 inoor     20   0 3406964 520316 148828 R  26,7   3,3   0:50.20 Isolate+
+   2092 inoor     20   0 1831336  94412  38196 R  13,3   0,6   0:19.25 Xorg
+МиБ Mem :  15328,1 total,   2707,1 free,  11856,7 used,    764,3 buff/cache
+МиБ Swap:   1359,1 total,    124,8 free,   1234,3 used.   3053,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5502 inoor     20   0    8624    512    444 S  73,3   0,0   0:00.11 tail
+   5501 inoor     20   0    8600    572    508 S  40,0   0,0   0:00.13 head
+   3709 inoor     20   0 4075980 280556 172720 S  33,3   1,8   0:57.50 firefox
+   4048 inoor     20   0 3406964 522064 148896 S  26,7   3,3   0:50.55 Isolate+
+   2092 inoor     20   0 1831336  94412  38196 S  13,3   0,6   0:19.39 Xorg
+МиБ Mem :  15328,1 total,   2622,1 free,  11941,2 used,    764,8 buff/cache
+МиБ Swap:   1359,1 total,    125,2 free,   1233,9 used.   2968,7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5507 inoor     20   0    8624    576    508 S  80,0   0,0   0:00.12 tail
+   4048 inoor     20   0 3406964 525108 148900 R  53,3   3,3   0:51.17 Isolate+
+   3709 inoor     20   0 4072236 280848 172720 S  40,0   1,8   0:58.01 firefox
+   5506 inoor     20   0    8600    572    508 S  40,0   0,0   0:00.13 head
+   2092 inoor     20   0 1831336  94412  38196 S  20,0   0,6   0:19.53 Xorg
+МиБ Mem :  15328,1 total,   2545,4 free,  12017,9 used,    764,9 buff/cache
+МиБ Swap:   1359,1 total,    125,8 free,   1233,3 used.   2892,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5512 inoor     20   0    8624    576    508 S  73,3   0,0   0:00.11 tail
+   5511 inoor     20   0    8600    516    448 S  46,7   0,0   0:00.13 head
+   3709 inoor     20   0 4072236 280936 172720 S  26,7   1,8   0:58.49 firefox
+   2092 inoor     20   0 1831336  94412  38196 S  13,3   0,6   0:19.66 Xorg
+   2408 inoor     20   0 5521736  86800  27716 S  13,3   0,6   0:39.43 gnome-s+
+МиБ Mem :  15328,1 total,   2440,8 free,  12125,3 used,    762,1 buff/cache
+МиБ Swap:   1359,1 total,    126,9 free,   1232,2 used.   2787,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5517 inoor     20   0    8624    512    448 S  80,0   0,0   0:00.12 tail
+   3709 inoor     20   0 4075896 274040 166660 S  60,0   1,7   0:59.03 firefox
+   4048 inoor     20   0 3405984 527568 146116 S  60,0   3,4   0:52.21 Isolate+
+   5516 inoor     20   0    8600    572    508 S  60,0   0,0   0:00.15 head
+   4240 inoor     20   0   10,1g  10,1g   1640 S  20,0  67,7   2:32.63 bash
+МиБ Mem :  15328,1 total,   2382,4 free,  12183,6 used,    762,1 buff/cache
+МиБ Swap:   1359,1 total,    128,1 free,   1231,1 used.   2729,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5522 inoor     20   0    8624    576    508 S  68,8   0,0   0:00.11 tail
+   5521 inoor     20   0    8600    516    448 S  43,8   0,0   0:00.13 head
+   5520 inoor     20   0   12196   3984   3200 R  12,5   0,0   0:00.17 top
+   1954 inoor      9 -11 2343032   5096   3304 S   6,2   0,0   0:03.29 pulseau+
+   2092 inoor     20   0 1833384  94412  38196 S   6,2   0,6   0:19.86 Xorg
+МиБ Mem :  15328,1 total,   2312,2 free,  12247,8 used,    768,1 buff/cache
+МиБ Swap:   1359,1 total,    128,4 free,   1230,7 used.   2660,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5527 inoor     20   0    8624    516    448 S  75,0   0,0   0:00.12 tail
+   5526 inoor     20   0    8600    572    508 S  43,8   0,0   0:00.14 head
+   4048 inoor     20   0 3413028 537800 151112 S  18,8   3,4   0:53.03 Isolate+
+   2963 inoor     20   0 3998156  98420  59712 S  12,5   0,6   0:16.63 spotify
+   1954 inoor      9 -11 2343032   5096   3304 S   6,2   0,0   0:03.34 pulseau+
+МиБ Mem :  15328,1 total,   2225,3 free,  12327,8 used,    775,0 buff/cache
+МиБ Swap:   1359,1 total,    128,9 free,   1230,3 used.   2575,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5532 inoor     20   0    8624    576    508 S  75,0   0,0   0:00.12 tail
+   5531 inoor     20   0    8600    512    448 S  43,8   0,0   0:00.14 head
+   4048 inoor     20   0 3419364 545244 156424 R  31,2   3,5   0:53.50 Isolate+
+   3709 inoor     20   0 4079200 281700 177216 S  25,0   1,8   1:00.34 firefox
+   2408 inoor     20   0 5521736  86800  27716 S  18,8   0,6   0:40.05 gnome-s+
+МиБ Mem :  15328,1 total,   2138,3 free,  12430,6 used,    759,3 buff/cache
+МиБ Swap:   1359,1 total,    129,7 free,   1229,4 used.   2488,5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5537 inoor     20   0       4      4      0 R  86,7   0,0   0:00.13 bash
+   3709 inoor     20   0 4063416 269020 164548 S  53,3   1,7   1:00.95 firefox
+   4048 inoor     20   0 3403264 528912 140324 S  53,3   3,4   0:54.08 Isolate+
+   5536 inoor     20   0    8600    576    508 S  46,7   0,0   0:00.13 head
+   2408 inoor     20   0 5521736  86800  27716 S  20,0   0,6   0:40.33 gnome-s+
+МиБ Mem :  15328,1 total,   2082,1 free,  12483,3 used,    762,7 buff/cache
+МиБ Swap:   1359,1 total,    130,0 free,   1229,1 used.   2432,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5542 inoor     20   0    8624    576    508 S  81,2   0,0   0:00.13 tail
+   5541 inoor     20   0    8600    572    508 S  43,8   0,0   0:00.14 head
+   3709 inoor     20   0 4063100 271664 167984 S  31,2   1,7   1:01.60 firefox
+   4048 inoor     20   0 3406700 531968 143760 S  31,2   3,4   0:54.71 Isolate+
+   2408 inoor     20   0 5521736  86800  27716 S  18,8   0,6   0:40.62 gnome-s+
+МиБ Mem :  15328,1 total,   1987,1 free,  12581,5 used,    759,6 buff/cache
+МиБ Swap:   1359,1 total,    130,4 free,   1228,8 used.   2337,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5547 inoor     20   0    8624    576    508 S  81,2   0,0   0:00.13 tail
+   5546 inoor     20   0    8600    572    508 S  50,0   0,0   0:00.14 head
+   4048 inoor     20   0 3403264 528964 140324 S  43,8   3,4   0:55.09 Isolate+
+   3709 inoor     20   0 4059664 269364 164548 S  37,5   1,7   1:01.94 firefox
+   2408 inoor     20   0 5521736  86800  27716 S  12,5   0,6   0:40.80 gnome-s+
+МиБ Mem :  15328,1 total,   1928,2 free,  12640,4 used,    759,6 buff/cache
+МиБ Swap:   1359,1 total,    130,4 free,   1228,7 used.   2278,7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5552 inoor     20   0    8624    512    444 S  75,0   0,0   0:00.12 tail
+   5551 inoor     20   0    8600    512    448 S  43,8   0,0   0:00.14 head
+   3072 inoor     20   0 2850044  23932  18160 S  12,5   0,2   0:07.91 spotify
+   3203 inoor     20   0   30,4g 137836  67672 S  12,5   0,9   0:17.51 spotify
+   3709 inoor     20   0 4059664 269600 164548 S  12,5   1,7   1:02.22 firefox
+МиБ Mem :  15328,1 total,   1848,4 free,  12720,1 used,    759,6 buff/cache
+МиБ Swap:   1359,1 total,    130,5 free,   1228,6 used.   2199,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5557 inoor     20   0    8624    572    504 S  75,0   0,0   0:00.12 tail
+   5556 inoor     20   0    8600    576    508 S  43,8   0,0   0:00.14 head
+   2408 inoor     20   0 5521736  87124  27996 S   6,2   0,6   0:41.15 gnome-s+
+   4048 inoor     20   0 3403264 529372 140324 S   6,2   3,4   0:55.79 Isolate+
+   4240 inoor     20   0   10,7g  10,7g   1640 S   6,2  71,7   2:42.79 bash
+МиБ Mem :  15328,1 total,   1768,8 free,  12795,8 used,    763,5 buff/cache
+МиБ Swap:   1359,1 total,    130,9 free,   1228,3 used.   2119,5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5562 inoor     20   0    8624    576    508 S  80,0   0,0   0:00.12 tail
+   5561 inoor     20   0    8600    512    448 S  46,7   0,0   0:00.14 head
+   3709 inoor     20   0 4067016 272932 168464 S  13,3   1,7   1:03.07 firefox
+   4048 inoor     20   0 3407180 534704 144240 R  13,3   3,4   0:56.17 Isolate+
+   5560 inoor     20   0   12196   3856   3072 R  13,3   0,0   0:00.17 top
+МиБ Mem :  15328,1 total,   1681,2 free,  12881,0 used,    765,9 buff/cache
+МиБ Swap:   1359,1 total,    133,6 free,   1225,6 used.   2032,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   4048 inoor     20   0 3409536 542924 147364 R  81,2   3,5   0:56.77 Isolate+
+   5567 inoor     20   0    8624    512    444 S  75,0   0,0   0:00.12 tail
+   5566 inoor     20   0    8600    576    508 S  50,0   0,0   0:00.15 head
+   3709 inoor     20   0 4071728 275272 170488 S  37,5   1,8   1:03.55 firefox
+    708 root     -51   0       0      0      0 S   6,2   0,0   0:01.96 irq/88-+
+МиБ Mem :  15328,1 total,   1561,7 free,  12997,5 used,    769,0 buff/cache
+МиБ Swap:   1359,1 total,    134,3 free,   1224,9 used.   1912,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5572 inoor     20   0    8624    572    508 S  81,2   0,0   0:00.13 tail
+   5571 inoor     20   0    8600    572    508 S  43,8   0,0   0:00.15 head
+   4048 inoor     20   0 3412492 548060 150328 S  31,2   3,5   0:57.53 Isolate+
+   3709 inoor     20   0 4072328 280408 174312 S  18,8   1,8   1:04.19 firefox
+   4240 inoor     20   0   11,0g  11,0g   1640 S  18,8  73,2   2:46.64 bash
+МиБ Mem :  15328,1 total,   1504,8 free,  13055,9 used,    767,4 buff/cache
+МиБ Swap:   1359,1 total,    136,1 free,   1223,0 used.   1860,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5577 inoor     20   0    8624    512    448 S  75,0   0,0   0:00.12 tail
+   5576 inoor     20   0    8600    572    508 S  50,0   0,0   0:00.15 head
+   3709 inoor     20   0 4065576 274860 168096 R  18,8   1,8   1:04.64 firefox
+   4240 inoor     20   0   11,0g  11,0g   1640 S  12,5  73,7   2:47.91 bash
+   2408 inoor     20   0 5521736  87124  27996 S   6,2   0,6   0:41.98 gnome-s+
+МиБ Mem :  15328,1 total,   1387,1 free,  13154,2 used,    786,8 buff/cache
+МиБ Swap:   1359,1 total,    142,5 free,   1216,7 used.   1761,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5582 inoor     20   0    8624    512    444 S  81,2   0,0   0:00.13 tail
+   5581 inoor     20   0    8600    512    448 S  43,8   0,0   0:00.14 head
+   3709 inoor     20   0 4065576 277600 168772 S  18,8   1,8   1:05.24 firefox
+   4048 inoor     20   0 3406204 546544 144760 S  18,8   3,5   0:58.70 Isolate+
+   2963 inoor     20   0 3998156  98700  59848 S  12,5   0,6   0:17.37 spotify
+МиБ Mem :  15328,1 total,   1304,7 free,  13235,6 used,    787,8 buff/cache
+МиБ Swap:   1359,1 total,    142,8 free,   1216,4 used.   1680,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5587 inoor     20   0    8624    576    508 S  81,2   0,0   0:00.13 tail
+   5586 inoor     20   0    8600    516    448 S  50,0   0,0   0:00.15 head
+   2963 inoor     20   0 3998156  99088  60044 S  18,8   0,6   0:17.48 spotify
+   3709 inoor     20   0 4066372 277660 168772 S  18,8   1,8   1:05.81 firefox
+   4240 inoor     20   0   11,2g  11,2g   1640 S  18,8  74,7   2:50.50 bash
+МиБ Mem :  15328,1 total,   1194,7 free,  13332,0 used,    801,4 buff/cache
+МиБ Swap:   1359,1 total,    149,8 free,   1209,3 used.   1585,5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5596 inoor     20   0       4      4      0 R  81,2   0,0   0:00.13 bash
+   5593 inoor     20   0    8600    572    508 S  56,2   0,0   0:00.17 head
+   2408 inoor     20   0 5525832  94948  32676 S  50,0   0,6   0:42.95 gnome-s+
+   3203 inoor     20   0   30,4g 149876  69376 R  50,0   1,0   0:17.87 spotify
+   2963 inoor     20   0 3998156 109100  64704 S  43,8   0,7   0:17.65 spotify
+МиБ Mem :  15328,1 total,   1107,8 free,  13419,7 used,    800,7 buff/cache
+МиБ Swap:   1359,1 total,    150,0 free,   1209,1 used.   1499,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5603 inoor     20   0    8624    572    508 S  80,0   0,0   0:00.12 tail
+   5602 inoor     20   0    8600    576    508 S  53,3   0,0   0:00.15 head
+   4048 inoor     20   0 3403248 543980 141804 S  13,3   3,5   1:00.30 Isolate+
+   4240 inoor     20   0   11,3g  11,3g   1640 S  13,3  75,7   2:53.08 bash
+   2092 inoor     20   0 1833384  94412  38196 S   6,7   0,6   0:21.66 Xorg
+МиБ Mem :  15328,1 total,   1029,0 free,  13500,6 used,    798,5 buff/cache
+МиБ Swap:   1359,1 total,    150,4 free,   1208,8 used.   1421,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5608 inoor     20   0    8624    516    448 S  86,7   0,0   0:00.13 tail
+   5607 inoor     20   0    8600    508    444 S  53,3   0,0   0:00.15 head
+   4240 inoor     20   0   11,4g  11,4g   1640 S  20,0  76,2   2:54.38 bash
+    708 root     -51   0       0      0      0 S   6,7   0,0   0:02.05 irq/88-+
+   1954 inoor      9 -11 2343032   5096   3304 S   6,7   0,0   0:03.95 pulseau+
+МиБ Mem :  15328,1 total,    931,5 free,  13581,9 used,    814,6 buff/cache
+МиБ Swap:   1359,1 total,    151,2 free,   1208,0 used.   1339,9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5614 inoor     20   0       4      4      0 R  86,7   0,0   0:00.13 bash
+   5613 inoor     20   0    8600    572    508 S  46,7   0,0   0:00.15 head
+   3709 inoor     20   0 4056708 270496 162968 R  33,3   1,7   1:07.14 firefox
+   4048 inoor     20   0 3400292 542584 138848 R  26,7   3,5   1:00.75 Isolate+
+   2408 inoor     20   0 5525832  95400  32904 S  20,0   0,6   0:43.70 gnome-s+
+МиБ Mem :  15328,1 total,    846,4 free,  13661,0 used,    820,7 buff/cache
+МиБ Swap:   1359,1 total,    151,3 free,   1207,8 used.   1260,9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5619 inoor     20   0       4      4      0 R  81,2   0,0   0:00.13 bash
+   4048 inoor     20   0 3400292 542728 138848 S  68,8   3,5   1:01.05 Isolate+
+   5618 inoor     20   0    8600    516    448 S  56,2   0,0   0:00.16 head
+   3709 inoor     20   0 4056708 270432 162968 S  50,0   1,7   1:07.42 firefox
+   2408 inoor     20   0 5521736  95476  32904 S  31,2   0,6   0:43.93 gnome-s+
+МиБ Mem :  15328,1 total,    777,7 free,  13729,7 used,    820,8 buff/cache
+МиБ Swap:   1359,1 total,    151,5 free,   1207,7 used.   1192,3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5624 inoor     20   0    8624    512    444 S  81,2   0,0   0:00.13 tail
+   5623 inoor     20   0    8600    576    508 S  50,0   0,0   0:00.15 head
+   4240 inoor     20   0   11,6g  11,6g   1640 S  12,5  77,7   2:58.20 bash
+   5076 inoor     20   0   12192   1852    852 S  12,5   0,0   0:00.89 top
+   5622 inoor     20   0   12196   3860   3080 R  12,5   0,0   0:00.17 top
+МиБ Mem :  15328,1 total,    692,1 free,  13814,0 used,    822,0 buff/cache
+МиБ Swap:   1359,1 total,    151,8 free,   1207,4 used.   1107,5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5629 inoor     20   0    2500    308    268 R  81,2   0,0   0:00.13 tail
+   5628 inoor     20   0    8600    572    508 S  50,0   0,0   0:00.15 head
+    581 root      20   0       0      0      0 I  12,5   0,0   0:00.96 kworker+
+   3709 inoor     20   0 4063508 270144 163472 S  12,5   1,7   1:08.09 firefox
+   4048 inoor     20   0 3400796 544284 139352 S  12,5   3,5   1:01.65 Isolate+
+МиБ Mem :  15328,1 total,    612,5 free,  13884,5 used,    831,1 buff/cache
+МиБ Swap:   1359,1 total,    152,3 free,   1206,8 used.   1028,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5634 inoor     20   0       4      4      0 R  93,3   0,0   0:00.14 bash
+   5633 inoor     20   0    8600    576    508 S  53,3   0,0   0:00.16 head
+   3709 inoor     20   0 4069804 281864 173228 S  40,0   1,8   1:08.55 firefox
+   4048 inoor     20   0 3409952 555556 148508 R  40,0   3,5   1:02.18 Isolate+
+   2408 inoor     20   0 5521736  95476  32904 S   6,7   0,6   0:44.38 gnome-s+
+МиБ Mem :  15328,1 total,    544,1 free,  13956,1 used,    828,0 buff/cache
+МиБ Swap:   1359,1 total,    152,8 free,   1206,3 used.    959,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5639 inoor     20   0       4      4      0 R  86,7   0,0   0:00.13 bash
+   5638 inoor     20   0    8600    576    508 S  53,3   0,0   0:00.15 head
+   4048 inoor     20   0 3406516 552120 145072 D  26,7   3,5   1:02.49 Isolate+
+   3203 inoor     20   0   30,4g 141276  68916 R  13,3   0,9   0:18.21 spotify
+   4240 inoor     20   0   11,9g  11,8g   1640 S  13,3  79,2   3:02.06 bash
+МиБ Mem :  15328,1 total,    466,1 free,  14032,3 used,    829,7 buff/cache
+МиБ Swap:   1359,1 total,    153,1 free,   1206,0 used.    883,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5644 inoor     20   0    8128    572    508 R  86,7   0,0   0:00.13 tail
+   5643 inoor     20   0    8600    576    508 S  53,3   0,0   0:00.15 head
+   4240 inoor     20   0   11,9g  11,9g   1640 S  20,0  79,7   3:03.34 bash
+   1954 inoor      9 -11 2343032   5096   3304 S   6,7   0,0   0:04.22 pulseau+
+   2963 inoor     20   0 3998156 110948  64768 S   6,7   0,7   0:18.55 spotify
+МиБ Mem :  15328,1 total,    392,7 free,  14110,7 used,    824,8 buff/cache
+МиБ Swap:   1359,1 total,    153,7 free,   1205,5 used.    810,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5650 inoor     20   0       4      4      0 R  80,0   0,0   0:00.12 bash
+   5649 inoor     20   0    8600    512    448 S  53,3   0,0   0:00.15 head
+   4240 inoor     20   0   12,0g  12,0g   1640 S  20,0  80,2   3:04.62 bash
+   2963 inoor     20   0 3998156 110948  64768 S  13,3   0,7   0:18.62 spotify
+    708 root     -51   0       0      0      0 S   6,7   0,0   0:02.17 irq/88-+
+МиБ Mem :  15328,1 total,    338,1 free,  14162,3 used,    827,7 buff/cache
+МиБ Swap:   1359,1 total,    300,0 free,   1059,2 used.    759,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   3989 inoor     20   0 2812216 134256  28876 S  93,8   0,9   0:08.51 WebExte+
+   5658 inoor     20   0       4      4      0 R  81,2   0,0   0:00.13 bash
+   5657 inoor     20   0    8600    572    508 S  50,0   0,0   0:00.16 head
+   3709 inoor     20   0 4046780 260136 166628 S  18,8   1,7   1:09.44 firefox
+   4240 inoor     20   0   12,1g  12,1g   1640 S  12,5  80,6   3:05.92 bash
+МиБ Mem :  15328,1 total,    253,3 free,  14245,7 used,    829,1 buff/cache
+МиБ Swap:   1359,1 total,    300,6 free,   1058,5 used.    675,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5663 inoor     20   0       4      4      0 R  81,2   0,0   0:00.13 bash
+   5662 inoor     20   0    8600    572    508 S  50,0   0,0   0:00.15 head
+   2963 inoor     20   0 3998156 110948  64768 S  25,0   0,7   0:18.79 spotify
+   4240 inoor     20   0   12,2g  12,1g   1640 S  18,8  81,1   3:07.23 bash
+     77 root      20   0       0      0      0 I   6,2   0,0   0:00.48 kworker+
+МиБ Mem :  15328,1 total,    213,8 free,  14287,9 used,    826,5 buff/cache
+МиБ Swap:   1359,1 total,    273,7 free,   1085,5 used.    633,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5668 inoor     20   0    8624    512    448 S  86,7   0,0   0:00.13 tail
+   5667 inoor     20   0    8600    576    508 S  53,3   0,0   0:00.16 head
+   4240 inoor     20   0   12,2g  12,2g   1640 S  13,3  81,5   3:08.51 bash
+   1954 inoor      9 -11 2343032   5096   3304 S   6,7   0,0   0:04.40 pulseau+
+   2963 inoor     20   0 3998156 110980  64768 S   6,7   0,7   0:18.90 spotify
+МиБ Mem :  15328,1 total,    202,4 free,  14301,5 used,    824,2 buff/cache
+МиБ Swap:   1359,1 total,    225,8 free,   1133,3 used.    619,9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5673 inoor     20   0       4      4      0 R  75,0   0,0   0:00.12 bash
+   5672 inoor     20   0    8600    576    508 S  50,0   0,0   0:00.15 head
+   4240 inoor     20   0   12,3g  12,2g   1640 S  12,5  81,7   3:09.79 bash
+   1954 inoor      9 -11 2343032   5092   3304 S   6,2   0,0   0:04.44 pulseau+
+   2963 inoor     20   0 3998156 110968  64768 S   6,2   0,7   0:18.97 spotify
+МиБ Mem :  15328,1 total,    192,6 free,  14316,7 used,    818,8 buff/cache
+МиБ Swap:   1359,1 total,    155,8 free,   1203,3 used.    607,9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5678 inoor     20   0       4      4      0 R  81,2   0,0   0:00.13 bash
+   5677 inoor     20   0    8600    572    508 S  56,2   0,0   0:00.18 head
+   3709 inoor     20   0 4049848 259148 164024 S  37,5   1,7   1:09.80 firefox
+   2092 inoor     20   0 1839528  94284  38192 S  31,2   0,6   0:22.64 Xorg
+   2408 inoor     20   0 5521736  97624  34724 S  31,2   0,6   0:45.00 gnome-s+
+МиБ Mem :  15328,1 total,    185,2 free,  14333,6 used,    809,4 buff/cache
+МиБ Swap:   1359,1 total,    106,6 free,   1252,5 used.    591,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5683 inoor     20   0       4      4      0 R  86,7   0,0   0:00.13 bash
+   5682 inoor     20   0    8600    576    508 S  53,3   0,0   0:00.15 head
+   4240 inoor     20   0   12,5g  12,3g   1640 S  20,0  81,9   3:12.43 bash
+   3930 inoor     20   0 2448104  75800  57356 S   6,7   0,5   0:04.54 Privile+
+      1 root      20   0  168500   7596   4144 S   0,0   0,0   0:01.49 systemd
+МиБ Mem :  15328,1 total,    198,5 free,  14331,6 used,    798,1 buff/cache
+МиБ Swap:   1359,1 total,     56,4 free,   1302,8 used.    593,0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5688 inoor     20   0       4      4      0 R  86,7   0,0   0:00.13 bash
+   5687 inoor     20   0    8600    508    444 S  46,7   0,0   0:00.15 head
+   4240 inoor     20   0   12,5g  12,3g   1640 S  20,0  82,1   3:13.74 bash
+   1954 inoor      9 -11 2343032   5092   3304 S   6,7   0,0   0:04.58 pulseau+
+   3072 inoor     20   0 2849788  23940  18168 S   6,7   0,2   0:08.20 spotify
+МиБ Mem :  15328,1 total,    196,8 free,  14348,3 used,    783,0 buff/cache
+МиБ Swap:   1359,1 total,      0,2 free,   1358,9 used.    576,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5696 inoor     20   0       4      4      0 R  81,2   0,0   0:00.13 bash
+   5695 inoor     20   0    8600    576    508 S  50,0   0,0   0:00.16 head
+   3709 inoor     20   0 4043584 266564 166584 S  43,8   1,7   1:10.09 firefox
+   3930 inoor     20   0 2448088  78748  57356 S  18,8   0,5   0:04.58 Privile+
+   4240 inoor     20   0   12,6g  12,3g   1640 S  12,5  82,2   3:15.05 bash
+МиБ Mem :  15328,1 total,    219,1 free,  14377,7 used,    731,4 buff/cache
+МиБ Swap:   1359,1 total,      0,0 free,   1359,1 used.    546,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5701 inoor     20   0    8624    516    448 S  87,5   0,0   0:00.14 tail
+   5700 inoor     20   0    8600    572    508 S  43,8   0,0   0:00.16 head
+     77 root      20   0       0      0      0 I   6,2   0,0   0:00.49 kworker+
+   2963 inoor     20   0 3998156 110828  64632 S   6,2   0,7   0:19.32 spotify
+   3709 inoor     20   0 4043584 261752 165688 S   6,2   1,7   1:10.11 firefox
+МиБ Mem :  15328,1 total,    212,1 free,  14457,1 used,    658,9 buff/cache
+МиБ Swap:   1359,1 total,      0,0 free,   1359,1 used.    466,4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5706 inoor     20   0    8624    576    508 S  82,4   0,0   0:00.14 tail
+   5705 inoor     20   0    8600    576    508 S  35,3   0,0   0:00.16 head
+   3203 inoor     20   0   30,4g 139300  66836 S  11,8   0,9   0:18.58 spotify
+   1954 inoor      9 -11 2343032   4964   3176 S   5,9   0,0   0:04.73 pulseau+
+   2963 inoor     20   0 3998156 109184  62872 S   5,9   0,7   0:19.40 spotify
+МиБ Mem :  15328,1 total,    237,5 free,  14553,2 used,    537,4 buff/cache
+МиБ Swap:   1359,1 total,      0,0 free,   1359,1 used.    370,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5714 inoor     20   0       4      4      0 R  81,2   0,0   0:00.13 bash
+   5712 inoor     20   0    8600    512    448 S  50,0   0,0   0:00.16 head
+   4240 inoor     20   0   12,8g  12,5g   1640 S  12,5  83,7   3:18.97 bash
+    177 root      20   0       0      0      0 S   6,2   0,0   0:07.64 kswapd0
+   1146 root      20   0 2235508  12056    596 S   6,2   0,1   0:01.17 contain+
+МиБ Mem :  15328,1 total,    222,4 free,  14602,2 used,    503,5 buff/cache
+МиБ Swap:   1359,1 total,      0,0 free,   1359,1 used.    321,7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5719 inoor     20   0    8624    572    508 S  82,4   0,0   0:00.14 tail
+   5718 inoor     20   0    8600    576    508 S  35,3   0,0   0:00.16 head
+   2963 inoor     20   0 3998156 102464  56152 S   5,9   0,7   0:19.51 spotify
+   3072 inoor     20   0 2849788  20188  14416 S   5,9   0,1   0:08.26 spotify
+   4240 inoor     20   0   12,9g  12,6g   1584 S   5,9  84,2   3:20.29 bash
+МиБ Mem :  15328,1 total,    208,0 free,  14703,0 used,    417,2 buff/cache
+МиБ Swap:   1359,1 total,      0,0 free,   1359,1 used.    220,6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5724 inoor     20   0       4      4      0 R  81,2   0,0   0:00.13 bash
+   5723 inoor     20   0    8600    576    508 S  50,0   0,0   0:00.16 head
+   2963 inoor     20   0 3998156  74964  28652 S  12,5   0,5   0:19.59 spotify
+   4240 inoor     20   0   13,0g  12,7g   1580 S  12,5  84,7   3:21.61 bash
+   5722 inoor     20   0   12056   3808   3084 R  12,5   0,0   0:00.19 top
+МиБ Mem :  15328,1 total,    182,0 free,  14788,3 used,    357,8 buff/cache
+МиБ Swap:   1359,1 total,      0,0 free,   1359,1 used.    137,2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5729 inoor     20   0       4      4      0 R  81,2   0,0   0:00.13 bash
+   5728 inoor     20   0    8600    572    508 S  56,2   0,0   0:00.17 head
+   2963 inoor     20   0 3998156  55636   9324 S  18,8   0,4   0:19.66 spotify
+   4240 inoor     20   0   13,0g  12,7g   1580 S  12,5  85,2   3:22.92 bash
+    581 root      20   0       0      0      0 I   6,2   0,0   0:01.00 kworker+
+МиБ Mem :  15328,1 total,    192,2 free,  14863,2 used,    272,7 buff/cache
+МиБ Swap:   1359,1 total,      0,0 free,   1359,1 used.    104,8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5734 inoor     20   0       4      4      0 R  87,5   0,0   0:00.14 bash
+   5733 inoor     20   0    8600    560    492 S  50,0   0,0   0:00.17 head
+    115 root      20   0       0      0      0 R   6,2   0,0   0:00.42 kcompac+
+    891 root      20   0       0      0      0 I   6,2   0,0   0:00.30 kworker+
+   4048 inoor     20   0 3353468 425504  83912 S   6,2   2,7   1:04.23 Isolate+
+МиБ Mem :  15328,1 total,    152,2 free,  14931,2 used,    244,7 buff/cache
+МиБ Swap:   1359,1 total,      0,0 free,   1359,1 used.     50,5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   3072 inoor     20   0 2849788   6396    540 R  93,8   0,0   0:08.64 spotify
+   5739 inoor     20   0       4      4      0 R  93,8   0,0   0:00.15 bash
+   2963 inoor     20   0 3998156  47696   1264 S  62,5   0,3   0:19.95 spotify
+   3203 inoor     20   0   30,4g  76960   3944 D  62,5   0,5   0:19.04 spotify
+   5738 inoor     20   0    8600    580    516 S  37,5   0,0   0:00.18 head
+МиБ Mem :  15328,1 total,    140,5 free,  14982,6 used,    205,0 buff/cache
+МиБ Swap:   1359,1 total,      0,0 free,   1359,1 used.     19,1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    177 root      20   0       0      0      0 R  81,5   0,0   0:09.33 kswapd0
+   1146 root      20   0 2235508  11600      0 S  81,5   0,1   0:01.43 contain+
+   2963 inoor     20   0 3998156  47788   1276 R  81,5   0,3   0:21.63 spotify
+   3709 inoor     20   0 4049880 171768  74392 S  81,5   1,1   1:10.66 firefox
+   2092 inoor     20   0 1833384  85368  29440 D  74,1   0,5   0:23.45 Xorg
