@@ -174,7 +174,8 @@ public class Implementor implements JarImpler {
 
         Path tempDir;
         try {
-            tempDir = Files.createTempDirectory("implementJarTempDir");
+            tempDir = jarFile.toAbsolutePath().getParent().resolve("ImplementorTemp");
+            Files.createDirectories(tempDir);
         } catch (IOException e) {
             throw new ImplerException("Could not create temp directory", e);
         }
