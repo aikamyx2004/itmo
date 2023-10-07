@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="graal (2)">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/javascript/graal" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/javascript/graal" recursive="false" />
+  </library>
+</component>
