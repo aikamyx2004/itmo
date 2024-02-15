@@ -16,13 +16,44 @@ public class TestParserPlusMinus extends TestParserBase {
     }
 
     @Test
-    public void testInvalidMinus() throws ParseException {
+    public void testInvalidMinus() {
         testInvalidPlusMinus("-");
     }
 
     @Test
-    public void testInvalidPlus() throws ParseException {
+    public void testInvalidPlus() {
         testInvalidPlusMinus("+");
+    }
+
+    @Test
+    public void testUnaryMinus() throws ParseException {
+        // -1
+        // -1 --- F (N ())
+        // из-за '-' обернется до E (T (F ("-1")), E' ())
+        // E (T (F (MINUS, F (N ())), E' ())
+        // E (
+        //      T (
+        //          F (
+        //              MINUS,
+        //              F (N ())
+        //             ),
+        //          T' ()
+        //        ),
+        //      E' ()
+        //   )
+        Tree tree = new Tree("E",
+                new Tree("T",
+                        new Tree("F",
+                                new Tree("-"),
+                                new Tree("F", new Tree("N"))
+                        ),
+                        new Tree("T'")
+                ),
+                new Tree("E'")
+        );
+        test("-1", tree);
+        test("-\t123", tree);
+        test("-\t735", tree);
     }
 
     private void testPlusMinus(String sign) throws ParseException {
@@ -76,6 +107,6 @@ public class TestParserPlusMinus extends TestParserBase {
         testInvalid(symbol);
         testInvalid("\t100 %s".formatted(symbol));
         testInvalid("%s %s".formatted(symbol, symbol));
-        testInvalid("100 %s 52 %s ".formatted(symbol, symbol));
+        testInvalid("100  %s 52 %s ".formatted(symbol, symbol));
     }
 }

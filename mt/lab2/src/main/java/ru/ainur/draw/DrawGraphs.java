@@ -19,6 +19,7 @@ public class DrawGraphs {
         Graphviz.useEngine(new GraphvizV8Engine(), new GraphvizCmdLineEngine());
 
         draw("1", "number");
+        draw("-52", "negative");
         draw("(1)", "number-in-brackets");
         draw("sin 30", "sin");
         draw("cos (60)", "cos-in-brackets");
