@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'java-gradle-plugin'
+}
+
+group = 'ru.ainur'
+version = '1.0-SNAPSHOT'
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(19)
+    }
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'guru.nidi:graphviz-java:0.18.1'
+    implementation 'org.apache.logging.log4j:log4j-api:2.22.1'
+    implementation 'org.apache.logging.log4j:log4j-core:2.22.1'
+    implementation 'com.eclipsesource.j2v8:j2v8:6.2.1'
+    implementation 'guru.nidi:graphviz-java-all-j2v8:0.18.1'
+
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
