@@ -30,7 +30,7 @@ public class TestParserFunction extends TestParserBase {
 
         test("abs 12", tree);
         test("sin 15", tree);
-        test("f -12", tree);
-        test("f -12", tree);
+        test("f 12", tree);
+        test("f 0", tree);
     }
 }

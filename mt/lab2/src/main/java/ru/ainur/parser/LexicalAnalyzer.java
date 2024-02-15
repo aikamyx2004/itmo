@@ -44,7 +44,10 @@ public class LexicalAnalyzer {
                 nextChar();
                 curToken = Token.LPAREN;
             }
-
+            case '-' -> {
+                nextChar();
+                curToken = Token.MINUS;
+            }
             case ')' -> {
                 nextChar();
                 curToken = Token.RPAREN;
@@ -52,13 +55,6 @@ public class LexicalAnalyzer {
             case '+' -> {
                 nextChar();
                 curToken = Token.PLUS;
-            }
-            case '-' -> {
-                nextChar();
-                if (checkSequence(Character::isDigit, Token.N)) {
-                    return;
-                }
-                curToken = Token.MINUS;
             }
             case '*' -> {
                 nextChar();

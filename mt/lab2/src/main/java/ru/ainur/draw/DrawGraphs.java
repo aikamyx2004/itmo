@@ -1,22 +1,15 @@
 package ru.ainur.draw;
 
-import guru.nidi.graphviz.attribute.Image;
-import guru.nidi.graphviz.attribute.Label;
-import guru.nidi.graphviz.attribute.Size;
-import guru.nidi.graphviz.engine.*;
-import guru.nidi.graphviz.model.Graph;
-import guru.nidi.graphviz.model.MutableGraph;
-import guru.nidi.graphviz.model.MutableNode;
+import guru.nidi.graphviz.engine.Format;
+import guru.nidi.graphviz.engine.Graphviz;
+import guru.nidi.graphviz.engine.GraphvizCmdLineEngine;
+import guru.nidi.graphviz.engine.GraphvizV8Engine;
 import ru.ainur.parser.ExpressionParser;
 import ru.ainur.parser.Tree;
 
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.text.ParseException;
-
-import static guru.nidi.graphviz.model.Factory.*;
 
 
 public class DrawGraphs {
@@ -33,6 +26,7 @@ public class DrawGraphs {
         draw("52 * -812", "mul");
         draw("1 + 2 * 3", "add-mul");
         draw("1 * 2 + 3", "mul-add");
+        draw("(1+2)*sin(-3*(7-4)+2)", "example");
     }
 
     private static void draw(String input, String filename) throws ParseException, IOException {

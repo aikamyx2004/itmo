@@ -43,9 +43,9 @@ public class TestParserMultiply extends TestParserBase {
         );
         System.out.println(parse("1 * 2"));
         test("1\r * 2", tree);
-        test("-12 *\t 2", tree);
+        test("12 *\t 2", tree);
         test("52 * 812\t", tree);
-        test("\t-735234  *\r -112313", tree);
+        test("\t735234  *\r 112313", tree);
     }
 
     @Test

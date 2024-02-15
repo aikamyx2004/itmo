@@ -53,4 +53,6 @@ cos(60): <br/>
 ![alt text](examples/add-mul.png "add-mul")<br/>
 1 * 2 + 3:<br/>
 ![alt text](examples/mul-add.png "mul-add")<br/>
+(1+2) * sin(-3*(7-4)+2):<br/>
+![alt text](examples/example.png "example")<br/>
 

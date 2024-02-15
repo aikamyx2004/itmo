@@ -19,9 +19,8 @@ public class TestLexerManyTokens {
 
     @Test
     public void test2Tokens() throws ParseException {
-        test("2 -3", List.of(Token.N, Token.N));
-        test("52 -334534", List.of(Token.N, Token.N));
-        test("-123 812\r", List.of(Token.N, Token.N));
+        test("52 -", List.of(Token.N, Token.MINUS));
+        test("+ 123", List.of(Token.PLUS, Token.N));
 
 
         test("cos sin\r", List.of(Token.FUNC, Token.FUNC));
@@ -118,10 +117,6 @@ public class TestLexerManyTokens {
                 case 0 -> {
                     tokens.add(Token.N);
                     int num = random.nextInt(1_000_000);
-                    if (random.nextBoolean()) {
-                        num *= -1;
-                        sb.append(' ');
-                    }
                     sb.append(String.valueOf(num));
                     sb.append(' ');
                 }

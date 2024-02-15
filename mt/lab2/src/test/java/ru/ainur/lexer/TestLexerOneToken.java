@@ -17,9 +17,9 @@ public class TestLexerOneToken {
     @Test
     public void testNumber() {
         expect(Token.N, "1");
-        expect(Token.N, "-1");
+        expect(Token.N, "735 123");
         expect(Token.N, "52 (812)");
-        expect(Token.N, "-812 + smth else");
+        expect(Token.N, "812 + smth else");
     }
 
     @Test

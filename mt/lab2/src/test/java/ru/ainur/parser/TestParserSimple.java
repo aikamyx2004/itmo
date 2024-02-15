@@ -16,8 +16,8 @@ public class TestParserSimple extends TestParserBase {
     public void testInvalidExpressions() throws ParseException {
         testInvalid("100_000");
         testInvalid("$100");
-        testInvalid("52 % 12");
-        testInvalid("735 & 812");
+        testInvalid("52 \t% 12");
+        testInvalid("735     & 812");
     }
 
     @Test
@@ -41,9 +41,9 @@ public class TestParserSimple extends TestParserBase {
         );
 
         test("0", tree);
-        test("\t-12", tree);
-        test("10013 ", tree);
-        test("\r -735812", tree);
+        test("\t12", tree);
+        test("      10013 ", tree);
+        test("\r\r 735812", tree);
     }
 
     @Test
@@ -88,10 +88,12 @@ public class TestParserSimple extends TestParserBase {
                 new Tree("E'")
         );
 
-        test("(1)", tree);
-        test("(-52)", tree);
-        test("(-812)", tree);
-        test("(735)", tree);
+        test("(0)", tree);
+        test("\t (   0)", tree);
+        test("( 1 \t)", tree);
+        test("(52) \r  ", tree);
+        test("(812)\t\t", tree);
+        test("(\r\r735)", tree);
 
     }
 
@@ -119,7 +121,7 @@ public class TestParserSimple extends TestParserBase {
 
         test("(sin 1)", tree);
         test("(cos2)", tree);
-        test("(f -123)", tree);
+        test("(f 123)", tree);
         test("(mycoolfun 79528125252)", tree);
 
     }

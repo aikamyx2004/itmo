@@ -66,9 +66,9 @@ public class TestParserPlusMinus extends TestParserBase {
 
 
         test("1\r " + sign + " 2", tree);
-        test("-12 " + sign + "\t 2", tree);
+        test("12 " + sign + "\t 2", tree);
         test("52 " + sign + " 812\t", tree);
-        test("\t-735234  " + sign + "\r -112313", tree);
+        test("\t735234  " + sign + "\r 112313", tree);
     }
 
 
