@@ -1,0 +1,47 @@
+package ru.ainur;
+
+import ru.ainur.parser.JavaBaseListener;
+import ru.ainur.parser.JavaParser;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class JavaListener extends JavaBaseListener {
+    public Map<List<String>, List<String>> getVariables() {
+        return variables;
+    }
+
+    public List<String> getStack() {
+        return stack;
+    }
+
+    private final Map<List<String>, List<String>> variables = new HashMap<>();
+    private final List<String> stack = new ArrayList<>();
+
+
+    @Override
+    public void exitStackIdentifier(JavaParser.StackIdentifierContext ctx) {
+        stack.add(ctx.getText());
+    }
+
+    @Override
+    public void exitClassBodyDeclaration(JavaParser.ClassBodyDeclarationContext ctx) {
+        stack.remove(stack.size() - 1);
+    }
+
+    @Override
+    public void exitMethodDeclaration(JavaParser.MethodDeclarationContext ctx) {
+        stack.remove(stack.size() - 1);
+    }
+
+    @Override
+    public void exitVariableDeclaratorId(JavaParser.VariableDeclaratorIdContext ctx) {
+        if (ctx != null) {
+            variables.putIfAbsent(stack, new ArrayList<>());
+            variables.get(stack).add(ctx.Identifier().getText());
+        }
+    }
+}
+
