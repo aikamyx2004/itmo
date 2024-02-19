@@ -2,7 +2,8 @@ package ru.ainur;
 
 public class Variables {
     public void f(){
-
+        int q;
+        int w;
     }
     public static void main(String[] args) {
         List<Integer> a;

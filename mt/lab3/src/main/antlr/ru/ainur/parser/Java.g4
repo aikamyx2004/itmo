@@ -13,51 +13,71 @@ file
     ;
 
 package
-    :   'package' WS+
+    :   PACKAGE WS+
         qualifiedIdentifier WS*
-        ';' WS*
+        SEMICOLON WS*
     ;
+
+
+
+PACKAGE : 'package' ;
 
 
 importDeclaration
-    :   'import' WS*
-        ('static' WS*)?
+    :   IMPORT WS*
+        (STATIC WS*)?
         Identifier WS*
-        (WS* '.' WS* Identifier)* WS*
-        ('.' '*')? WS*
+        (WS* DOT WS* Identifier)* WS*
+        (DOT MULTIPLY)? WS*
+        SEMICOLON WS*
     ;
+
+MULTIPLY : '*' ;
+
+DOT : '.' ;
+
+STATIC : 'static' ;
+
+IMPORT : 'import' ;
 
 
 classDeclaration
     :   modifier* WS*
-        'class' WS*
-        Identifier WS*
-        classBody
+        CLASS WS*
+        stackIdentifier WS*
+        ('extends' WS* qualifiedIdentifier WS*)?
+        classBody WS*
     ;
+
+CLASS : 'class' ;
 
 
 classBody
-    :   '{' WS*
+    :   START_BLOCK WS*
          classBodyDeclaration* WS*
-        '}' WS*
+        END_BLOCK WS*
     ;
+
+END_BLOCK : '}' ;
+
+START_BLOCK : '{' ;
 
 
 classBodyDeclaration
-    :   ';' WS*
+    :   SEMICOLON WS*
     |   (modifier WS*)* memberDecl WS*
     ;
 
 
 memberDecl // public static ...
-    :   methodDeclaration WS*
-    |   fieldDeclaration WS*
+    :    methodDeclaration WS*
+    |    fieldDeclaration WS*
     ;
 
 
 methodDeclaration // public static ...
     :   typeOrVoid WS*
-        Identifier WS*
+        stackIdentifier WS*
         parametersInBrackets WS*
         throwsList? WS*
         methodBody WS*
@@ -65,14 +85,14 @@ methodDeclaration // public static ...
 
 
 parametersInBrackets
-    :   '(' WS*
+    :   LPAREN WS*
         (parameters WS*)?
-        ')' WS*
+        RPAREN WS*
     ;
 
 parameters
     :   parameter WS*
-        (WS* ',' WS* parameters WS*)*
+        (WS* COMMA WS* parameters WS*)*
     ;
 
 parameter
@@ -83,65 +103,69 @@ parameter
 fieldDeclaration // public static ...
     :   type WS*
         variableDeclarators WS*
-        ';' WS*
+        SEMICOLON WS*
     ;
 
 methodBody
     :   block
-    |   ';'
+    |   SEMICOLON
     ;
 
 throwsList
-    :   'throws' WS*
+    :   THROWS WS*
         qualifiedIdentifierList WS*
     ;
+
+THROWS : 'throws' ;
 
 
 typeOrVoid
     :   type WS*
-    |   'void' WS*
+    |   VOID WS*
     ;
+
+VOID : 'void' ;
 
 variableDeclarators
      : variableDeclarator WS*
-       (WS* ',' WS* variableDeclarator WS*)* WS*
+       (WS* COMMA WS* variableDeclarator WS*)* WS*
      ;
 
 variableDeclaratorId
-    : Identifier WS*
+    : Identifier
     ;
 
 variableDeclarator
     :   variableDeclaratorId WS*
-        ('=' WS* variableInitializer WS*)?
+        (EQUALS WS* variableInitializer WS*)?
     ;
+
+EQUALS : '=' ;
 
 variableInitializer
     :   arrayInitializer WS*
     |   expression WS*
-    |   'new' WS*
-        qualifiedIdentifier WS*
-        ('<' WS* types? WS* '>' WS*)?
-        arguments WS*
     ;
 
+NEW : 'new' ;
+
 arrayInitializer
-    :   '{' WS*
+    :   START_BLOCK WS*
         (variableInitializer WS*
-            (WS* ',' WS* variableInitializer WS*)* WS*
-            ',' WS*?
+            (WS* COMMA WS* variableInitializer WS*)* WS*
+            COMMA WS*?
         )? WS*
-        '}' WS*
+        END_BLOCK WS*
     ;
 
 block
-    :   '{' WS*
+    :   START_BLOCK WS*
         blockStatement* WS*
-        '}' WS*
+        END_BLOCK WS*
     ;
 
 blockStatement
-    :   localVariableDeclaration WS* ';' WS*
+    :   localVariableDeclaration WS* SEMICOLON WS*
     |   statement WS*
     ;
 
@@ -155,47 +179,61 @@ statement
     |   ifStatement WS*
     |   forStatement WS*
     |   whileStatement WS*
-    |   'return' WS* expression? WS* ';' WS*
-    |   'break' WS* ';' WS*
-    |   'continue' WS* ';' WS*
-    |   expression WS* ';' WS*
+    |   RETURN WS* expression? WS* SEMICOLON WS*
+    |   BREAK WS* SEMICOLON WS*
+    |   CONTINUE WS* SEMICOLON WS*
+    |   expression WS* SEMICOLON WS*
     ;
 
+CONTINUE : 'continue' ;
+
+BREAK : 'break' ;
+
+RETURN : 'return' ;
+
 whileStatement
-    :   'while' WS*
+    :   WHILE WS*
         parExpression WS* // (i<0)
         statement WS*     // {...}
     ;
 
+WHILE : 'while' ;
+
 forStatement
-    :   'for' WS*
-        '(' WS*
-            localVariableDeclaration? WS* ';' WS*   // int i = 0;
-            expression? WS* ';' WS*                 // i < 0;
-            expressionList? WS* ';' WS*             // i++;
-        ')' WS*
+    :   FOR WS*
+        LPAREN WS*
+            localVariableDeclaration? WS* SEMICOLON WS*   // int i = 0;
+            expression? WS* SEMICOLON WS*                 // i < 0;
+            expressionList? WS* SEMICOLON WS*             // i++;
+        RPAREN WS*
         statement WS*
     ;
 
+FOR : 'for' ;
+
 ifStatement
-    :   'if' WS*
+    :   IF WS*
         parExpression WS*           // (i < 0)
         statement WS*               // {...}
-        ('else' WS* statement)? WS* // else
+        (ELSE WS* statement)? WS* // else
     ;
+
+ELSE : 'else' ;
+
+IF : 'if' ;
 
 
 parExpression
-    : '(' WS* expression WS* ')' WS*;
+    : LPAREN WS* expression WS* RPAREN WS*;
 
 
 expressionList
-    : expression (WS* ',' WS*  expression)* WS*;
+    : expression (WS* COMMA WS*  expression)* WS*;
 
 expression
     :   primary WS*
     |   expression WS*
-        '.' WS*
+        DOT WS*
         (   Identifier
         |   methodCall
         ) WS*
@@ -215,21 +253,30 @@ expression
     |   <assoc = right> expression WS* assignment WS* expression WS*
     ;
 primary
-    : '(' expression ')'
+    : LPAREN expression RPAREN
     | literal
     | Identifier
+    |   NEW WS*
+            qualifiedIdentifier WS*
+            (LESS_SIGN WS* types? WS* MORE_SIGN WS*)?
+            arguments WS*
     ;
 
 literal
     :   integerLiteral
     |   floatLiteral
+    |   stringLiteral
+    ;
+
+stringLiteral
+    : QUOT .*? QUOT
     ;
 
 integerLiteral: digits;
 
 floatLiteral
-    :   digits '.' digits?
-    |   '.' digits
+    :   digits DOT digits?
+    |   DOT digits
     ;
 
 methodCall
@@ -238,30 +285,38 @@ methodCall
     ;
 
 arguments
-    :   '(' WS*
+    :   LPAREN WS*
         expressionList? WS*
-        ')' WS*
+        RPAREN WS*
     ;
 
 type
-    :   BasicType (WS* '[' WS* ']' WS*)* WS*
-    |   Identifier (WS* '[' WS* ']' WS*)* WS*
+    :   BasicType (WS* ARRAY_LPAREN WS* ARRAY_RPAREN WS*)* WS*
+    |   qualifiedIdentifier (WS* ARRAY_LPAREN WS* ARRAY_RPAREN WS*)* WS*
     |   type WS*
-        '<'  WS*
+        LESS_SIGN  WS*
         types  WS*
-        '>' WS*
+        MORE_SIGN WS*
     ;
 
-types: type (WS* ',' WS* type)*;
+
+LESS_SIGN: '<';
+MORE_SIGN: '>';
+
+
+types: type (WS* COMMA WS* type)*;
 
 qualifiedIdentifierList
     : qualifiedIdentifier
-      (WS* ',' WS* qualifiedIdentifier WS*)* WS*
+      (WS* COMMA WS* qualifiedIdentifier WS*)* WS*
     ;
 
 qualifiedIdentifier
     :   Identifier
-        (WS* '.' WS* Identifier)*
+        (WS* DOT WS* Identifier)*
+    ;
+stackIdentifier
+    :   Identifier
     ;
 
 Identifier
@@ -311,8 +366,8 @@ additive
     ;
 
 relational
-    :    '<'
-    |   '>'
+    :    LESS_SIGN
+    |   MORE_SIGN
     |   '<='
     |    '>='
     ;
@@ -350,7 +405,14 @@ assignment
 
 Digit : [0-9];
 digits: Digit+;
-
 Letter: [a-zA-Z_];
 LetterOrDigit: Letter | Digit;
 WS: [ \r\t\n];
+
+LPAREN : '(';
+RPAREN : ')';
+ARRAY_LPAREN : '[';
+ARRAY_RPAREN : ']';
+SEMICOLON : ';' ;
+COMMA: ',';
+QUOT : '"';

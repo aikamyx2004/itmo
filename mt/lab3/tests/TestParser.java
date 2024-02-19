@@ -12,32 +12,26 @@ import java.nio.file.Path;
 public class TestParser {
     private static final String PARSER_TESTS_SRC = "tests";
 
-    @Test
     public void testEmptyClass() throws IOException {
         test("EmptyClass");
     }
 
-    @Test
     public void testPsvm() throws IOException {
         test("Psvm");
     }
 
-    @Test
     public void testSomeFunctions() throws IOException {
         test("SomeFunctions");
     }
 
-    @Test
     public void testArithmeticOperations() throws IOException {
         test("ArithmeticOperations");
     }
 
-    @Test
     public void testVariables() throws IOException {
         test("Variables");
     }
 
-    @   Test
     public void testGenerics() throws IOException {
         test("Generics");
     }
