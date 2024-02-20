@@ -1,5 +1,3 @@
-package ru.ainur;
-
 import ru.ainur.parser.JavaBaseListener;
 import ru.ainur.parser.JavaParser;
 

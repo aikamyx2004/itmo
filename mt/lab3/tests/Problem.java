@@ -1,11 +1,10 @@
 import java.util.*;
 import java.io.*;
 
-public class Codechef {
+public class Problem {
     static class FastReader {
         BufferedReader br;
         StringTokenizer st;
-
 
 
         String next() {

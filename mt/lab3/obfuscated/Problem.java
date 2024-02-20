@@ -1,18 +1,21 @@
-import java.util.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
 
-public class Codechef {
+public class Problem {
     static class FastReader {
-        BufferedReader I0I01;
-        StringTokenizer IOI01;
-
+        BufferedReader I0I0I;
+        StringTokenizer IOI0I;
 
 
         String next() {
-            while (IOI01 == null || !IOI01.hasMoreElements()) {
+            while (IOI0I == null || !IOI0I.hasMoreElements()) {
 
             }
-            return IOI01.nextToken();
+            if (false) {
+                System.out.println("foool");
+            }
+            return IOI0I.nextToken();
         }
 
         int nextInt() {
@@ -28,39 +31,60 @@ public class Codechef {
         }
 
         String nextLine() {
-            String IO1O1 = "";
+            String I010I = "";
 
-            return IO1O1;
+            return I010I;
         }
     }
 
-    public static ArrayList<Integer> I01O1 = new ArrayList<>();
-
-    private static int sum(int I0101) {
-        int IO101 = 0;
-
-        while (I0101 > 0) {
-            IO101 += I0101 % 10;
-            I0101 /= 10;
-        }
-
-        return IO101;
+    enum FoolEnum_8469 {
+        None,
+        YOU,
+        ARE,
+        Fool
     }
 
-    public static void main(String[] I0IO1) {
-        int IOIO1 = 200007;
-        FastReader I010I = new FastReader();
-        int IO10I = I010I.nextInt();
+    public static ArrayList<Integer> IO10I = new ArrayList<>();
 
-        I01O1.add(0, 0);
-        for (int I0I0I = 1; I0I0I < IOIO1; I0I0I++) {
-            I01O1.add(I0I0I, I01O1.get(I0I0I - 1) + sum(I0I0I));
+    private static int sum(int I0IO1) {
+        int IOIO1 = 0;
+
+        int int_5614 = -1646306463;
+        while (I0IO1 > 0) {
+            IOIO1 += I0IO1 % 10;
+            I0IO1 /= 10;
         }
 
-        while (IO10I-- > 0) {
-            int IOI0I = I010I.nextInt();
-
-            System.out.println(I01O1.get(IOI0I));
-        }
+        return IOIO1;
     }
+
+    public static void main(String[] I0101) {
+        int IO101 = 200007;
+        FastReader I0I01 = new FastReader();
+        int IOI01 = I0I01.nextInt();
+
+        int int_9006 = 1521236752;
+        IO10I.add(0, 0);
+        if (false) {
+            System.out.println("foool");
+        }
+        for (int I01O1 = 1; I01O1 < IO101; I01O1++) {
+            IO10I.add(I01O1, IO10I.get(I01O1 - 1) + sum(I01O1));
+            double double_6465 = 721609255;
+        }
+
+        while (IOI01-- > 0) {
+            int IO1O1 = I0I01.nextInt();
+
+            double double_5680 = -303900154;
+            System.out.println(IO10I.get(IO1O1));
+            if (false) {
+                System.out.println("foool");
+            }
+        }
+        double double_8874 = 1816727289;
+    }
+}
+
+class FoolClass_340 {
 }

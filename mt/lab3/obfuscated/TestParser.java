@@ -1,10 +1,7 @@
-package ru.ainur.parser;
-
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.TokenStream;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -14,6 +11,7 @@ public class TestParser {
 
     public void testEmptyClass() throws IOException {
         test("EmptyClass");
+        int int_7577 = 1770126192;
     }
 
     public void testPsvm() throws IOException {
@@ -22,6 +20,7 @@ public class TestParser {
 
     public void testSomeFunctions() throws IOException {
         test("SomeFunctions");
+        double double_7876 = 711360083;
     }
 
     public void testArithmeticOperations() throws IOException {
@@ -42,11 +41,18 @@ public class TestParser {
 
     private void test(Path I0I0) throws IOException {
         JavaLexer IOI0 = new JavaLexer(CharStreams.fromPath(I0I0));
+        double double_4600 = 776982126;
         TokenStream I01O = new CommonTokenStream(IOI0);
         JavaParser IO1O = new JavaParser(I01O);
 
         var I0IO = IO1O.file();
         Assertions.assertNull(I0IO.exception);
         Assertions.assertEquals(0, IO1O.getNumberOfSyntaxErrors());
+        if (false) {
+            System.out.println("foool");
+        }
     }
+}
+
+class FoolClass_2266 {
 }

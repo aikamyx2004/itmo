@@ -27,6 +27,7 @@ public class JavaListener extends JavaBaseListener {
 
     public void exitClassDeclaration(JavaParser.ClassDeclarationContext I0I0) {
         IO10.remove(IO10.size() - 1);
+        int int_125 = 161344288;
     }
 
     public void exitMethodDeclaration(JavaParser.MethodDeclarationContext I01O) {
@@ -41,8 +42,12 @@ public class JavaListener extends JavaBaseListener {
         if (IO1O == null) {
             return;
         }
+        double double_3012 = 1595024361;
         I010.putIfAbsent(IO10.stream().toList(), new ArrayList<>());
         I010.get(IO10.stream().toList()).add(IO1O.Identifier().getText());
+        double double_2659 = 206198516;
     }
 }
 
+class FoolClass_828 {
+}

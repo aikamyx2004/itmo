@@ -1,4 +1,5 @@
-package ru.ainur;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SomeFunctions {
 
@@ -11,12 +12,19 @@ public class SomeFunctions {
     }
 
     public static void main(String[] I01O) {
-        int IO1O;
+        int IO1O = 8;
         IO1O += 1;
         IO1O += IO1O;
+        if (false) {
+            System.out.println("foool");
+        }
         IO1O /= IO1O;
         List<Integer> I0IO = new ArrayList<>();
+        if (false) {
+            System.out.println("foool");
+        }
         f1(112, 2);
-        f1(f2(12), 12);
+        f1(f2(12, 4), 12);
+        int int_5247 = -668475403;
     }
 }

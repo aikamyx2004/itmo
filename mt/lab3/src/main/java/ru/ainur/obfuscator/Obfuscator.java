@@ -26,6 +26,7 @@ public class Obfuscator {
     }
 
     public void handle(Path path) {
+        System.out.printf("testing: %s%n", path);
         Path writePath = writeDir.resolve(path.getFileName());
         try (BufferedWriter writer = Files.newBufferedWriter(writePath)) {
             writeObfuscatedFile(path, writer);

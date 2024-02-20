@@ -189,11 +189,14 @@ statement
     |   ifStatement WS*
     |   forStatement WS*
     |   whileStatement WS*
-    |   RETURN WS* expression? WS* SEMICOLON WS*
-    |   BREAK WS* SEMICOLON WS*
-    |   CONTINUE WS* SEMICOLON WS*
+    |   breakStatement WS*
     |   expression WS* SEMICOLON WS*
     ;
+
+breakStatement
+    :   RETURN WS* expression? WS* SEMICOLON WS*
+    |   BREAK WS* SEMICOLON WS*
+    |   CONTINUE WS* SEMICOLON WS*;
 
 CONTINUE : 'continue' ;
 
@@ -251,7 +254,8 @@ expression
     |   methodCall WS*
     |   expression WS* IncDec WS*
     |   IncDec WS* expression WS*
-    |   '!' WS* expression WS*
+    |   NOT WS* expression WS*
+    |   LPAREN WS* type WS* RPAREN WS* expression WS*
     |   expression WS* multiplicative WS* expression WS*
     |   expression WS* additive       WS* expression WS*
     |   expression WS* relational     WS* expression WS*
@@ -263,6 +267,8 @@ expression
 
     |   <assoc = right> expression WS* assignment WS* expression WS*
     ;
+
+NOT : '!' ;
 primary
     : LPAREN expression RPAREN
     | literal

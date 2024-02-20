@@ -1,4 +1,5 @@
-package ru.ainur;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SomeFunctions {
 
@@ -11,12 +12,12 @@ public class SomeFunctions {
     }
 
     public static void main(String[] args) {
-        int a;
+        int a = 8;
         a += 1;
         a += a;
         a /= a;
         List<Integer> b = new ArrayList<>();
         f1(112, 2);
-        f1(f2(12), 12);
+        f1(f2(12, 4), 12);
     }
 }

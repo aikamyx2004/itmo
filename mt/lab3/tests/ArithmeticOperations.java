@@ -1,12 +1,10 @@
-package ru.ainur;
-
 public class ArithmeticOperations {
-    public void sum(int a, int b) {
+    public int sum(int a, int b) {
         return a + b;
     }
 
-    public void g2(int a, double b) {
-        return a * b / c % a - b & a;
+    public double g2(int a, double b) {
+        return a * b / 3 % a - b * (a & a);
     }
 
     public static void main(String[] args) {
@@ -15,9 +13,9 @@ public class ArithmeticOperations {
         a++;
         --a;
         a--;
-        a-=1;
-        a+=1;
-        a%=2;
+        a -= 1;
+        a += 1;
+        a %= 2;
         double q = a + a + a - a - a - a * a * a * a / a / a / a;
 
     }

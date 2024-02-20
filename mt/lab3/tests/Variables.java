@@ -1,18 +1,19 @@
-package ru.ainur;
+import java.util.List;
 
 public class Variables {
-    public void f(){
+    public void f() {
         int q;
         int w;
     }
+
     public static void main(String[] args) {
-        List<Integer> a;
+        List<Integer> qwe;
         int a = 1;
         double b = 12.123;
-        double b = .123;
-        float b = .123;
-        List<Integer> b;
-        String q = "wdadsadas";
-        String w = "wdadsadas";
+        double q = .123;
+        float r = (float) 1.1;
+        List<Integer> list;
+        String x = "wdadsadas";
+        String y = "wdadsadas";
     }
 }
