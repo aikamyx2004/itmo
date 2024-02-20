@@ -10,39 +10,39 @@ import java.util.Map;
 
 public class JavaListener extends JavaBaseListener {
     public Map<List<String>, List<String>> getVariables() {
-        return I0101;
+        return I010;
     }
 
     public List<String> getStack() {
-        return IO101;
+        return IO10;
     }
 
-    private final Map<List<String>, List<String>> I0101 = new HashMap<>();
-    private final List<String> IO101 = new ArrayList<>();
+    private final Map<List<String>, List<String>> I010 = new HashMap<>();
+    private final List<String> IO10 = new ArrayList<>();
 
 
-    public void exitStackIdentifier(JavaParser.StackIdentifierContext IOI01) {
-        IO101.add(IOI01.getText());
+    public void exitStackIdentifier(JavaParser.StackIdentifierContext IOI0) {
+        IO10.add(IOI0.getText());
     }
 
-    public void exitClassDeclaration(JavaParser.ClassDeclarationContext I0I01) {
-        IO101.remove(IO101.size() - 1);
+    public void exitClassDeclaration(JavaParser.ClassDeclarationContext I0I0) {
+        IO10.remove(IO10.size() - 1);
     }
 
-    public void exitMethodDeclaration(JavaParser.MethodDeclarationContext I01O1) {
-        IO101.remove(IO101.size() - 1);
+    public void exitMethodDeclaration(JavaParser.MethodDeclarationContext I01O) {
+        IO10.remove(IO10.size() - 1);
     }
 
-    private void test(String I0IO1) throws IOException {
-        test(Path.of(PARSER_TESTS_SRC).resolve(I0IO1 + ".java"));
+    private void test(String I0IO) throws IOException {
+        test(Path.of(PARSER_TESTS_SRC).resolve(I0IO + ".java"));
     }
 
-    public void exitVariableDeclaratorId(JavaParser.VariableDeclaratorIdContext IO1O1) {
-        if (IO1O1 == null) {
+    public void exitVariableDeclaratorId(JavaParser.VariableDeclaratorIdContext IO1O) {
+        if (IO1O == null) {
             return;
         }
-        I0101.putIfAbsent(IO101.stream().toList(), new ArrayList<>());
-        I0101.get(IO101.stream().toList()).add(IO1O1.Identifier().getText());
+        I010.putIfAbsent(IO10.stream().toList(), new ArrayList<>());
+        I010.get(IO10.stream().toList()).add(IO1O.Identifier().getText());
     }
 }
 

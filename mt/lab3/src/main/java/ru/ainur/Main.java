@@ -1,5 +1,7 @@
 package ru.ainur;
 
+import ru.ainur.obfuscator.Obfuscator;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;

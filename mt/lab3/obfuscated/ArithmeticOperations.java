@@ -1,24 +1,24 @@
 package ru.ainur;
 
 public class ArithmeticOperations {
-    public void sum(int IO1O1, int I0IO1) {
-        return IO1O1 + I0IO1;
+    public void sum(int IO1O, int I0IO) {
+        return IO1O + I0IO;
     }
 
-    public void g2(int I0101, double IO101) {
-        return I0101 * IO101 / c % I0101 - IO101 & I0101;
+    public void g2(int I010, double IO10) {
+        return I010 * IO10 / c % I010 - IO10 & I010;
     }
 
-    public static void main(String[] I0I01) {
-        int IOI01 = 1;
-        ++IOI01;
-        IOI01++;
-        --IOI01;
-        IOI01--;
-        IOI01-=1;
-        IOI01+=1;
-        IOI01%=2;
-        double I01O1 = IOI01 + IOI01 + IOI01 - IOI01 - IOI01 - IOI01 * IOI01 * IOI01 * IOI01 / IOI01 / IOI01 / IOI01;
+    public static void main(String[] I0I0) {
+        int IOI0 = 1;
+        ++IOI0;
+        IOI0++;
+        --IOI0;
+        IOI0--;
+        IOI0-=1;
+        IOI0+=1;
+        IOI0%=2;
+        double I01O = IOI0 + IOI0 + IOI0 - IOI0 - IOI0 - IOI0 * IOI0 * IOI0 * IOI0 / IOI0 / IOI0 / IOI0;
 
     }
 }

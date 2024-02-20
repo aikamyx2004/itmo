@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 public class TestParser {
-    private static final String I0101 = "tests";
+    private static final String I010 = "tests";
 
     public void testEmptyClass() throws IOException {
         test("EmptyClass");
@@ -36,17 +36,17 @@ public class TestParser {
         test("Generics");
     }
 
-    private void test(String IO101) throws IOException {
-        test(Path.of(I0101).resolve(IO101 + ".java"));
+    private void test(String IO10) throws IOException {
+        test(Path.of(I010).resolve(IO10 + ".java"));
     }
 
-    private void test(Path I0I01) throws IOException {
-        JavaLexer IOI01 = new JavaLexer(CharStreams.fromPath(I0I01));
-        TokenStream I01O1 = new CommonTokenStream(IOI01);
-        JavaParser IO1O1 = new JavaParser(I01O1);
+    private void test(Path I0I0) throws IOException {
+        JavaLexer IOI0 = new JavaLexer(CharStreams.fromPath(I0I0));
+        TokenStream I01O = new CommonTokenStream(IOI0);
+        JavaParser IO1O = new JavaParser(I01O);
 
-        var I0IO1 = IO1O1.file();
-        Assertions.assertNull(I0IO1.exception);
-        Assertions.assertEquals(0, IO1O1.getNumberOfSyntaxErrors());
+        var I0IO = IO1O.file();
+        Assertions.assertNull(I0IO.exception);
+        Assertions.assertEquals(0, IO1O.getNumberOfSyntaxErrors());
     }
 }

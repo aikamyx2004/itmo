@@ -1,4 +1,4 @@
-package ru.ainur;
+package ru.ainur.listener;
 
 import ru.ainur.parser.JavaBaseListener;
 import ru.ainur.parser.JavaParser;

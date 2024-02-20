@@ -45,16 +45,22 @@ classDeclaration
     :   modifier* WS*
         CLASS WS*
         stackIdentifier WS*
-        ('extends' WS* qualifiedIdentifier WS*)?
+        (EXTENDS WS* qualifiedIdentifier WS*)?
+        (IMPLEMENTS WS* types WS*)?
+
         classBody WS*
     ;
+
+IMPLEMENTS : 'implements' ;
+
+EXTENDS : 'extends' ;
 
 CLASS : 'class' ;
 
 
 classBody
     :   START_BLOCK WS*
-         classBodyDeclaration* WS*
+        classBodyDeclaration* WS*
         END_BLOCK WS*
     ;
 
@@ -72,6 +78,7 @@ classBodyDeclaration
 memberDecl // public static ...
     :    methodDeclaration WS*
     |    fieldDeclaration WS*
+    |    classDeclaration WS*
     ;
 
 
@@ -150,12 +157,15 @@ variableInitializer
 NEW : 'new' ;
 
 arrayInitializer
-    :   START_BLOCK WS*
-        (variableInitializer WS*
+    :   NEW WS*
+        type WS*
+        (ARRAY_LPAREN WS* expression? WS* ARRAY_RPAREN WS*)+
+        (START_BLOCK WS*
+        variableInitializer WS*
             (WS* COMMA WS* variableInitializer WS*)* WS*
             COMMA WS*?
-        )? WS*
-        END_BLOCK WS*
+         WS*
+        END_BLOCK WS*)?
     ;
 
 block
@@ -204,7 +214,7 @@ forStatement
         LPAREN WS*
             localVariableDeclaration? WS* SEMICOLON WS*   // int i = 0;
             expression? WS* SEMICOLON WS*                 // i < 0;
-            expressionList? WS* SEMICOLON WS*             // i++;
+            expressionList? WS* WS*             // i++;
         RPAREN WS*
         statement WS*
     ;
@@ -228,10 +238,11 @@ parExpression
 
 
 expressionList
-    : expression (WS* COMMA WS*  expression)* WS*;
+    : expression (WS* COMMA WS*  expression WS*)*;
 
 expression
     :   primary WS*
+    |   expression WS* ARRAY_LPAREN WS* expression WS* ARRAY_RPAREN WS*
     |   expression WS*
         DOT WS*
         (   Identifier
@@ -240,7 +251,7 @@ expression
     |   methodCall WS*
     |   expression WS* IncDec WS*
     |   IncDec WS* expression WS*
-
+    |   '!' WS* expression WS*
     |   expression WS* multiplicative WS* expression WS*
     |   expression WS* additive       WS* expression WS*
     |   expression WS* relational     WS* expression WS*
@@ -263,20 +274,26 @@ primary
     ;
 
 literal
-    :   integerLiteral
-    |   floatLiteral
-    |   stringLiteral
+    :   IntegerLiteral
+    |   FloatLiteral
+    |   StringLiteral
+    |   CharLiteral
     ;
 
-stringLiteral
-    : QUOT .*? QUOT
+CharLiteral
+    :   APOSTROPH ~['] APOSTROPH
     ;
 
-integerLiteral: digits;
+StringLiteral
+    : QUOT ~["]* QUOT
+    ;
 
-floatLiteral
-    :   digits DOT digits?
-    |   DOT digits
+
+IntegerLiteral: Digits;
+
+FloatLiteral
+    :   Digits DOT Digits?
+    |   DOT Digits
     ;
 
 methodCall
@@ -403,12 +420,14 @@ assignment
     |   '%='
     ;
 
-Digit : [0-9];
-digits: Digit+;
-Letter: [a-zA-Z_];
-LetterOrDigit: Letter | Digit;
-WS: [ \r\t\n];
+Digits: DIGIT+;
 
+
+
+DIGIT: [0-9];
+Letter: [a-zA-Z_];
+LetterOrDigit: Letter | [0-9];
+WS: [ \r\t\n];
 LPAREN : '(';
 RPAREN : ')';
 ARRAY_LPAREN : '[';
@@ -416,3 +435,4 @@ ARRAY_RPAREN : ']';
 SEMICOLON : ';' ;
 COMMA: ',';
 QUOT : '"';
+APOSTROPH : '\'';

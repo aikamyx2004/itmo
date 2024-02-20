@@ -3,11 +3,11 @@ package ru.ainur;
 public class SomeFunctions {
 
     public static int f1(int a, int v) {
-
+        return a * v;
     }
 
     private static int f2(int a, int c) {
-
+        return f1(a, c) * f1(c, a * c);
     }
 
     public static void main(String[] args) {

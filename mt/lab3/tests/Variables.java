@@ -11,6 +11,8 @@ public class Variables {
         double b = 12.123;
         double b = .123;
         float b = .123;
-        List<Integer> a;
+        List<Integer> b;
+        String q = "wdadsadas";
+        String w = "wdadsadas";
     }
 }

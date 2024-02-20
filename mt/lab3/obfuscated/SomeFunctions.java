@@ -2,20 +2,20 @@ package ru.ainur;
 
 public class SomeFunctions {
 
-    public static int f1(int I0101, int IO101) {
-
+    public static int f1(int I010, int IO10) {
+        return I010 * IO10;
     }
 
-    private static int f2(int I0I01, int IOI01) {
-
+    private static int f2(int I0I0, int IOI0) {
+        return f1(I0I0, IOI0) * f1(IOI0, I0I0 * IOI0);
     }
 
-    public static void main(String[] I01O1) {
-        int IO1O1;
-        IO1O1 += 1;
-        IO1O1 += IO1O1;
-        IO1O1 /= IO1O1;
-        List<Integer> I0IO1 = new ArrayList<>();
+    public static void main(String[] I01O) {
+        int IO1O;
+        IO1O += 1;
+        IO1O += IO1O;
+        IO1O /= IO1O;
+        List<Integer> I0IO = new ArrayList<>();
         f1(112, 2);
         f1(f2(12), 12);
     }
