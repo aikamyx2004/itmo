@@ -13,7 +13,7 @@ public class TestParserSimple extends TestParserBase {
     }
 
     @Test
-    public void testInvalidExpressions() throws ParseException {
+    public void testInvalidExpressions() {
         testInvalid("100_000");
         testInvalid("$100");
         testInvalid("52 \t% 12");
@@ -73,7 +73,7 @@ public class TestParserSimple extends TestParserBase {
         Tree tree = new Tree("E",
                 new Tree("T",
                         new Tree("F",
-                                new Tree("LPAREN"),
+                                new Tree("("),
                                 new Tree("E",
                                         new Tree("T",
                                                 new Tree("F", new Tree("N")),
@@ -81,7 +81,7 @@ public class TestParserSimple extends TestParserBase {
                                         ),
                                         new Tree("E'")
                                 ),
-                                new Tree("RPAREN")
+                                new Tree(")")
                         ),
                         new Tree("T'")
                 ),
@@ -104,7 +104,7 @@ public class TestParserSimple extends TestParserBase {
         Tree tree = new Tree("E",
                 new Tree("T",
                         new Tree("F",
-                                new Tree("LPAREN"),
+                                new Tree("("),
                                 new Tree("E",
                                         new Tree("T",
                                                 new Tree("F", new Tree("FUNC"), new Tree("F", new Tree("N"))),
@@ -112,7 +112,7 @@ public class TestParserSimple extends TestParserBase {
                                         ),
                                         new Tree("E'")
                                 ),
-                                new Tree("RPAREN")
+                                new Tree(")")
                         ),
                         new Tree("T'")
                 ),
