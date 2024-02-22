@@ -117,13 +117,13 @@ public class BaseParser {
             case LPAREN:
                 //(
                 expect(Token.LPAREN);
-                tree.addChildren(new Tree("LPAREN"));
+                tree.addChildren(new Tree("("));
                 lexer.nextToken();
                 //E
                 tree.addChildren(E());
                 //)
                 expect(Token.RPAREN);
-                tree.addChildren(new Tree("RPAREN"));
+                tree.addChildren(new Tree(")"));
                 lexer.nextToken();
                 break;
 
