@@ -37,6 +37,7 @@ public class TestLexerOneToken {
         testOneToken(Token.MINUS, "-");
         testOneToken(Token.MULTIPLY, "*");
         testOneToken(Token.LPAREN, "(");
+        testOneToken(Token.COMMA, ",");
         testOneToken(Token.RPAREN, ")");
     }
 

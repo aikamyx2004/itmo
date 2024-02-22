@@ -44,6 +44,10 @@ public class LexicalAnalyzer {
                 nextChar();
                 curToken = Token.LPAREN;
             }
+            case ',' -> {
+                nextChar();
+                curToken = Token.COMMA;
+            }
             case '-' -> {
                 nextChar();
                 curToken = Token.MINUS;

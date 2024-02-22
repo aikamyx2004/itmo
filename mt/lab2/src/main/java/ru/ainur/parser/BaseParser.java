@@ -34,7 +34,7 @@ public class BaseParser {
                 tree.addChildren(EPrime());
                 break;
             case END:
-            case RPAREN:
+            case COMMA:
                 break;
             default:
                 throw new ParseException("Unexpected token at E()", lexer.curPos());
@@ -63,6 +63,7 @@ public class BaseParser {
                 break;
             case END:
             case RPAREN:
+            case COMMA:
                 break;
 
             default:
@@ -81,6 +82,8 @@ public class BaseParser {
             case FUNC:
                 tree.addChildren(F());
                 tree.addChildren(TPrime());
+                break;
+            case COMMA:
                 break;
             default:
                 throw new ParseException("Unexpected token at T()", lexer.curPos());
@@ -104,9 +107,10 @@ public class BaseParser {
             case PLUS:
             case MINUS:
             case RPAREN:
+            case COMMA:
                 break;
             default:
-                throw new ParseException("Unexpected token at TPrime()", lexer.curPos());
+                throw new ParseException("Unexpected token at TPrime() %s".formatted(lexer.curToken().name()), lexer.curPos());
         }
         return tree;
     }
@@ -117,7 +121,7 @@ public class BaseParser {
             case LPAREN:
                 //(
                 expect(Token.LPAREN);
-                tree.addChildren(new Tree("("));
+                tree.addChildren(new Tree(""));
                 lexer.nextToken();
                 //E
                 tree.addChildren(E());
@@ -139,8 +143,18 @@ public class BaseParser {
                 expect(Token.FUNC);
                 tree.addChildren(new Tree("FUNC"));
                 lexer.nextToken();
-                //F
-                tree.addChildren(F());
+                // (
+                expect(Token.LPAREN);
+                tree.addChildren(new Tree("LPAREN"));
+                lexer.nextToken();
+
+                //A
+                tree.addChildren(A());
+
+                // )
+                expect(Token.RPAREN);
+                tree.addChildren(new Tree("RPAREN"));
+                lexer.nextToken();
                 break;
 
             case MINUS:
@@ -151,8 +165,46 @@ public class BaseParser {
                 //F
                 tree.addChildren(F());
                 break;
+
+            case COMMA:
+                break;
             default:
                 throw new ParseException("Unexpected token at F()", lexer.curPos());
+        }
+        return tree;
+    }
+
+    private Tree A() throws ParseException {
+        Tree tree = new Tree("A");
+        switch (lexer.curToken()) {
+            case LPAREN:
+            case MINUS:
+            case N:
+            case FUNC:
+                tree.addChildren(E());
+                tree.addChildren(APrime());
+                break;
+            default:
+                throw new ParseException("Unexpected token at A()", lexer.curPos());
+        }
+        return tree;
+    }
+
+    private Tree APrime() throws ParseException {
+        Tree tree = new Tree("A'");
+        switch (lexer.curToken()) {
+            case COMMA:
+                expect(Token.COMMA);
+                tree.addChildren(new Tree(","));
+                lexer.nextToken();
+
+                tree.addChildren(E());
+                tree.addChildren(APrime());
+                break;
+            case RPAREN:
+                break;
+            default:
+                throw new ParseException("Unexpected token at APrime()", lexer.curPos());
         }
         return tree;
     }

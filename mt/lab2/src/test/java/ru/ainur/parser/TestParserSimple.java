@@ -101,16 +101,20 @@ public class TestParserSimple extends TestParserBase {
     public void testBracketsWithFunction() throws ParseException {
         // test smth like: (sin 12)
         // changed inside LPAREN ... RPAREN to what was in function
-        Tree tree = new Tree("E",
+        Tree func = new Tree("E",
                 new Tree("T",
-                        new Tree("F",
+                        new Tree("F", new Tree("FUNC"),
                                 new Tree("("),
-                                new Tree("E",
-                                        new Tree("T",
-                                                new Tree("F", new Tree("FUNC"), new Tree("F", new Tree("N"))),
-                                                new Tree("T'")
-                                        ),
-                                        new Tree("E'")
+                                new Tree("A",
+                                        new Tree(
+                                                "E",
+                                                new Tree(
+                                                        "T",
+                                                        new Tree("F", new Tree("N")),
+                                                        new Tree("T'")
+                                                ),
+                                                new Tree("E'")),
+                                        new Tree("A'")
                                 ),
                                 new Tree(")")
                         ),
@@ -118,11 +122,23 @@ public class TestParserSimple extends TestParserBase {
                 ),
                 new Tree("E'")
         );
+        Tree tree = new Tree("E",
+                new Tree("T",
+                        new Tree("F",
+                                new Tree("("),
+                                func
+                                ,
+                                new Tree(")")
+                        ),
+                        new Tree("T'")
+                ),
+                new Tree("E'")
+        );
 
-        test("(sin 1)", tree);
-        test("(cos2)", tree);
-        test("(f 123)", tree);
-        test("(mycoolfun 79528125252)", tree);
+        test("(sin (1))", tree);
+        test("(cos(2))", tree);
+        test("(f (123))", tree);
+        test("(mycoolfun (79528125252))", tree);
 
     }
 }

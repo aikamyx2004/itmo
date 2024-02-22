@@ -20,8 +20,10 @@ public class DrawGraphs {
 
         draw("1", "number");
         draw("-52", "negative");
+        draw("gcd(3, 4)", "gcd");
+        draw("gcd(gcd(1, 2), 4)", "gcd_gcd");
         draw("(1)", "number-in-brackets");
-        draw("sin 30", "sin");
+        draw("sin (30)", "sin");
         draw("cos (60)", "cos-in-brackets");
         draw("1+2", "add");
         draw("52 * -812", "mul");
