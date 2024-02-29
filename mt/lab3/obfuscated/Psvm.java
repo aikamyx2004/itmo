@@ -3,6 +3,3 @@ public class Psvm {
 
     }
 }
-
-class FoolClass_7079 {
-}

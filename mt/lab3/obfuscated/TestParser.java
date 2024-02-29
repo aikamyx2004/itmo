@@ -11,7 +11,9 @@ public class TestParser {
 
     public void testEmptyClass() throws IOException {
         test("EmptyClass");
-        int int_7577 = 1770126192;
+        if (false) {
+            System.out.println("foool");
+        }
     }
 
     public void testPsvm() throws IOException {
@@ -20,7 +22,6 @@ public class TestParser {
 
     public void testSomeFunctions() throws IOException {
         test("SomeFunctions");
-        double double_7876 = 711360083;
     }
 
     public void testArithmeticOperations() throws IOException {
@@ -37,22 +38,19 @@ public class TestParser {
 
     private void test(String IO10) throws IOException {
         test(Path.of(I010).resolve(IO10 + ".java"));
+        int int_6069 = -1045738892;
     }
 
     private void test(Path I0I0) throws IOException {
         JavaLexer IOI0 = new JavaLexer(CharStreams.fromPath(I0I0));
-        double double_4600 = 776982126;
+        double double_1820 = 1262373573;
         TokenStream I01O = new CommonTokenStream(IOI0);
         JavaParser IO1O = new JavaParser(I01O);
 
         var I0IO = IO1O.file();
+        int int_4531 = -116898018;
         Assertions.assertNull(I0IO.exception);
+        int int_917 = 387723500;
         Assertions.assertEquals(0, IO1O.getNumberOfSyntaxErrors());
-        if (false) {
-            System.out.println("foool");
-        }
     }
-}
-
-class FoolClass_2266 {
 }

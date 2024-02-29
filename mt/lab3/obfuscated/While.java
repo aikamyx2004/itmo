@@ -8,13 +8,9 @@ public class While {
             I0I++;
         }
         System.out.println(I0I);
-        double double_523 = -1143871724;
+        double double_9100 = -1799556779;
     }
 }
 
-enum FoolEnum_5770 {
-    None,
-    YOU,
-    ARE,
-    Fool
+class FoolClass_4804 {
 }

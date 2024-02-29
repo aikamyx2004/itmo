@@ -9,24 +9,37 @@ public class ArithmeticOperations {
 
     public static void main(String[] I0I0) {
         int IOI0 = 1;
+        if (false) {
+            System.out.println("foool");
+        }
         ++IOI0;
+        if (false) {
+            System.out.println("foool");
+        }
         IOI0++;
+        if (false) {
+            System.out.println("foool");
+        }
         --IOI0;
-        double double_4046 = -1301082290;
         IOI0--;
         if (false) {
             System.out.println("foool");
         }
         IOI0 -= 1;
-        double double_3943 = 221640115;
-        IOI0 += 1;
-        double double_6672 = 1398705199;
-        IOI0 %= 2;
         if (false) {
             System.out.println("foool");
         }
+        IOI0 += 1;
+        double double_8474 = -327689070;
+        IOI0 %= 2;
         double I01O = IOI0 + IOI0 + IOI0 - IOI0 - IOI0 - IOI0 * IOI0 * IOI0 * IOI0 / IOI0 / IOI0 / IOI0;
 
-        double double_5570 = 241891570;
     }
+}
+
+enum FoolEnum_5596 {
+    None,
+    YOU,
+    ARE,
+    Fool
 }

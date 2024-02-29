@@ -264,9 +264,12 @@ expression
     |   expression WS* or             WS* expression WS*
     |   expression WS* andAnd         WS* expression WS*
     |   expression WS* orOr           WS* expression WS*
-
-    |   expression WS* assignment WS* expression WS*
+    |   expression WS* '?' WS* expression WS* ':' WS* expression WS*
+    |   expression WS* assignment     WS* expression WS*
     ;
+
+
+QUESTION : '?' ;
 
 NOT : '!' ;
 primary
@@ -280,8 +283,8 @@ primary
     ;
 
 literal
-    :   IntegerLiteral
-    |   FloatLiteral
+    :   ('-')? IntegerLiteral
+    |   ('-')? FloatLiteral
     |   StringLiteral
     |   CharLiteral
     ;

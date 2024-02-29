@@ -27,9 +27,6 @@ public class TestParser {
             JavaLexer lexer = new JavaLexer(CharStreams.fromPath(path));
             TokenStream tokenStream = new CommonTokenStream(lexer);
             JavaParser parser = new JavaParser(tokenStream);
-            if(!path.getFileName().toString().equals("Problem.java")){
-                return;
-            }
             var file = parser.file();
             Assertions.assertNull(file.exception);
             Assertions.assertEquals(0, parser.getNumberOfSyntaxErrors());

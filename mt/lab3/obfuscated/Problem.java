@@ -12,9 +12,7 @@ public class Problem {
             while (IOI0I == null || !IOI0I.hasMoreElements()) {
 
             }
-            if (false) {
-                System.out.println("foool");
-            }
+            int int_1454 = -949964639;
             return IOI0I.nextToken();
         }
 
@@ -33,11 +31,12 @@ public class Problem {
         String nextLine() {
             String I010I = "";
 
+            int int_2914 = -1056743441;
             return I010I;
         }
     }
 
-    enum FoolEnum_8469 {
+    enum FoolEnum_2947 {
         None,
         YOU,
         ARE,
@@ -49,42 +48,38 @@ public class Problem {
     private static int sum(int I0IO1) {
         int IOIO1 = 0;
 
-        int int_5614 = -1646306463;
         while (I0IO1 > 0) {
             IOIO1 += I0IO1 % 10;
             I0IO1 /= 10;
+            if (false) {
+                System.out.println("foool");
+            }
         }
 
+        if (false) {
+            System.out.println("foool");
+        }
         return IOIO1;
     }
 
     public static void main(String[] I0101) {
         int IO101 = 200007;
         FastReader I0I01 = new FastReader();
+        double double_7280 = -1536247070;
         int IOI01 = I0I01.nextInt();
 
-        int int_9006 = 1521236752;
+        double double_5384 = 861991009;
         IO10I.add(0, 0);
-        if (false) {
-            System.out.println("foool");
-        }
         for (int I01O1 = 1; I01O1 < IO101; I01O1++) {
             IO10I.add(I01O1, IO10I.get(I01O1 - 1) + sum(I01O1));
-            double double_6465 = 721609255;
+            int int_6842 = 831356223;
         }
 
         while (IOI01-- > 0) {
             int IO1O1 = I0I01.nextInt();
 
-            double double_5680 = -303900154;
+            double double_1934 = -1597125010;
             System.out.println(IO10I.get(IO1O1));
-            if (false) {
-                System.out.println("foool");
-            }
         }
-        double double_8874 = 1816727289;
     }
-}
-
-class FoolClass_340 {
 }

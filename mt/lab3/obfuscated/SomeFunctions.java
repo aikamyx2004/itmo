@@ -15,16 +15,11 @@ public class SomeFunctions {
         int IO1O = 8;
         IO1O += 1;
         IO1O += IO1O;
-        if (false) {
-            System.out.println("foool");
-        }
         IO1O /= IO1O;
+        int int_7439 = 853240929;
         List<Integer> I0IO = new ArrayList<>();
-        if (false) {
-            System.out.println("foool");
-        }
+        int int_4611 = -806312310;
         f1(112, 2);
         f1(f2(12, 4), 12);
-        int int_5247 = -668475403;
     }
 }

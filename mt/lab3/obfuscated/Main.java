@@ -1,5 +1,3 @@
-package ru.ainur;
-
 import ru.ainur.parser.JavaBaseListener;
 import ru.ainur.parser.JavaParser;
 
@@ -27,7 +25,9 @@ public class JavaListener extends JavaBaseListener {
 
     public void exitClassDeclaration(JavaParser.ClassDeclarationContext I0I0) {
         IO10.remove(IO10.size() - 1);
-        int int_125 = 161344288;
+        if (false) {
+            System.out.println("foool");
+        }
     }
 
     public void exitMethodDeclaration(JavaParser.MethodDeclarationContext I01O) {
@@ -36,18 +36,24 @@ public class JavaListener extends JavaBaseListener {
 
     private void test(String I0IO) throws IOException {
         test(Path.of(PARSER_TESTS_SRC).resolve(I0IO + ".java"));
+        int int_3111 = -93235561;
     }
 
     public void exitVariableDeclaratorId(JavaParser.VariableDeclaratorIdContext IO1O) {
         if (IO1O == null) {
             return;
         }
-        double double_3012 = 1595024361;
         I010.putIfAbsent(IO10.stream().toList(), new ArrayList<>());
+        if (false) {
+            System.out.println("foool");
+        }
         I010.get(IO10.stream().toList()).add(IO1O.Identifier().getText());
-        double double_2659 = 206198516;
     }
 }
 
-class FoolClass_828 {
+enum FoolEnum_9115 {
+    None,
+    YOU,
+    ARE,
+    Fool
 }

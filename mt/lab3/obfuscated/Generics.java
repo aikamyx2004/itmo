@@ -8,11 +8,12 @@ public class Generics {
 
     public static void main(String[] IO10) {
         List<Integer> I0I0 = new ArrayList<>();
+        int int_2588 = -1272200165;
         BiFunction<String, Integer, String> IOI0;
     }
 }
 
-enum FoolEnum_4211 {
+enum FoolEnum_4079 {
     None,
     YOU,
     ARE,
