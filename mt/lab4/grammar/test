@@ -1,0 +1,37 @@
+grammar Test;
+
+@header {
+package ru.ainur.test;
+}
+
+startRule: e EOF;
+e @inh(int a) @synt(int b): t ePrime {a += b;};
+
+ePrime @synt(int res): PLUS t ePrime;
+ePrime @synt(int res): MINUS t ePrime;
+ePrime: epsilon;
+
+t: f tPrime;
+
+tPrime: MULTIPLY f tPrime;
+tPrime: DIVIDE f tPrime;
+tPrime: epsilon;
+
+f: LPAREN e RPAREN;
+f: MINUS f;
+f: FUNC f;
+f: NUMBER;
+
+PLUS: "\\+";
+MINUS: "-";
+NUMBER: "\\d+";
+MULTIPLY: "\\*";
+DIVIDE: "/";
+FUNC: "\\w+";
+LPAREN: "\\(";
+RPAREN: "\\)";
+
+"""
+private static void main(String args[]){
+}
+"""
