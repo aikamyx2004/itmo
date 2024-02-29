@@ -1,0 +1,29 @@
+<a        href =    "http://www.example1.com/" >
+<a        href =    "https://www.example2.com/search?q=keyword&page=1" >
+<a        href =    "https://api.example3.com/v1/users/123/profile">
+<a        href =    "ftp://username:password@ftp.example4.com/">
+<a        href =    "http://www.example5.com:8080/">
+<a        href =    "http://www.example6.com/page#section2">
+<a        href =    "https://пример7.рф/">
+
+
+
+<a        href =    "http://www.example8.com/search?q=hello%20world&category=cars%2Fsedans">
+<a        href =    "http://www.example10.com/search?q=hello%20world&category=cars%2Fsedans">
+<a        href =    "https://www.example11.com:8080/api/v1/resource?id=123&format=json">
+<a        href =    "https://api.example12.com/v1/users/123/orders?status=completed&page=2">
+<a        href =    "https://[2001:0db8:85a3:0000:0000:8a2e:0370:7334]:8080/api/v1/resource">
+<a        href =    "https://пример13.рф/search?запрос=привет&страница=1">
+
+[2001:0db8:85a3:0000:0000:8a2e:0370:7334]:8080
+api.example12.com
+api.example3.com
+www.example1.com
+www.example10.com
+www.example11.com:8080
+www.example2.com
+www.example5.com:8080
+www.example6.com
+www.example8.com
+пример13.рф
+пример7.рф
