@@ -265,7 +265,7 @@ expression
     |   expression WS* andAnd         WS* expression WS*
     |   expression WS* orOr           WS* expression WS*
 
-    |   <assoc = right> expression WS* assignment WS* expression WS*
+    |   expression WS* assignment WS* expression WS*
     ;
 
 NOT : '!' ;
