@@ -13,8 +13,8 @@ public class Main {
     private static final Path LAB1_PARSER_SRC = Path.of("src/main/java/ru/ainur/lab1");
 
     public static void main(String[] args) throws IOException {
-        Generator generator = new Generator(LAB1_PARSER_SRC);
-        generator.generate(LAB1_GRAMMAR);
+        Generator generator = new Generator(TEST_PARSER_SRC);
+        generator.generate(TEST_GRAMMAR);
 //        CharStream charStream = CharStreams.fromPath(GRAMMAR_PATH);
 //        GrammarLexer lexer = new GrammarLexer(charStream);
 //        TokenStream tokenStream = new CommonTokenStream(lexer);

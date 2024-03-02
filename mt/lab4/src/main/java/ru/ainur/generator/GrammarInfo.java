@@ -3,6 +3,7 @@ package ru.ainur.generator;
 import ru.ainur.generator.code.GeneratorUtil;
 import ru.ainur.parser.NonTerminal;
 import ru.ainur.parser.Terminal;
+import ru.ainur.parser.Token;
 
 import java.util.*;
 
@@ -36,14 +37,14 @@ public class GrammarInfo {
         } while (changes);
     }
 
-    public Set<String> computeFirstIteration(List<String> alpha) {
+    public Set<String> computeFirstIteration(List<Token> alpha) {
         if (alpha.isEmpty()) {
             return new HashSet<>(Set.of(EPSILON));
         }
-        if (GeneratorUtil.isTerminal(alpha.get(0))) {
-            return new HashSet<>(Set.of(alpha.get(0)));
+        if (GeneratorUtil.isTerminal(alpha.get(0).name())) {
+            return new HashSet<>(Set.of(alpha.get(0).name()));
         }
-        var firstA = first.get(alpha.get(0));
+        var firstA = first.get(alpha.get(0).name());
         var answer = new HashSet<>(firstA);
         answer.remove(EPSILON);
 
@@ -68,7 +69,7 @@ public class GrammarInfo {
                     var A = nt.name();
                     var alpha = rule.tokens();
                     for (int i = 0; i < alpha.size(); i++) {
-                        var B = alpha.get(i);
+                        var B = alpha.get(i).name();
                         var gamma = alpha.subList(i + 1, alpha.size());
                         var firstGamma = computeFirstIteration(gamma);
                         boolean EPS_inside = firstGamma.remove(EPSILON);
@@ -85,7 +86,7 @@ public class GrammarInfo {
 
 
 
-    public Set<String> countFirst1(List<String> alpha, String A) {
+    public Set<String> countFirst1(List<Token> alpha, String A) {
         var firsts = computeFirstIteration(alpha);
         if(firsts.contains(EPSILON)){
             firsts.addAll(follow.get(A));

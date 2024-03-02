@@ -1,4 +1,4 @@
-package ru.ainur.test;
+package ru.ainur.lab1;
 
 
 import ru.ainur.parser.Terminal;
@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 import java.text.ParseException;
 import java.util.stream.Collectors;
 
-public class TestLexer {
+public class Lab1Lexer {
     public static final List<Terminal> TERMINALS = List.of(
             new Terminal("EOF", "$"),
             new Terminal("PLUS", "\\+"),
@@ -24,10 +24,10 @@ public class TestLexer {
     private final String input;
     private final Pattern regex;
     private final Matcher matcher;
-    private TestToken currentToken;
+    private Lab1Token currentToken;
     private String currentTokenString;
 
-    public TestLexer(String input) throws ParseException {
+    public Lab1Lexer(String input) throws ParseException {
         this.input = input;
         this.regex = Pattern.compile(
                 TERMINALS.stream()
@@ -40,20 +40,20 @@ public class TestLexer {
 
     public void nextToken() throws ParseException {
         if (!matcher.find()) {
-            if (currentToken != TestToken.EOF) {
+            if (currentToken != Lab1Token.EOF) {
                 throw new ParseException("it is not token", matcher.start());
             }
         }
         for (int i = 0; i < TERMINALS.size(); i++) {
             String match = matcher.group(TERMINALS.get(i).name());
             if (match != null) {
-                currentToken = TestToken.values()[i];
+                currentToken = Lab1Token.values()[i];
                 currentTokenString = match;
             }
         }
     }
 
-    public TestToken getCurrentToken() {
+    public Lab1Token getCurrentToken() {
         return currentToken;
     }
 

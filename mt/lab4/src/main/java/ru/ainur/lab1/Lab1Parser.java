@@ -1,30 +1,25 @@
-package ru.ainur.test;
+package ru.ainur.lab1;
+
 
 
 import ru.ainur.generator.tree.BaseNonTerminal;
 import ru.ainur.generator.tree.TreeToken;
-import ru.ainur.test.TestLexer;
 
 import java.text.ParseException;
-import java.util.Map;
-import java.util.Set;
 
-import static ru.ainur.test.TestTreeClasses.*;
-public class TestParser {
-    private final TestLexer lexer;
-    public TestParser(TestLexer lexer) {
+import static ru.ainur.lab1.Lab1TreeClasses.*;
+public class Lab1Parser {
+    private final Lab1Lexer lexer;
+    public Lab1Parser(Lab1Lexer lexer) {
         this.lexer = lexer;
     }
     public StartRuleContext startRule(StartRuleInherited startRuleInherited) throws ParseException {
         StartRuleContext startRuleContext = new StartRuleContext();
         switch (lexer.getCurrentToken()) {
-            case NUMBER, LPAREN, MINUS -> {
-                var _in0 = new EInherited();
-                var _child0 = e(_in0);
+            case NUMBER, FUNC, LPAREN, MINUS -> {
+                var _child0 = e(null);
                 startRuleContext.addChildren(_child0);
-
-                var _child1 = expect(TestToken.EOF, startRuleContext);
-
+                var _child1 = expect(Lab1Token.EOF, startRuleContext);
                 startRuleContext.res = _child0.res;
             }
             default -> throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
@@ -34,17 +29,12 @@ public class TestParser {
     public EContext e(EInherited eInherited) throws ParseException {
         EContext eContext = new EContext();
         switch (lexer.getCurrentToken()) {
-            case NUMBER, LPAREN, MINUS -> {
-                var _in0 = new TInherited();
-                var _child0 = t(_in0);
+            case NUMBER, FUNC, LPAREN, MINUS -> {
+                var _child0 = t(null);
                 eContext.addChildren(_child0);
-
-                var _in1 = new EPrimeInherited();
-                _in1.res=_child0.res;
-                var _child1 = ePrime(_in1);
+                var _child1 = ePrime(null);
                 eContext.addChildren(_child1);
-
-                eContext.res = _child1.res;
+                eContext.res = _child0.res + _child1.res;
             }
             default -> throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
         }
@@ -54,35 +44,23 @@ public class TestParser {
         EPrimeContext ePrimeContext = new EPrimeContext();
         switch (lexer.getCurrentToken()) {
             case PLUS -> {
-                var _child0 = expect(TestToken.PLUS, ePrimeContext);
-
-                var _in1 = new TInherited();
-                var _child1 = t(_in1);
+                var _child0 = expect(Lab1Token.PLUS, ePrimeContext);
+                var _child1 = t(null);
                 ePrimeContext.addChildren(_child1);
-
-                var _in2 = new EPrimeInherited();
-                _in2.res = ePrimeInherited.res + _child1.res;
-                var _child2 = ePrime(_in2);
+                var _child2 = ePrime(null);
                 ePrimeContext.addChildren(_child2);
-
-                ePrimeContext.res = _child2.res;
+                ePrimeContext.res = _child1.res + _child2.res;
             }
             case MINUS -> {
-                var _child0 = expect(TestToken.MINUS, ePrimeContext);
-
-                var _in1 = new TInherited();
-                var _child1 = t(_in1);
+                var _child0 = expect(Lab1Token.MINUS, ePrimeContext);
+                var _child1 = t(null);
                 ePrimeContext.addChildren(_child1);
-
-                var _in2 = new EPrimeInherited();
-                _in2.res = ePrimeInherited.res - _child1.res;
-                var _child2 = ePrime(_in2);
+                var _child2 = ePrime(null);
                 ePrimeContext.addChildren(_child2);
-
-                ePrimeContext.res = _child2.res;
+                ePrimeContext.res = -_child1.res + _child2.res;
             }
             case RPAREN, EOF -> {
-                ePrimeContext.res = ePrimeInherited.res;
+                ePrimeContext.res = 0;
             }
             default -> throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
         }
@@ -91,17 +69,12 @@ public class TestParser {
     public TContext t(TInherited tInherited) throws ParseException {
         TContext tContext = new TContext();
         switch (lexer.getCurrentToken()) {
-            case NUMBER, LPAREN, MINUS -> {
-                var _in0 = new FInherited();
-                var _child0 = f(_in0);
+            case NUMBER, FUNC, LPAREN, MINUS -> {
+                var _child0 = f(null);
                 tContext.addChildren(_child0);
-
-                var _in1 = new TPrimeInherited();
-                _in1.res = _child0.res;
-                var _child1 = tPrime(_in1);
+                var _child1 = tPrime(null);
                 tContext.addChildren(_child1);
-
-                tContext.res = _child1.res;
+                tContext.res = _child0.res * _child1.res;
             }
             default -> throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
         }
@@ -111,35 +84,23 @@ public class TestParser {
         TPrimeContext tPrimeContext = new TPrimeContext();
         switch (lexer.getCurrentToken()) {
             case MULTIPLY -> {
-                var _child0 = expect(TestToken.MULTIPLY, tPrimeContext);
-
-                var _in1 = new FInherited();
-                var _child1 = f(_in1);
+                var _child0 = expect(Lab1Token.MULTIPLY, tPrimeContext);
+                var _child1 = f(null);
                 tPrimeContext.addChildren(_child1);
-
-                var _in2 = new TPrimeInherited();
-                _in2.res = tPrimeInherited.res * _child1.res;
-                var _child2 = tPrime(_in2);
+                var _child2 = tPrime(null);
                 tPrimeContext.addChildren(_child2);
-
-                tPrimeContext.res = _child2.res;
+                tPrimeContext.res = _child1.res * _child2.res;
             }
             case DIVIDE -> {
-                var _child0 = expect(TestToken.DIVIDE, tPrimeContext);
-
-                var _in1 = new FInherited();
-                var _child1 = f(_in1);
+                var _child0 = expect(Lab1Token.DIVIDE, tPrimeContext);
+                var _child1 = f(null);
                 tPrimeContext.addChildren(_child1);
-
-                var _in2 = new TPrimeInherited();
-                _in2.res = tPrimeInherited.res / _child1.res;
-                var _child2 = tPrime(_in2);
+                var _child2 = tPrime(null);
                 tPrimeContext.addChildren(_child2);
-
-                tPrimeContext.res = _child2.res;
+                tPrimeContext.res = (1.0 / _child1.res) * _child2.res;
             }
             case RPAREN, EOF, PLUS, MINUS -> {
-                tPrimeContext.res = tPrimeInherited.res;
+                tPrimeContext.res = 1;
             }
             default -> throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
         }
@@ -149,35 +110,33 @@ public class TestParser {
         FContext fContext = new FContext();
         switch (lexer.getCurrentToken()) {
             case LPAREN -> {
-                var _child0 = expect(TestToken.LPAREN, fContext);
-
-                var _in1 = new EInherited();
-                var _child1 = e(_in1);
+                var _child0 = expect(Lab1Token.LPAREN, fContext);
+                var _child1 = e(null);
                 fContext.addChildren(_child1);
-
-                var _child2 = expect(TestToken.RPAREN, fContext);
-
+                var _child2 = expect(Lab1Token.RPAREN, fContext);
                 fContext.res = _child1.res;
             }
             case MINUS -> {
-                var _child0 = expect(TestToken.MINUS, fContext);
-
-                var _in1 = new FInherited();
-                var _child1 = f(_in1);
+                var _child0 = expect(Lab1Token.MINUS, fContext);
+                var _child1 = f(null);
                 fContext.addChildren(_child1);
-
                 fContext.res = -_child1.res;
             }
             case NUMBER -> {
-                var _child0 = expect(TestToken.NUMBER, fContext);
-
+                var _child0 = expect(Lab1Token.NUMBER, fContext);
                 fContext.res = Integer.parseInt(_child0.getText());
+            }
+            case FUNC -> {
+                var _child0 = expect(Lab1Token.FUNC, fContext);
+                var _child1 = f(null);
+                fContext.addChildren(_child1);
+                fContext.res = Math.sin(_child1.res);
             }
             default -> throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
         }
         return fContext;
     }
-    private TreeToken expect(TestToken token, BaseNonTerminal nt) throws ParseException {
+    private TreeToken expect(Lab1Token token, BaseNonTerminal nt) throws ParseException {
         if (!token.equals(lexer.getCurrentToken())) {
             throw new ParseException(
                     "expected %s but found %s".formatted(token.name(), lexer.getCurrentToken().name()),

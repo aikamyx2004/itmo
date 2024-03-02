@@ -3,10 +3,7 @@ package ru.ainur.generator;
 import org.antlr.v4.runtime.tree.TerminalNode;
 import ru.ainur.grammar.GrammarBaseListener;
 import ru.ainur.grammar.GrammarParser;
-import ru.ainur.parser.NonTermRules;
-import ru.ainur.parser.NonTerminal;
-import ru.ainur.parser.Pair;
-import ru.ainur.parser.Terminal;
+import ru.ainur.parser.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -50,13 +47,12 @@ public class InfoListener extends GrammarBaseListener {
         List<NonTermRules> rules = new ArrayList<>();
         var nonTermRules = ctx.nonTermRules();
         for (var rule : nonTermRules.nonTermRule()) {
-            List<String> children = new ArrayList<>();
+            List<Token> children = new ArrayList<>();
             if (rule.children != null)
-                for (var child : rule.children) {
-                    if (child.equals(rule.BLOCKED_CODE())) {
-                        continue;
-                    }
-                    children.add(child.getText());
+                for (var child : rule.token()) {
+                    String token = child.getChild(0).getText();
+                    String code = removeFirstLast(child.INH_CODE());
+                    children.add(new Token(token, code));
                 }
             String syntCode = removeFirstLast(rule.BLOCKED_CODE());
             rules.add(new NonTermRules(children, syntCode));
@@ -77,7 +73,7 @@ public class InfoListener extends GrammarBaseListener {
 
     private String removeFirstLast(TerminalNode blockedCode) {
         if (blockedCode == null) {
-            return "";
+            return null;
         }
         String code = blockedCode.getText();
         return code.substring(1, code.length() - 1);

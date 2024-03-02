@@ -51,8 +51,12 @@ nonTermRules
         ('|' nonTermRule)*
     ;
 nonTermRule
-    :   (LOWER_START_IDENTIFIER | CAPITAL_START_IDENTIFIER)*
+    :   token*
         BLOCKED_CODE?
+    ;
+token
+    :   (LOWER_START_IDENTIFIER | CAPITAL_START_IDENTIFIER)
+        INH_CODE?
     ;
 
 inh
@@ -140,3 +144,5 @@ COMMA: ',';
 DOT: '.';
 
 WS : [ \t\r\n]+ -> skip;
+
+INH_CODE : '[' .*? ']';

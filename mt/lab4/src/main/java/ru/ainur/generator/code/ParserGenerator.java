@@ -3,6 +3,7 @@ package ru.ainur.generator.code;
 import ru.ainur.generator.GrammarInfo;
 import ru.ainur.parser.NonTermRules;
 import ru.ainur.parser.NonTerminal;
+import ru.ainur.parser.Token;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -31,7 +32,9 @@ public class ParserGenerator extends BaseGenerator {
     }
 
     private void writeHeader(BufferedWriter writer) throws IOException {
-        writer.write(info.getHeader());
+        if (info.getHeader() != null) {
+            writer.write(info.getHeader());
+        }
     }
 
     private void writeMethods(BufferedWriter writer) throws IOException {
@@ -87,38 +90,47 @@ public class ParserGenerator extends BaseGenerator {
 
     private void writeCase(NonTermRules rule, String ntName, String syntFieldName, BufferedWriter writer) throws IOException {
         writer.write(" ".repeat(12));
-        List<String> tokens = rule.tokens();
+        List<Token> tokens = rule.tokens();
         var firsts = info.countFirst1(tokens, ntName);
         writer.write("case %s -> {\n".formatted(String.join(", ", firsts)));
         for (int i = 0; i < tokens.size(); i++) {
-            String token = tokens.get(i);
+            Token token = tokens.get(i);
             writer.write(" ".repeat(16));
-            if (GeneratorUtil.isTerminal(token)) {
-                writer.write("var _child%d = expect(%s.%s, %s);%n".formatted(
+            if (GeneratorUtil.isTerminal(token.name())) {
+                writer.write("var _child%d = expect(%s.%s, %s);%n%n".formatted(
                         i,
                         info.getTokenClassName(),
-                        token,
+                        token.name(),
                         syntFieldName
                 ));
             } else {
+                String tab = " ".repeat(16);
                 String child = "_child%d".formatted(i);
-                writer.write("var %s = %s(null);%n".formatted(child, token));
-                writer.write(" ".repeat(16));
-                writer.write("%s.addChildren(%s);%n"
+                String inhField = "_in%d".formatted(i);
+                writer.write("var %s = new %s();%n"
                         .formatted(
+                                inhField,
+                                GeneratorUtil.getNonTerminalInhClassName(token.name())
+                        ));
+                writeCode(writer, token.code());
+
+                writer.write("%svar %s = %s(%s);%n"
+                        .formatted(
+                                tab,
+                                child,
+                                token.name(),
+                                inhField)
+                );
+                writer.write("%s%s.addChildren(%s);%n%n"
+                        .formatted(
+                                tab,
                                 syntFieldName,
                                 child
                         )
                 );
             }
         }
-        if (rule.code() != null && !rule.code().isEmpty()) {
-            var formattedCode = Arrays.stream(rule.code().strip().split(System.lineSeparator()))
-                    .map(t -> " ".repeat(16) + t)
-                    .collect(Collectors.joining("\n"));
-            writer.write(formattedCode);
-            writer.newLine();
-        }
+        writeCode(writer, rule.code());
         writer.write(" ".repeat(12));
         writer.write("}\n");
     }
@@ -126,6 +138,17 @@ public class ParserGenerator extends BaseGenerator {
     private void writeDefault(BufferedWriter writer) throws IOException {
         writer.write(" ".repeat(12));
         writer.write("default -> throw new ParseException(\"unexpected token: \" + lexer.getCurrentTokenString(), lexer.getPosition());\n");
+    }
+
+    private void writeCode(BufferedWriter writer, String code) throws IOException {
+        if(code == null || code.isEmpty()){
+            return;
+        }
+        var formattedCode = Arrays.stream(code.strip().split(System.lineSeparator()))
+                .map(t -> " ".repeat(16) + t)
+                .collect(Collectors.joining(System.lineSeparator()));
+        writer.write(formattedCode);
+        writer.newLine();
     }
 
     private void writeConstructor(BufferedWriter writer) throws IOException {

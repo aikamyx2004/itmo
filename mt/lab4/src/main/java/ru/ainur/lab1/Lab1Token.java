@@ -1,7 +1,7 @@
-package ru.ainur.test;
+package ru.ainur.lab1;
 
 
-public enum TestToken {
+public enum Lab1Token {
     EOF,
     PLUS,
     MINUS,

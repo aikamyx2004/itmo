@@ -27,16 +27,16 @@ public class TreeClassesGenerator extends BaseGenerator {
         for (var nt : info.getNonTerminals()) {
 //            var synt = nt.getValue().stream()
 //                    .map(NonTerminal::synt)
-//                    .flatMap(Collection::stream)
-//                    .distinct()
-//                    .toList();
-//            var inh = nt.getValue().stream()
-//                    .map(NonTerminal::inh)
-//                    .flatMap(Collection::stream)
-//                    .distinct()
-//                    .toList();
-            new AttributesGenerator(GeneratorUtil.getNonTerminalSyntClassName(nt.name()),
-                    nt.name(),
+    //                    .flatMap(Collection::stream)
+    //                    .distinct()
+    //                    .toList();
+    //            var inh = nt.getValue().stream()
+    //                    .map(NonTerminal::inh)
+    //                    .flatMap(Collection::stream)
+    //                    .distinct()
+    //                    .toList();
+                new AttributesGenerator(GeneratorUtil.getNonTerminalSyntClassName(nt.name()),
+                        nt.name(),
                     "extends BaseNonTerminal",
                     true,
                     writer,

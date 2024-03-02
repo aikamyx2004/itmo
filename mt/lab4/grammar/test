@@ -1,27 +1,39 @@
-grammar Lab1;
+grammar Test;
 
-@package = ru.ainur.lab1;
+@package = ru.ainur.test;
 
 startRule @synt(double res)
-    :   e EOF {startRuleContext.res = _child0.res;};
+    :   e EOF
+        {startRuleContext.res = _child0.res;}
+    ;
 e @synt(double res)
-    : t ePrime {
-        eContext.res = _child0.res + _child1.res;
-    };
+    :   t ePrime[_in1.res=_child0.res;]
+        {eContext.res = _child1.res;}
+    ;
 
-ePrime @synt(double res)
-    :   PLUS t ePrime  {ePrimeContext.res = _child1.res + _child2.res;}
-    |   MINUS t ePrime {ePrimeContext.res = -_child1.res + _child2.res;}
-    |                  {ePrimeContext.res = 0;}
+ePrime @inh(double res) @synt(double res)
+    :   PLUS t ePrime [_in2.res = ePrimeInherited.res + _child1.res;]
+        {ePrimeContext.res = _child2.res;}
+
+    |   MINUS t ePrime[_in2.res = ePrimeInherited.res - _child1.res;]
+        {ePrimeContext.res = _child2.res;}
+
+    |    {ePrimeContext.res = ePrimeInherited.res;}
     ;
 
 t @synt(double res)
-    : f tPrime {tContext.res = _child0.res * _child1.res;};
+    :   f tPrime [_in1.res = _child0.res;]
+        {tContext.res = _child1.res;}
+    ;
 
-tPrime @synt(double res)
-    :   MULTIPLY f tPrime {tPrimeContext.res = _child1.res * _child2.res;}
-    |   DIVIDE f tPrime   {tPrimeContext.res = (1.0 / _child1.res) * _child2.res;}
-    |                     {tPrimeContext.res = 1;}
+tPrime @inh(double res) @synt(double res)
+    :   MULTIPLY f tPrime [_in2.res = tPrimeInherited.res * _child1.res;]
+        {tPrimeContext.res = _child2.res;}
+
+    |   DIVIDE f tPrime   [_in2.res = tPrimeInherited.res / _child1.res;]
+        {tPrimeContext.res = _child2.res;}
+
+    |   {tPrimeContext.res = tPrimeInherited.res;}
     ;
 
 f   @synt(double res)
