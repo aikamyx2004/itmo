@@ -1,12 +1,12 @@
-grammar Test;
+grammar Lab1;
 
-@package = ru.ainur.test;
+@package = ru.ainur.lab1;
 
 startRule: e EOF;
-e @inh(int a) @synt(int b): t ePrime {a += b;};
+e: t ePrime;
 
-ePrime @synt(int res): PLUS t ePrime;
-ePrime @synt(int res): MINUS t ePrime;
+ePrime: PLUS t ePrime;
+ePrime: MINUS t ePrime;
 ePrime: ;
 
 t: f tPrime;
@@ -28,8 +28,3 @@ DIVIDE: "/";
 FUNC: "\\w+";
 LPAREN: "\\(";
 RPAREN: "\\)";
-
-"""
-private static void main(String args[]){
-}
-"""

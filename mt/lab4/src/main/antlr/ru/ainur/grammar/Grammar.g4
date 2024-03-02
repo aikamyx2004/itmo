@@ -6,10 +6,21 @@ package ru.ainur.grammar;
 
 startRule
     :   grammarName
-        header?
+        package?
         rule*
         ALL_CODE?
         EOF
+    ;
+
+package
+    :   '@package'
+        '='
+        packageName
+        SEMICOLON
+    ;
+packageName
+    :   LOWER_START_IDENTIFIER
+        (DOT (LOWER_START_IDENTIFIER|CAPITAL_START_IDENTIFIER))*
     ;
 
 grammarName
@@ -18,10 +29,6 @@ grammarName
         SEMICOLON
     ;
 
-header
-    :   '@header'
-        BLOCKED_CODE
-    ;
 
 rule: nonTerm | term;
 
@@ -37,7 +44,6 @@ nonTerm
 
 nonTermRule
     :   (LOWER_START_IDENTIFIER | CAPITAL_START_IDENTIFIER)*
-    |   EPS
     ;
 
 inh
@@ -113,7 +119,6 @@ fragment DIGIT: [0-9];
 
 INHERITED : '@inh';
 SYNTHESIZED : '@synt';
-EPS : 'epsilon';
 
 START_BLOCK : '{';
 END_BLOCK : '}';

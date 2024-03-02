@@ -1,10 +1,11 @@
 package ru.ainur.generator.tree;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BaseNonTerminal implements ParseTree {
     private final String name;
-    private List<ParseTree> children;
+    private final List<ParseTree> children = new ArrayList<>();
 
     public BaseNonTerminal(String name) {
         this.name = name;

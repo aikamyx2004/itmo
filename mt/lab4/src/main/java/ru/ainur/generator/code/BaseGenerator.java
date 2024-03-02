@@ -17,13 +17,13 @@ public abstract class BaseGenerator {
     }
 
     protected void writeHeader(BufferedWriter writer) throws IOException {
-        if (info.getHeader() != null) {
-            writer.write(info.getHeader());
+        if (info.getPackageName() != null) {
+            writer.write("package %s;%n%n".formatted(info.getPackageName()));
             writer.newLine();
         }
     }
 
-    public void generate() throws IOException {
+    public void generate() {
         try (BufferedWriter writer = Files.newBufferedWriter(path)) {
             generateImpl(writer);
         } catch (IOException e) {

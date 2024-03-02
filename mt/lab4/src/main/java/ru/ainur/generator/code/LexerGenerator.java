@@ -37,6 +37,10 @@ public class LexerGenerator extends BaseGenerator {
                         "\n" +
                         "    public String getCurrentTokenString() {\n" +
                         "        return currentTokenString;\n" +
+                        "    }\n" +
+                        "\n" +
+                        "    public int getPosition(){\n" +
+                        "        return matcher.start();\n" +
                         "    }\n\n");
     }
 
@@ -73,13 +77,16 @@ public class LexerGenerator extends BaseGenerator {
 
     private void writeImports(BufferedWriter writer) throws IOException {
         writer.write(
-                "import ru.ainur.parser.Terminal;\n" +
-                        "\n" +
-                        "import java.util.List;\n" +
-                        "import java.util.regex.Matcher;\n" +
-                        "import java.util.regex.Pattern;\n" +
-                        "import java.text.ParseException;\n" +
-                        "import java.util.stream.Collectors;\n\n");
+                """
+                        import ru.ainur.parser.Terminal;
+
+                        import java.util.List;
+                        import java.util.regex.Matcher;
+                        import java.util.regex.Pattern;
+                        import java.text.ParseException;
+                        import java.util.stream.Collectors;
+
+                        """);
     }
 
     private void writeFields(BufferedWriter writer) throws IOException {

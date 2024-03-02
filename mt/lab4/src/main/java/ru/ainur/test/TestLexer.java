@@ -61,4 +61,8 @@ public class TestLexer {
         return currentTokenString;
     }
 
+    public int getPosition(){
+        return matcher.start();
+    }
+
 }

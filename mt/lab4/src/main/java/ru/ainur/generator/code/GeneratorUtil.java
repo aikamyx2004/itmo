@@ -11,16 +11,26 @@ public class GeneratorUtil {
         return toCamelCase(terminal.name());
     }
 
+    public static String getTerminalClassName(String terminal) {
+        return toCamelCase(terminal);
+    }
+
     public static String getNonTerminalSyntClassName(String name) {
         return toCamelCase(name + "Context");
     }
+
     public static String getNonTerminalSyntFieldName(String name) {
         return name + "Context";
     }
+
     public static String getNonTerminalInhClassName(String name) {
         return toCamelCase(name + "Inherited");
     }
+
     public static String getNonTerminalInhFieldName(String name) {
         return name + "Inherited";
+    }
+    public static boolean isTerminal(String name){
+        return Character.isUpperCase(name.charAt(0));
     }
 }

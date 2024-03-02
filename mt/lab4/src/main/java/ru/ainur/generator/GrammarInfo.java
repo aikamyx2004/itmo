@@ -1,5 +1,6 @@
 package ru.ainur.generator;
 
+import ru.ainur.generator.code.GeneratorUtil;
 import ru.ainur.parser.NonTerminalRule;
 import ru.ainur.parser.RuleType;
 import ru.ainur.parser.Terminal;
@@ -7,10 +8,12 @@ import ru.ainur.parser.Terminal;
 import java.util.*;
 
 public class GrammarInfo {
+    private static final String EPSILON = "EPSILON";
+    private static final String DOLLAR = "$";
     private List<Terminal> terminals = new ArrayList<>(List.of(new Terminal("EOF", "$")));
     private Map<String, List<NonTerminalRule>> nonTerminals = new HashMap<>();
     private Map<String, RuleType> nameToType = new HashMap<>();
-    private String header;
+    private String packageName;
     private String code;
     private String grammarName;
     private final Map<String, Set<String>> first = new HashMap<>();
@@ -20,112 +23,79 @@ public class GrammarInfo {
         computeFirst();
         computeFollow();
     }
+
     private void computeFirst() {
-        for (Terminal terminal : terminals) {
-            first.put(terminal.name(), new HashSet<>(List.of(terminal.name())));
-        }
-
-        for (String nonTerminal : nonTerminals.keySet()) {
-            first.put(nonTerminal, new HashSet<>());
-        }
-
+        initSet(first);
         boolean changes;
         do {
-            changes = computeFirstIteration();
+            changes = false;
+            for (var nt : nonTerminals.entrySet()) {
+                for (var rule : nt.getValue()) {
+                    changes |= first.get(nt.getKey())
+                            .addAll(computeFirstIteration(rule.nonTermRule()));
+                }
+            }
         } while (changes);
     }
 
-    private boolean computeFirstIteration() {
-        boolean changes = false;
-        for (String nonTerminal : nonTerminals.keySet()) {
-            for (NonTerminalRule rule : nonTerminals.get(nonTerminal)) {
-                List<String> symbols = rule.nonTermRule();
-                int i = 0;
-                while (i < symbols.size()) {
-                    String symbol = symbols.get(i);
-                    if (terminals.stream().anyMatch(t -> t.name().equals(symbol))) {
-                        changes |= first.get(nonTerminal).add(symbol);
-                        break;
-                    } else if (symbol.equals("epsilon")) {
-                        changes |= first.get(nonTerminal).add(symbol);
-                        break;
-                    } else {
-                        Set<String> firstOfSymbol = first.getOrDefault(symbol, Collections.emptySet());
-                        changes |= first.get(nonTerminal).addAll(firstOfSymbol);
-                        if (!firstOfSymbol.contains("epsilon")) {
-                            break;
-                        }
-                    }
-                    i++;
-                }
-                if (i == symbols.size()) {
-                    changes |= first.get(nonTerminal).add("epsilon");
-                }
-            }
+    public Set<String> computeFirstIteration(List<String> alpha) {
+        if (alpha.isEmpty()) {
+            return new HashSet<>(Set.of(EPSILON));
         }
-        return changes;
+        if (GeneratorUtil.isTerminal(alpha.get(0))) {
+            return new HashSet<>(Set.of(alpha.get(0)));
+        }
+        var firstA = first.get(alpha.get(0));
+        var answer = new HashSet<>(firstA);
+        answer.remove(EPSILON);
+
+        if (firstA.contains(EPSILON)) {
+            answer.addAll(computeFirstIteration(alpha.subList(1, alpha.size())));
+        }
+        return answer;
     }
 
-    private void computeFollow() {
-        for (String nonTerminal : nonTerminals.keySet()) {
-            follow.put(nonTerminal, new HashSet<>());
+    public void computeFollow() {
+        initSet(follow);
+        for (Terminal t : terminals) {
+            follow.put(t.name(), new HashSet<>());
         }
-
-        follow.get("startRule").add("EOF");
+        follow.get("startRule").add(DOLLAR);
 
         boolean changes;
         do {
-            changes = computeFollowIteration();
-        } while (changes);
-    }
+            changes = false;
+            for (var nt : nonTerminals.entrySet()) {
+                for (var rule : nt.getValue()) {
+                    var A = rule.name();
+                    var alpha = rule.nonTermRule();
+                    for (int i = 0; i < alpha.size(); i++) {
+                        var B = alpha.get(i);
+                        var gamma = alpha.subList(i + 1, alpha.size());
+                        var firstGamma = computeFirstIteration(gamma);
+                        boolean EPS_inside = firstGamma.remove(EPSILON);
 
-    private boolean computeFollowIteration() {
-        boolean changes = false;
-        for (String nonTerminal : nonTerminals.keySet()) {
-            for (NonTerminalRule rule : nonTerminals.get(nonTerminal)) {
-                List<String> symbols = rule.nonTermRule();
-                for (int i = 0; i < symbols.size() - 1; i++) {
-                    String symbol = symbols.get(i);
-                    if (nonTerminals.containsKey(symbol)) {
-                        List<String> beta = symbols.subList(i + 1, symbols.size());
-                        Set<String> firstOfBeta = firstOf(beta);
-                        if (!firstOfBeta.contains("epsilon")) {
-                            changes |= follow.get(symbol).addAll(firstOfBeta);
-                        } else {
-                            changes |= follow.get(symbol).addAll(firstOfBeta);
-                            changes |= follow.get(symbol).addAll(follow.get(nonTerminal));
+                        changes |= follow.get(B).addAll(firstGamma);
+                        if (EPS_inside) {
+                            changes |= follow.get(B).addAll(follow.get(A));
                         }
                     }
                 }
-                String lastSymbol = symbols.get(symbols.size() - 1);
-                if (nonTerminals.containsKey(lastSymbol)) {
-                    changes |= follow.get(lastSymbol).addAll(follow.get(nonTerminal));
-                }
             }
-        }
-        return changes;
+        } while (changes);
     }
 
-    private Set<String> firstOf(List<String> symbols) {
-        Set<String> result = new HashSet<>();
-        int i = 0;
-        while (i < symbols.size()) {
-            String symbol = symbols.get(i);
-            if (terminals.stream().anyMatch(t -> t.name().equals(symbol))) {
-                result.add(symbol);
-                break;
-            } else {
-                result.addAll(first.get(symbol));
-                if (!first.get(symbol).contains("epsilon")) {
-                    break;
-                }
-            }
-            i++;
+
+
+    public Set<String> countFirst1(NonTerminalRule rule) {
+        var A = rule.name();
+        var alpha = rule.nonTermRule();
+        var firsts = computeFirstIteration(alpha);
+        if(firsts.contains(EPSILON)){
+            firsts.addAll(follow.get(A));
         }
-        if (i == symbols.size()) {
-            result.add("epsilon");
-        }
-        return result;
+        firsts.remove(EPSILON);
+        return firsts;
     }
 
     public Map<String, Set<String>> getFirst() {
@@ -168,12 +138,12 @@ public class GrammarInfo {
         this.nonTerminals = nonTerminals;
     }
 
-    public String getHeader() {
-        return header;
+    public String getPackageName() {
+        return packageName;
     }
 
-    public void setHeader(String header) {
-        this.header = header;
+    public void setPackageName(String packageName) {
+        this.packageName = packageName;
     }
 
     public String getCode() {
@@ -198,5 +168,12 @@ public class GrammarInfo {
 
     public String getTreeClassesClassName() {
         return "%sTreeClasses".formatted(grammarName);
+    }
+
+
+    private void initSet(Map<String, Set<String>> mp) {
+        for (String nonTerminal : nonTerminals.keySet()) {
+            mp.put(nonTerminal, new HashSet<>());
+        }
     }
 }

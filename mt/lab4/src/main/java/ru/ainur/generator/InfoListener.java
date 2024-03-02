@@ -23,8 +23,9 @@ public class InfoListener extends GrammarBaseListener {
     }
 
     @Override
-    public void exitHeader(GrammarParser.HeaderContext ctx) {
-        info.setHeader(removeFirstLast(ctx.BLOCKED_CODE()));
+    public void exitPackageName(GrammarParser.PackageNameContext ctx) {
+        info.setPackageName(ctx.getText());
+        System.out.println("as");
     }
 
     @Override
@@ -49,7 +50,7 @@ public class InfoListener extends GrammarBaseListener {
         if (ctx.synt() != null) {
             synthesized = getAttributes(ctx.synt().attributes());
         }
-        if (ctx.nonTermRule().EPS() == null) {
+        if (ctx.nonTermRule().children != null) {
             nonTermRule.addAll(
                     ctx.nonTermRule()
                             .children.stream()

@@ -1,8 +1,26 @@
 
 package ru.ainur.test;
 
-import ru.ainur.generator.tree.*;
+import ru.ainur.generator.tree.BaseNonTerminal;
+import ru.ainur.generator.tree.InheritedContext;
+import ru.ainur.generator.tree.TreeToken;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Supplier;
+
 public class TestTreeClasses {
+    public static final Map<TestToken, Supplier<TreeToken>> NAME_TO_CTOR = new HashMap<>();
+    static {
+        NAME_TO_CTOR.put(TestToken.PLUS, PLUS::new);
+        NAME_TO_CTOR.put(TestToken.MINUS, MINUS::new);
+        NAME_TO_CTOR.put(TestToken.NUMBER, NUMBER::new);
+        NAME_TO_CTOR.put(TestToken.MULTIPLY, MULTIPLY::new);
+        NAME_TO_CTOR.put(TestToken.DIVIDE, DIVIDE::new);
+        NAME_TO_CTOR.put(TestToken.FUNC, FUNC::new);
+        NAME_TO_CTOR.put(TestToken.LPAREN, LPAREN::new);
+        NAME_TO_CTOR.put(TestToken.RPAREN, RPAREN::new);
+    }
     public static class EOF extends TreeToken {
         public EOF() {
             super("EOF");
