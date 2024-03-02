@@ -1,12 +1,10 @@
 package ru.ainur.generator.code;
 
 import ru.ainur.generator.GrammarInfo;
-import ru.ainur.parser.NonTerminalRule;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Path;
-import java.util.Collection;
 import java.util.stream.Collectors;
 
 public class TreeClassesGenerator extends BaseGenerator {
@@ -16,7 +14,7 @@ public class TreeClassesGenerator extends BaseGenerator {
     }
 
     protected void generateImpl(BufferedWriter writer) throws IOException {
-        writeHeader(writer);
+        writePackage(writer);
         writeImports(writer);
         writer.write("public class %s {\n".formatted(info.getTreeClassesClassName()));
 
@@ -26,30 +24,30 @@ public class TreeClassesGenerator extends BaseGenerator {
             new TerminalGenerator(info, t, writer).generate();
         }
 
-        for (var e : info.getNonTerminals().entrySet()) {
-            var synt = e.getValue().stream()
-                    .map(NonTerminalRule::synt)
-                    .flatMap(Collection::stream)
-                    .distinct()
-                    .toList();
-            var inh = e.getValue().stream()
-                    .map(NonTerminalRule::inh)
-                    .flatMap(Collection::stream)
-                    .distinct()
-                    .toList();
-            new AttributesGenerator(GeneratorUtil.getNonTerminalSyntClassName(e.getKey()),
-                    e.getKey(),
+        for (var nt : info.getNonTerminals()) {
+//            var synt = nt.getValue().stream()
+//                    .map(NonTerminal::synt)
+//                    .flatMap(Collection::stream)
+//                    .distinct()
+//                    .toList();
+//            var inh = nt.getValue().stream()
+//                    .map(NonTerminal::inh)
+//                    .flatMap(Collection::stream)
+//                    .distinct()
+//                    .toList();
+            new AttributesGenerator(GeneratorUtil.getNonTerminalSyntClassName(nt.name()),
+                    nt.name(),
                     "extends BaseNonTerminal",
                     true,
                     writer,
-                    synt
+                    nt.synt()
             ).generate();
-            new AttributesGenerator(GeneratorUtil.getNonTerminalInhClassName(e.getKey()),
-                    e.getKey(),
+            new AttributesGenerator(GeneratorUtil.getNonTerminalInhClassName(nt.name()),
+                    nt.name(),
                     "implements InheritedContext",
                     false,
                     writer,
-                    inh
+                    nt.inh()
             ).generate();
         }
         writer.write("}\n");

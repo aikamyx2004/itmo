@@ -6,10 +6,16 @@ package ru.ainur.grammar;
 
 startRule
     :   grammarName
+        header?
         package?
         rule*
         ALL_CODE?
         EOF
+    ;
+
+header
+    :   '@header'
+        BLOCKED_CODE
     ;
 
 package
@@ -37,13 +43,16 @@ nonTerm
         inh?
         synt?
         COLON
-        nonTermRule
-        BLOCKED_CODE?
+        nonTermRules
         SEMICOLON
     ;
-
+nonTermRules
+    :   nonTermRule
+        ('|' nonTermRule)*
+    ;
 nonTermRule
     :   (LOWER_START_IDENTIFIER | CAPITAL_START_IDENTIFIER)*
+        BLOCKED_CODE?
     ;
 
 inh

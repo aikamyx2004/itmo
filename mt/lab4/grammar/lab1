@@ -1,24 +1,36 @@
 grammar Lab1;
-
+@header {
+}
 @package = ru.ainur.lab1;
 
-startRule: e EOF;
-e: t ePrime;
+startRule @synt(double res)
+    :   e EOF {startRuleContext.res = _child0.res;};
+e @synt(double res)
+    : t ePrime {
+        eContext.res = _child0.res + _child1.res;
+    };
 
-ePrime: PLUS t ePrime;
-ePrime: MINUS t ePrime;
-ePrime: ;
+ePrime @synt(double res)
+    :   PLUS t ePrime  {ePrimeContext.res = _child1.res + _child2.res;}
+    |   MINUS t ePrime {ePrimeContext.res = -_child1.res + _child2.res;}
+    |                  {ePrimeContext.res = 0;}
+    ;
 
-t: f tPrime;
+t @synt(double res)
+    : f tPrime {tContext.res = _child0.res * _child1.res;};
 
-tPrime: MULTIPLY f tPrime;
-tPrime: DIVIDE f tPrime;
-tPrime: ;
+tPrime @synt(double res)
+    :   MULTIPLY f tPrime {tPrimeContext.res = _child1.res * _child2.res;}
+    |   DIVIDE f tPrime   {tPrimeContext.res = (1.0 / _child1.res) * _child2.res;}
+    |                     {tPrimeContext.res = 1;}
+    ;
 
-f: LPAREN e RPAREN;
-f: MINUS f;
-f: FUNC f;
-f: NUMBER;
+f   @synt(double res)
+    :   LPAREN e RPAREN {fContext.res = _child1.res;}
+    |   MINUS f         {fContext.res = -_child1.res;}
+    |   NUMBER          {fContext.res = Integer.parseInt(_child0.getText());}
+    |   FUNC f          {fContext.res = Math.sin(_child1.res);}
+    ;
 
 PLUS: "\\+";
 MINUS: "-";

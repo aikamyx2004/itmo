@@ -13,7 +13,7 @@ public class LexerGenerator extends BaseGenerator {
     }
 
     protected void generateImpl(BufferedWriter writer) throws IOException {
-        writeHeader(writer);
+        writePackage(writer);
         writeImports(writer);
         writer.write("public class %s {\n".formatted(info.getLexerClassName()));
         writeFields(writer);

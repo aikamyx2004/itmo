@@ -1,8 +1,7 @@
 package ru.ainur.generator;
 
 import ru.ainur.generator.code.GeneratorUtil;
-import ru.ainur.parser.NonTerminalRule;
-import ru.ainur.parser.RuleType;
+import ru.ainur.parser.NonTerminal;
 import ru.ainur.parser.Terminal;
 
 import java.util.*;
@@ -11,10 +10,9 @@ public class GrammarInfo {
     private static final String EPSILON = "EPSILON";
     private static final String DOLLAR = "$";
     private List<Terminal> terminals = new ArrayList<>(List.of(new Terminal("EOF", "$")));
-    private Map<String, List<NonTerminalRule>> nonTerminals = new HashMap<>();
-    private Map<String, RuleType> nameToType = new HashMap<>();
+    private List<NonTerminal> nonTerminals = new ArrayList<>();
     private String packageName;
-    private String code;
+    private String header;
     private String grammarName;
     private final Map<String, Set<String>> first = new HashMap<>();
     private final Map<String, Set<String>> follow = new HashMap<>();
@@ -29,10 +27,10 @@ public class GrammarInfo {
         boolean changes;
         do {
             changes = false;
-            for (var nt : nonTerminals.entrySet()) {
-                for (var rule : nt.getValue()) {
-                    changes |= first.get(nt.getKey())
-                            .addAll(computeFirstIteration(rule.nonTermRule()));
+            for (var nt : nonTerminals) {
+                for (var rule : nt.nonTermRule()) {
+                    changes |= first.get(nt.name())
+                            .addAll(computeFirstIteration(rule.tokens()));
                 }
             }
         } while (changes);
@@ -65,10 +63,10 @@ public class GrammarInfo {
         boolean changes;
         do {
             changes = false;
-            for (var nt : nonTerminals.entrySet()) {
-                for (var rule : nt.getValue()) {
-                    var A = rule.name();
-                    var alpha = rule.nonTermRule();
+            for (var nt : nonTerminals) {
+                for (var rule : nt.nonTermRule()) {
+                    var A = nt.name();
+                    var alpha = rule.tokens();
                     for (int i = 0; i < alpha.size(); i++) {
                         var B = alpha.get(i);
                         var gamma = alpha.subList(i + 1, alpha.size());
@@ -87,9 +85,7 @@ public class GrammarInfo {
 
 
 
-    public Set<String> countFirst1(NonTerminalRule rule) {
-        var A = rule.name();
-        var alpha = rule.nonTermRule();
+    public Set<String> countFirst1(List<String> alpha, String A) {
         var firsts = computeFirstIteration(alpha);
         if(firsts.contains(EPSILON)){
             firsts.addAll(follow.get(A));
@@ -106,13 +102,6 @@ public class GrammarInfo {
         return follow;
     }
 
-    public Map<String, RuleType> getNameToType() {
-        return nameToType;
-    }
-
-    public void setNameToType(Map<String, RuleType> nameToType) {
-        this.nameToType = nameToType;
-    }
 
     public String getGrammarName() {
         return grammarName;
@@ -130,11 +119,11 @@ public class GrammarInfo {
         this.terminals = terminals;
     }
 
-    public Map<String, List<NonTerminalRule>> getNonTerminals() {
+    public List<NonTerminal> getNonTerminals() {
         return nonTerminals;
     }
 
-    public void setNonTerminals(Map<String, List<NonTerminalRule>> nonTerminals) {
+    public void setNonTerminals(List<NonTerminal> nonTerminals) {
         this.nonTerminals = nonTerminals;
     }
 
@@ -146,12 +135,12 @@ public class GrammarInfo {
         this.packageName = packageName;
     }
 
-    public String getCode() {
-        return code;
+    public String getHeader() {
+        return header;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setHeader(String header) {
+        this.header = header;
     }
 
     public String getTokenClassName() {
@@ -172,8 +161,8 @@ public class GrammarInfo {
 
 
     private void initSet(Map<String, Set<String>> mp) {
-        for (String nonTerminal : nonTerminals.keySet()) {
-            mp.put(nonTerminal, new HashSet<>());
+        for (var nonTerminal : nonTerminals) {
+            mp.put(nonTerminal.name(), new HashSet<>());
         }
     }
 }

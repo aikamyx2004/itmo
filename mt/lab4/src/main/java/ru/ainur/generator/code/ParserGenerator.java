@@ -1,11 +1,13 @@
 package ru.ainur.generator.code;
 
 import ru.ainur.generator.GrammarInfo;
-import ru.ainur.parser.NonTerminalRule;
+import ru.ainur.parser.NonTermRules;
+import ru.ainur.parser.NonTerminal;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Path;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -18,6 +20,7 @@ public class ParserGenerator extends BaseGenerator {
     }
 
     protected void generateImpl(BufferedWriter writer) throws IOException {
+        writePackage(writer);
         writeHeader(writer);
         writeImports(writer);
         writer.write("public class %s {\n".formatted(info.getParserClassName()));
@@ -27,11 +30,15 @@ public class ParserGenerator extends BaseGenerator {
         writer.write("}\n");
     }
 
+    private void writeHeader(BufferedWriter writer) throws IOException {
+        writer.write(info.getHeader());
+    }
+
     private void writeMethods(BufferedWriter writer) throws IOException {
-        for (var nt : info.getNonTerminals().entrySet()) {
-            writeMethod(nt.getKey(), nt.getValue(), writer);
+        for (NonTerminal nt : info.getNonTerminals()) {
+            writeMethod(nt, writer);
         }
-        writer.write("    private void expect(%s token, BaseNonTerminal nt) throws ParseException {%n".formatted(
+        writer.write("    private TreeToken expect(%s token, BaseNonTerminal nt) throws ParseException {%n".formatted(
                 info.getTokenClassName()
         ));
 
@@ -46,11 +53,13 @@ public class ParserGenerator extends BaseGenerator {
                         t.setText(lexer.getCurrentTokenString());
                         nt.addChildren(t);
                         lexer.nextToken();
+                        return t;
                     }
                 """);
     }
 
-    private void writeMethod(String name, List<NonTerminalRule> rules, BufferedWriter writer) throws IOException {
+    private void writeMethod(NonTerminal nonTerminal, BufferedWriter writer) throws IOException {
+        String name = nonTerminal.name();
         String syntClassName = GeneratorUtil.getNonTerminalSyntClassName(name);
         String syntFieldName = GeneratorUtil.getNonTerminalSyntFieldName(name);
         writer.write("    public %s %s(%s %s) throws ParseException {%n".formatted(
@@ -62,40 +71,54 @@ public class ParserGenerator extends BaseGenerator {
         );
         writer.write("        %s %s = new %1$s();\n".formatted(syntClassName, syntFieldName));
 
-        writeSwitchCase(rules, writer, syntFieldName);
+        writeSwitchCase(nonTerminal, writer, syntFieldName);
         writer.write("        return %s;%n".formatted(syntFieldName));
         writer.write("    }\n");
     }
 
-    private void writeSwitchCase(List<NonTerminalRule> rules, BufferedWriter writer, String syntFieldName) throws IOException {
+    private void writeSwitchCase(NonTerminal nonTerminal, BufferedWriter writer, String syntFieldName) throws IOException {
         writer.write("        switch (lexer.getCurrentToken()) {\n");
-        for (var rule : rules) {
-            writeCase(rule, syntFieldName, writer);
+        for (var rule : nonTerminal.nonTermRule()) {
+            writeCase(rule, nonTerminal.name(), syntFieldName, writer);
         }
         writeDefault(writer);
         writer.write("        }\n");
     }
 
-    private void writeCase(NonTerminalRule rule, String syntFieldName, BufferedWriter writer) throws IOException {
+    private void writeCase(NonTermRules rule, String ntName, String syntFieldName, BufferedWriter writer) throws IOException {
         writer.write(" ".repeat(12));
-        var firsts = info.countFirst1(rule);
+        List<String> tokens = rule.tokens();
+        var firsts = info.countFirst1(tokens, ntName);
         writer.write("case %s -> {\n".formatted(String.join(", ", firsts)));
-        for (String token : rule.nonTermRule()) {
+        for (int i = 0; i < tokens.size(); i++) {
+            String token = tokens.get(i);
             writer.write(" ".repeat(16));
             if (GeneratorUtil.isTerminal(token)) {
-                writer.write("expect(%s.%s, %s);%n".formatted(
+                writer.write("var _child%d = expect(%s.%s, %s);%n".formatted(
+                        i,
                         info.getTokenClassName(),
                         token,
                         syntFieldName
                 ));
             } else {
-                writer.write("%s.addChildren(%s(null));%n".formatted(
-                        syntFieldName,
-                        token
-                ));
+                String child = "_child%d".formatted(i);
+                writer.write("var %s = %s(null);%n".formatted(child, token));
+                writer.write(" ".repeat(16));
+                writer.write("%s.addChildren(%s);%n"
+                        .formatted(
+                                syntFieldName,
+                                child
+                        )
+                );
             }
         }
-
+        if (rule.code() != null && !rule.code().isEmpty()) {
+            var formattedCode = Arrays.stream(rule.code().strip().split(System.lineSeparator()))
+                    .map(t -> " ".repeat(16) + t)
+                    .collect(Collectors.joining("\n"));
+            writer.write(formattedCode);
+            writer.newLine();
+        }
         writer.write(" ".repeat(12));
         writer.write("}\n");
     }
@@ -114,6 +137,7 @@ public class ParserGenerator extends BaseGenerator {
     private void writeImports(BufferedWriter writer) throws IOException {
         writer.write("""
                 import ru.ainur.generator.tree.BaseNonTerminal;
+                import ru.ainur.generator.tree.TreeToken;
                 import %s.%s;
                                 
                 import java.text.ParseException;

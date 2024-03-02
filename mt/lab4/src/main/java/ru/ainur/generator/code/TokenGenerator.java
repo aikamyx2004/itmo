@@ -4,7 +4,6 @@ import ru.ainur.generator.GrammarInfo;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.stream.Collectors;
 
@@ -15,7 +14,7 @@ public class TokenGenerator extends BaseGenerator {
     }
 
     protected void generateImpl(BufferedWriter writer) throws IOException {
-            writeHeader(writer);
+            writePackage(writer);
             writer.write("public enum %s {\n".formatted(info.getTokenClassName()));
             writer.write(info.getTerminals().stream()
                     .map(t -> "    " + t.name())

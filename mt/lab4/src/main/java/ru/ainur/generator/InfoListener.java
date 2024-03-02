@@ -1,12 +1,11 @@
 package ru.ainur.generator;
 
-import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.TerminalNode;
 import ru.ainur.grammar.GrammarBaseListener;
 import ru.ainur.grammar.GrammarParser;
-import ru.ainur.parser.NonTerminalRule;
+import ru.ainur.parser.NonTermRules;
+import ru.ainur.parser.NonTerminal;
 import ru.ainur.parser.Pair;
-import ru.ainur.parser.RuleType;
 import ru.ainur.parser.Terminal;
 
 import java.util.ArrayList;
@@ -33,51 +32,53 @@ public class InfoListener extends GrammarBaseListener {
         String name = ctx.CAPITAL_START_IDENTIFIER().getText();
         String regex = removeFirstLast(ctx.REGEX());
         info.getTerminals().add(new Terminal(name, regex));
-        info.getNameToType().put(name, RuleType.TERMINAL);
+//        info.getNameToType().put(name, RuleType.TERMINAL);
     }
 
     @Override
     public void exitNonTerm(GrammarParser.NonTermContext ctx) {
         String name = ctx.LOWER_START_IDENTIFIER().getText();
-        String code = null;
         List<Pair<String, String>> inherited = Collections.emptyList();
         List<Pair<String, String>> synthesized = Collections.emptyList();
-        List<String> nonTermRule = new ArrayList<>();
         if (ctx.inh() != null) {
             inherited = getAttributes(ctx.inh().attributes());
-
         }
         if (ctx.synt() != null) {
             synthesized = getAttributes(ctx.synt().attributes());
         }
-        if (ctx.nonTermRule().children != null) {
-            nonTermRule.addAll(
-                    ctx.nonTermRule()
-                            .children.stream()
-                            .map(ParseTree::getText)
-                            .toList()
-            );
+
+        List<NonTermRules> rules = new ArrayList<>();
+        var nonTermRules = ctx.nonTermRules();
+        for (var rule : nonTermRules.nonTermRule()) {
+            List<String> children = new ArrayList<>();
+            if (rule.children != null)
+                for (var child : rule.children) {
+                    if (child.equals(rule.BLOCKED_CODE())) {
+                        continue;
+                    }
+                    children.add(child.getText());
+                }
+            String syntCode = removeFirstLast(rule.BLOCKED_CODE());
+            rules.add(new NonTermRules(children, syntCode));
         }
-        if (ctx.BLOCKED_CODE() != null) {
-            code = removeFirstLast(ctx.BLOCKED_CODE());
-        }
-        var nonTerminals =  info.getNonTerminals();
-        nonTerminals.putIfAbsent(name, new ArrayList<>());
-        nonTerminals.get(name)
-                .add(new NonTerminalRule(name, inherited, synthesized, nonTermRule, code));
-        info.getNameToType().put(name, RuleType.NON_TERMINAL);
+        var nonTerminals = info.getNonTerminals();
+//        nonTerminals.putIfAbsent(name, new ArrayList<>());
+
+        nonTerminals.add(new NonTerminal(name, inherited, synthesized, rules));
+//        info.getNameToType().put(name, RuleType.NON_TERMINAL);
     }
 
     @Override
-    public void exitStartRule(GrammarParser.StartRuleContext ctx) {
-        if (ctx.ALL_CODE() != null) {
-            String code = ctx.ALL_CODE().getText();
-            code = code.substring(3, code.length() - 3);
-            info.setCode(code);
+    public void exitHeader(GrammarParser.HeaderContext ctx) {
+        if(ctx != null && ctx.BLOCKED_CODE()!= null){
+            info.setHeader(removeFirstLast(ctx.BLOCKED_CODE()));
         }
     }
 
     private String removeFirstLast(TerminalNode blockedCode) {
+        if (blockedCode == null) {
+            return "";
+        }
         String code = blockedCode.getText();
         return code.substring(1, code.length() - 1);
     }

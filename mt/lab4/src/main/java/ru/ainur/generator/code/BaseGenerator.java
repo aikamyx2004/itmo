@@ -16,7 +16,7 @@ public abstract class BaseGenerator {
         this.info = info;
     }
 
-    protected void writeHeader(BufferedWriter writer) throws IOException {
+    protected void writePackage(BufferedWriter writer) throws IOException {
         if (info.getPackageName() != null) {
             writer.write("package %s;%n%n".formatted(info.getPackageName()));
             writer.newLine();
