@@ -1,4 +1,4 @@
-package ru.ainur.parser;
+package ru.ainur.generator.info;
 
 import java.util.List;
 

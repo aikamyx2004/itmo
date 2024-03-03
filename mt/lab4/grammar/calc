@@ -1,6 +1,6 @@
-grammar Test;
+grammar Calculator;
 
-@package = ru.ainur.test;
+@package = ru.ainur.calculator;
 
 startRule @synt(double res)
     :   e EOF
@@ -22,44 +22,29 @@ ePrime @inh(double res) @synt(double res)
     ;
 
 t @synt(double res)
-    :   p tPrime [_in1.res = _child0.res;]
+    :   f tPrime [_in1.res = _child0.res;]
         {tContext.res = _child1.res;}
     ;
 
 tPrime @inh(double res) @synt(double res)
-    :   MULTIPLY p tPrime [_in2.res = tPrimeInherited.res * _child1.res;]
+    :   MULTIPLY f tPrime [_in2.res = tPrimeInherited.res * _child1.res;]
         {tPrimeContext.res = _child2.res;}
 
-    |   DIVIDE p tPrime   [_in2.res = tPrimeInherited.res / _child1.res;]
+    |   DIVIDE f tPrime   [_in2.res = tPrimeInherited.res / _child1.res;]
         {tPrimeContext.res = _child2.res;}
 
     |   {tPrimeContext.res = tPrimeInherited.res;}
     ;
-p @synt(double res)
-    :   f pPrime [_in1.res = _child0.res;]
-        {pContext.res = _child1.res;}
-    ;
 
-pPrime @inh(double res) @synt(double res)
-    :   POWER f pPrime [_in2.res = Math.pow(pPrimeInherited.res, _child1.res);]
-        {pPrimeContext.res = _child2.res;}
-    |    {pPrimeContext.res = pPrimeInherited.res;}
-    ;
 f   @synt(double res)
     :   LPAREN e RPAREN {fContext.res = _child1.res;}
     |   MINUS f         {fContext.res = -_child1.res;}
-    |   SIN f           {fContext.res = Math.sin(_child1.res);}
-    |   COS f           {fContext.res = Math.cos(_child1.res);}
-    |   TAN f           {fContext.res = Math.tan(_child1.res);}
     |   NUMBER          {fContext.res = Integer.parseInt(_child0.getText());}
     ;
-SIN: "sin";
-COS: "cos";
-TAN: "tan";
+
 PLUS: "\\+";
 MINUS: "-";
 NUMBER: "\\d+";
-POWER: "\\*\\*";
 MULTIPLY: "\\*";
 DIVIDE: "/";
 FUNC: "\\w+";

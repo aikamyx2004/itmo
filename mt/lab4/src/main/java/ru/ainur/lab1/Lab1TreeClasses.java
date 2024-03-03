@@ -11,6 +11,7 @@ import java.util.function.Supplier;
 
 public class Lab1TreeClasses {
     public static final Map<Lab1Token, Supplier<TreeToken>> NAME_TO_CTOR = new HashMap<>();
+
     static {
         NAME_TO_CTOR.put(Lab1Token.PLUS, PLUS::new);
         NAME_TO_CTOR.put(Lab1Token.MINUS, MINUS::new);
@@ -21,6 +22,7 @@ public class Lab1TreeClasses {
         NAME_TO_CTOR.put(Lab1Token.LPAREN, LPAREN::new);
         NAME_TO_CTOR.put(Lab1Token.RPAREN, RPAREN::new);
     }
+
     public static class EOF extends TreeToken {
         public EOF() {
             super("EOF");
@@ -79,48 +81,53 @@ public class Lab1TreeClasses {
         public StartRuleContext() {
             super("startRule");
         }
-        public double res;
     }
+
     public static class StartRuleInherited implements InheritedContext {
     }
+
     public static class EContext extends BaseNonTerminal {
         public EContext() {
             super("e");
         }
-        public double res;
     }
+
     public static class EInherited implements InheritedContext {
     }
+
     public static class EPrimeContext extends BaseNonTerminal {
         public EPrimeContext() {
             super("ePrime");
         }
-        public double res;
     }
+
     public static class EPrimeInherited implements InheritedContext {
     }
+
     public static class TContext extends BaseNonTerminal {
         public TContext() {
             super("t");
         }
-        public double res;
     }
+
     public static class TInherited implements InheritedContext {
     }
+
     public static class TPrimeContext extends BaseNonTerminal {
         public TPrimeContext() {
             super("tPrime");
         }
-        public double res;
     }
+
     public static class TPrimeInherited implements InheritedContext {
     }
+
     public static class FContext extends BaseNonTerminal {
         public FContext() {
             super("f");
         }
-        public double res;
     }
+
     public static class FInherited implements InheritedContext {
     }
 }

@@ -1,12 +1,12 @@
 package ru.ainur.lab1;
 
 
-import ru.ainur.parser.Terminal;
+import ru.ainur.generator.info.Terminal;
 
+import java.text.ParseException;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.text.ParseException;
 import java.util.stream.Collectors;
 
 public class Lab1Lexer {
@@ -61,7 +61,7 @@ public class Lab1Lexer {
         return currentTokenString;
     }
 
-    public int getPosition(){
+    public int getPosition() {
         return matcher.start();
     }
 

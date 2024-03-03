@@ -5,10 +5,8 @@ import java.text.ParseException;
 
 public class TestMain {
     public static void main(String[] args) throws ParseException {
-        writeResult("1 + 2 - 2 - 2 + 2");
-        writeResult("- 24 * 2 - 10");
-        writeResult("1 * 2 / (2 / 2) * 3");
-        writeResult("(5 + 3) * 2");
+        writeResult("2**2**2");
+        writeResult("sin(tan(1/2))");
 //        expect("", 0)
     }
 

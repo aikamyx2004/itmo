@@ -1,8 +1,7 @@
 package ru.ainur.generator.code;
 
-import ru.ainur.generator.GrammarInfo;
+import ru.ainur.generator.info.GrammarInfo;
 
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.stream.Collectors;
@@ -13,30 +12,20 @@ public class TreeClassesGenerator extends BaseGenerator {
         super(writePath.resolve("%s.java".formatted(info.getTreeClassesClassName())), info);
     }
 
-    protected void generateImpl(BufferedWriter writer) throws IOException {
-        writePackage(writer);
-        writeImports(writer);
+    protected void generateImpl() throws IOException {
+        writePackage();
+        writeImports();
         writer.write("public class %s {\n".formatted(info.getTreeClassesClassName()));
 
-        generateMapToCtor(writer);
+        generateMapToCtor();
 
         for (var t : info.getTerminals()) {
-            new TerminalGenerator(info, t, writer).generate();
+            new TerminalGenerator(t, writer).generate();
         }
 
         for (var nt : info.getNonTerminals()) {
-//            var synt = nt.getValue().stream()
-//                    .map(NonTerminal::synt)
-    //                    .flatMap(Collection::stream)
-    //                    .distinct()
-    //                    .toList();
-    //            var inh = nt.getValue().stream()
-    //                    .map(NonTerminal::inh)
-    //                    .flatMap(Collection::stream)
-    //                    .distinct()
-    //                    .toList();
-                new AttributesGenerator(GeneratorUtil.getNonTerminalSyntClassName(nt.name()),
-                        nt.name(),
+            new AttributesGenerator(GeneratorUtil.getNonTerminalSyntClassName(nt.name()),
+                    nt.name(),
                     "extends BaseNonTerminal",
                     true,
                     writer,
@@ -53,7 +42,7 @@ public class TreeClassesGenerator extends BaseGenerator {
         writer.write("}\n");
     }
 
-    private void generateMapToCtor(BufferedWriter writer) throws IOException {
+    private void generateMapToCtor() throws IOException {
         writer.write("    public static final Map<%s, Supplier<TreeToken>> NAME_TO_CTOR = new HashMap<>();\n".formatted(info.getTokenClassName()));
         writer.write("    static {\n");
         var terminals = info.getTerminals();
@@ -65,7 +54,7 @@ public class TreeClassesGenerator extends BaseGenerator {
         writer.write("    }\n");
     }
 
-    private void writeImports(BufferedWriter writer) throws IOException {
+    private void writeImports() throws IOException {
         writer.write("""
                 import ru.ainur.generator.tree.BaseNonTerminal;
                 import ru.ainur.generator.tree.InheritedContext;

@@ -1,6 +1,6 @@
 package ru.ainur.generator.code;
 
-import ru.ainur.parser.Pair;
+import ru.ainur.generator.info.Pair;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -10,23 +10,21 @@ public class AttributesGenerator {
     private final String name;
     private final BufferedWriter writer;
     private final List<Pair<String, String>> attr;
-    private final boolean needContructor;
+    private final boolean needConstructor;
     private final String extendsOrImplements;
     private final String tokenName;
 
-    public AttributesGenerator(String className, String tokenName, String extendsOrImplements, boolean needContructor, BufferedWriter writer, List<Pair<String, String>> attr) {
+    public AttributesGenerator(String className, String tokenName, String extendsOrImplements, boolean needConstructor, BufferedWriter writer, List<Pair<String, String>> attr) {
         this.name = className;
         this.tokenName = tokenName;
         this.writer = writer;
         this.attr = attr;
-        this.needContructor = needContructor;
+        this.needConstructor = needConstructor;
         this.extendsOrImplements = extendsOrImplements;
-
     }
 
     public void generate() throws IOException {
-        writer.write("    public static class %s %s {%n"
-                .formatted(name, extendsOrImplements));
+        writer.write("    public static class %s %s {%n".formatted(name, extendsOrImplements));
         writeConstructor();
         writeFields();
         writer.write("    }\n");
@@ -41,7 +39,7 @@ public class AttributesGenerator {
 
 
     private void writeConstructor() throws IOException {
-        if (!needContructor) {
+        if (!needConstructor) {
             return;
         }
         writer.write("""

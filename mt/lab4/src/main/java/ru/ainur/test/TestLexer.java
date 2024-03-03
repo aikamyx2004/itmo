@@ -1,20 +1,24 @@
 package ru.ainur.test;
 
 
-import ru.ainur.parser.Terminal;
+import ru.ainur.generator.info.Terminal;
 
+import java.text.ParseException;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.text.ParseException;
 import java.util.stream.Collectors;
 
 public class TestLexer {
     public static final List<Terminal> TERMINALS = List.of(
             new Terminal("EOF", "$"),
+            new Terminal("SIN", "sin"),
+            new Terminal("COS", "cos"),
+            new Terminal("TAN", "tan"),
             new Terminal("PLUS", "\\+"),
             new Terminal("MINUS", "-"),
             new Terminal("NUMBER", "\\d+"),
+            new Terminal("POWER", "\\*\\*"),
             new Terminal("MULTIPLY", "\\*"),
             new Terminal("DIVIDE", "/"),
             new Terminal("FUNC", "\\w+"),
@@ -61,7 +65,7 @@ public class TestLexer {
         return currentTokenString;
     }
 
-    public int getPosition(){
+    public int getPosition() {
         return matcher.start();
     }
 

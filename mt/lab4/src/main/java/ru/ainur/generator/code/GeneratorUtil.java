@@ -1,6 +1,6 @@
 package ru.ainur.generator.code;
 
-import ru.ainur.parser.Terminal;
+import ru.ainur.generator.info.Terminal;
 
 public class GeneratorUtil {
     public static String toCamelCase(String s) {
@@ -9,10 +9,6 @@ public class GeneratorUtil {
 
     public static String getTerminalClassName(Terminal terminal) {
         return toCamelCase(terminal.name());
-    }
-
-    public static String getTerminalClassName(String terminal) {
-        return toCamelCase(terminal);
     }
 
     public static String getNonTerminalSyntClassName(String name) {
@@ -30,7 +26,8 @@ public class GeneratorUtil {
     public static String getNonTerminalInhFieldName(String name) {
         return name + "Inherited";
     }
-    public static boolean isTerminal(String name){
+
+    public static boolean isTerminal(String name) {
         return Character.isUpperCase(name.charAt(0));
     }
 }

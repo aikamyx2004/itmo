@@ -1,9 +1,8 @@
 package ru.ainur.generator.tree;
 
-import java.util.List;
-
 public interface ParseTree {
     int fillDot(StringBuilder sb, int index);
+
     default String toDot() {
         StringBuilder sb = new StringBuilder();
         sb.append("digraph expr {");

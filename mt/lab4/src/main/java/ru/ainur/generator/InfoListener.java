@@ -1,9 +1,9 @@
 package ru.ainur.generator;
 
 import org.antlr.v4.runtime.tree.TerminalNode;
+import ru.ainur.generator.info.*;
 import ru.ainur.grammar.GrammarBaseListener;
 import ru.ainur.grammar.GrammarParser;
-import ru.ainur.parser.*;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -29,7 +29,6 @@ public class InfoListener extends GrammarBaseListener {
         String name = ctx.CAPITAL_START_IDENTIFIER().getText();
         String regex = removeFirstLast(ctx.REGEX());
         info.getTerminals().add(new Terminal(name, regex));
-//        info.getNameToType().put(name, RuleType.TERMINAL);
     }
 
     @Override
@@ -58,15 +57,13 @@ public class InfoListener extends GrammarBaseListener {
             rules.add(new NonTermRules(children, syntCode));
         }
         var nonTerminals = info.getNonTerminals();
-//        nonTerminals.putIfAbsent(name, new ArrayList<>());
 
         nonTerminals.add(new NonTerminal(name, inherited, synthesized, rules));
-//        info.getNameToType().put(name, RuleType.NON_TERMINAL);
     }
 
     @Override
     public void exitHeader(GrammarParser.HeaderContext ctx) {
-        if(ctx != null && ctx.BLOCKED_CODE()!= null){
+        if (ctx != null && ctx.BLOCKED_CODE() != null) {
             info.setHeader(removeFirstLast(ctx.BLOCKED_CODE()));
         }
     }

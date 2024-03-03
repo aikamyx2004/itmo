@@ -1,8 +1,7 @@
 package ru.ainur.generator.code;
 
-import ru.ainur.generator.GrammarInfo;
+import ru.ainur.generator.info.GrammarInfo;
 
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.stream.Collectors;
@@ -12,39 +11,42 @@ public class LexerGenerator extends BaseGenerator {
         super(writePath.resolve("%s.java".formatted(info.getLexerClassName())), info);
     }
 
-    protected void generateImpl(BufferedWriter writer) throws IOException {
-        writePackage(writer);
-        writeImports(writer);
+    protected void generateImpl() throws IOException {
+        writePackage();
+        writeImports();
         writer.write("public class %s {\n".formatted(info.getLexerClassName()));
-        writeFields(writer);
+        writeFields();
 
-        writeConstructor(writer);
-        writeMethods(writer);
+        writeConstructor();
+        writeMethods();
 
         writer.write("}\n");
     }
 
-    private void writeMethods(BufferedWriter writer) throws IOException {
-        writeNextToken(writer);
-        writeGetters(writer);
+    private void writeMethods() throws IOException {
+        writeNextToken();
+        writeGetters();
     }
 
-    private void writeGetters(BufferedWriter writer) throws IOException {
+    private void writeGetters() throws IOException {
         writer.write(
-                "    public %s getCurrentToken() {\n".formatted(info.getTokenClassName()) +
-                        "        return currentToken;\n" +
-                        "    }\n" +
-                        "\n" +
-                        "    public String getCurrentTokenString() {\n" +
-                        "        return currentTokenString;\n" +
-                        "    }\n" +
-                        "\n" +
-                        "    public int getPosition(){\n" +
-                        "        return matcher.start();\n" +
-                        "    }\n\n");
+                """
+                            public %s getCurrentToken() {
+                                return currentToken;
+                            }
+
+                            public String getCurrentTokenString() {
+                                return currentTokenString;
+                            }
+
+                            public int getPosition(){
+                                return matcher.start();
+                            }
+
+                        """.formatted(info.getTokenClassName()));
     }
 
-    private void writeNextToken(BufferedWriter writer) throws IOException {
+    private void writeNextToken() throws IOException {
         writer.write(
                 "    public void nextToken() throws ParseException {\n" +
                         "        if (!matcher.find()) {\n" +
@@ -62,7 +64,7 @@ public class LexerGenerator extends BaseGenerator {
                         "    }\n\n");
     }
 
-    private void writeConstructor(BufferedWriter writer) throws IOException {
+    private void writeConstructor() throws IOException {
         writer.write("    public %s(String input) throws ParseException {\n".formatted(info.getLexerClassName()) +
                 "        this.input = input;\n" +
                 "        this.regex = Pattern.compile(\n" +
@@ -75,10 +77,10 @@ public class LexerGenerator extends BaseGenerator {
                 "    }\n\n");
     }
 
-    private void writeImports(BufferedWriter writer) throws IOException {
+    private void writeImports() throws IOException {
         writer.write(
                 """
-                        import ru.ainur.parser.Terminal;
+                        import ru.ainur.generator.info.Terminal;
 
                         import java.util.List;
                         import java.util.regex.Matcher;
@@ -89,8 +91,8 @@ public class LexerGenerator extends BaseGenerator {
                         """);
     }
 
-    private void writeFields(BufferedWriter writer) throws IOException {
-        writeTerminalsField(writer);
+    private void writeFields() throws IOException {
+        writeTerminalsField();
         writer.write("    private final String input;\n");
         writer.write("    private final Pattern regex;\n");
         writer.write("    private final Matcher matcher;\n");
@@ -99,7 +101,7 @@ public class LexerGenerator extends BaseGenerator {
         writer.newLine();
     }
 
-    private void writeTerminalsField(BufferedWriter writer) throws IOException {
+    private void writeTerminalsField() throws IOException {
         writer.write("    public static final List<Terminal> TERMINALS = List.of(\n");
         writer.write(
                 info.getTerminals().stream()

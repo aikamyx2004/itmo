@@ -1,9 +1,6 @@
-package ru.ainur.generator;
+package ru.ainur.generator.info;
 
 import ru.ainur.generator.code.GeneratorUtil;
-import ru.ainur.parser.NonTerminal;
-import ru.ainur.parser.Terminal;
-import ru.ainur.parser.Token;
 
 import java.util.*;
 
@@ -85,10 +82,9 @@ public class GrammarInfo {
     }
 
 
-
     public Set<String> countFirst1(List<Token> alpha, String A) {
         var firsts = computeFirstIteration(alpha);
-        if(firsts.contains(EPSILON)){
+        if (firsts.contains(EPSILON)) {
             firsts.addAll(follow.get(A));
         }
         firsts.remove(EPSILON);
@@ -116,16 +112,8 @@ public class GrammarInfo {
         return terminals;
     }
 
-    public void setTerminals(List<Terminal> terminals) {
-        this.terminals = terminals;
-    }
-
     public List<NonTerminal> getNonTerminals() {
         return nonTerminals;
-    }
-
-    public void setNonTerminals(List<NonTerminal> nonTerminals) {
-        this.nonTerminals = nonTerminals;
     }
 
     public String getPackageName() {
@@ -165,5 +153,9 @@ public class GrammarInfo {
         for (var nonTerminal : nonTerminals) {
             mp.put(nonTerminal.name(), new HashSet<>());
         }
+    }
+
+    public boolean isLL1() {
+        return true;
     }
 }

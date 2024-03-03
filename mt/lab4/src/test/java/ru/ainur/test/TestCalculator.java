@@ -2,6 +2,9 @@ package ru.ainur.test;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import ru.ainur.calculator.CalculatorLexer;
+import ru.ainur.calculator.CalculatorParser;
+import ru.ainur.calculator.CalculatorTreeClasses;
 
 import java.text.ParseException;
 
@@ -33,9 +36,9 @@ public class TestCalculator {
         Assertions.assertEquals(number, t.res);
     }
 
-    private static TestTreeClasses.EContext parse(String input) throws ParseException {
-        TestLexer lexer = new TestLexer(input);
-        TestParser parser = new TestParser(lexer);
-        return parser.e(null);
+    private static CalculatorTreeClasses.EContext parse(String input) throws ParseException {
+        CalculatorLexer lexer = new CalculatorLexer(input);
+        CalculatorParser parser = new CalculatorParser(lexer);
+        return parser.e(new CalculatorTreeClasses.EInherited());
     }
 }
