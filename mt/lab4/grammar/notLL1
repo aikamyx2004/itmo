@@ -5,14 +5,13 @@ grammar NotLL1;
 startRule: e EOF;
 
 e
-    :   t
-    |   e PLUS t
+    :   e PLUS t
     |   e MINUS t
-
+    |   t
     ;
 
-t   :   f
-        t MULTIPLY f
+t   :   t MULTIPLY f
+    |   f
     ;
 
 f
