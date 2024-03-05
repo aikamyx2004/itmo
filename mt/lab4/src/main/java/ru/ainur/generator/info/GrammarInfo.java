@@ -7,8 +7,8 @@ import java.util.*;
 public class GrammarInfo {
     private static final String EPSILON = "EPSILON";
     private static final String DOLLAR = "$";
-    private List<Terminal> terminals = new ArrayList<>(List.of(new Terminal("EOF", "$")));
-    private List<NonTerminal> nonTerminals = new ArrayList<>();
+    private final List<Terminal> terminals = new ArrayList<>(List.of(new Terminal("EOF", "$")));
+    private final List<NonTerminal> nonTerminals = new ArrayList<>();
     private String packageName;
     private String header;
     private String grammarName;
@@ -156,6 +156,32 @@ public class GrammarInfo {
     }
 
     public boolean isLL1() {
+        for (var nt : nonTerminals) {
+            for (var a : nt.nonTermRule()) {
+                var firstA = computeFirstIteration(a.tokens());
+
+                for (var b : nt.nonTermRule()) {
+                    if (a == b) continue;
+                    var firstB = computeFirstIteration(b.tokens());
+                    if (firstA.stream()
+                            .anyMatch(firstB::contains)) {
+                        return false;
+                    }
+                }
+                if (!firstA.contains(EPSILON)) {
+                    continue;
+                }
+                var followA = follow.get(nt.name());
+                for (var b : nt.nonTermRule()) {
+                    if (a == b) continue;
+                    var firstB = computeFirstIteration(b.tokens());
+                    if (followA.stream()
+                            .anyMatch(firstB::contains)) {
+                        return false;
+                    }
+                }
+            }
+        }
         return true;
     }
 }

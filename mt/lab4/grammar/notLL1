@@ -1,0 +1,28 @@
+grammar NotLL1;
+
+@package = ru.ainur.not.ll1;
+
+startRule: e EOF;
+
+e
+    :   t
+    |   e PLUS t
+    |   e MINUS t
+
+    ;
+
+t   :   f
+        t MULTIPLY f
+    ;
+
+f
+    : NUMBER
+    | LPAREN e RPAREN
+    ;
+
+PLUS: "\\+";
+MINUS: "-";
+NUMBER: "\\d+";
+MULTIPLY: "\\*";
+LPAREN: "\\(";
+RPAREN: "\\)";
