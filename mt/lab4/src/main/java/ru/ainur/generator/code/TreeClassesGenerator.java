@@ -46,7 +46,7 @@ public class TreeClassesGenerator extends BaseGenerator {
         writer.write("    public static final Map<%s, Supplier<TreeToken>> NAME_TO_CTOR = new HashMap<>();\n".formatted(info.getTokenClassName()));
         writer.write("    static {\n");
         var terminals = info.getTerminals();
-        writer.write(terminals.subList(1, terminals.size()).stream()
+        writer.write(terminals.stream()
                 .map(t -> "        NAME_TO_CTOR.put(%s.%s, %s::new);\n"
                         .formatted(info.getTokenClassName(), t.name(), GeneratorUtil.getTerminalClassName(t))
                 )

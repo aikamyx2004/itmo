@@ -1,4 +1,4 @@
-package ru.ainur.lab1;
+package ru.ainur.badcalc;
 
 
 import ru.ainur.generator.tree.BaseNonTerminal;
@@ -9,18 +9,18 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
-public class Lab1TreeClasses {
-    public static final Map<Lab1Token, Supplier<TreeToken>> NAME_TO_CTOR = new HashMap<>();
+public class BadCalculatorTreeClasses {
+    public static final Map<BadCalculatorToken, Supplier<TreeToken>> NAME_TO_CTOR = new HashMap<>();
     static {
-        NAME_TO_CTOR.put(Lab1Token.EOF, EOF::new);
-        NAME_TO_CTOR.put(Lab1Token.PLUS, PLUS::new);
-        NAME_TO_CTOR.put(Lab1Token.MINUS, MINUS::new);
-        NAME_TO_CTOR.put(Lab1Token.NUMBER, NUMBER::new);
-        NAME_TO_CTOR.put(Lab1Token.MULTIPLY, MULTIPLY::new);
-        NAME_TO_CTOR.put(Lab1Token.DIVIDE, DIVIDE::new);
-        NAME_TO_CTOR.put(Lab1Token.FUNC, FUNC::new);
-        NAME_TO_CTOR.put(Lab1Token.LPAREN, LPAREN::new);
-        NAME_TO_CTOR.put(Lab1Token.RPAREN, RPAREN::new);
+        NAME_TO_CTOR.put(BadCalculatorToken.EOF, EOF::new);
+        NAME_TO_CTOR.put(BadCalculatorToken.PLUS, PLUS::new);
+        NAME_TO_CTOR.put(BadCalculatorToken.MINUS, MINUS::new);
+        NAME_TO_CTOR.put(BadCalculatorToken.NUMBER, NUMBER::new);
+        NAME_TO_CTOR.put(BadCalculatorToken.MULTIPLY, MULTIPLY::new);
+        NAME_TO_CTOR.put(BadCalculatorToken.DIVIDE, DIVIDE::new);
+        NAME_TO_CTOR.put(BadCalculatorToken.FUNC, FUNC::new);
+        NAME_TO_CTOR.put(BadCalculatorToken.LPAREN, LPAREN::new);
+        NAME_TO_CTOR.put(BadCalculatorToken.RPAREN, RPAREN::new);
     }
     public static class EOF extends TreeToken {
         public EOF() {
@@ -80,6 +80,7 @@ public class Lab1TreeClasses {
         public StartRuleContext() {
             super("startRule");
         }
+        public double res;
     }
     public static class StartRuleInherited implements InheritedContext {
     }
@@ -87,6 +88,7 @@ public class Lab1TreeClasses {
         public EContext() {
             super("e");
         }
+        public double res;
     }
     public static class EInherited implements InheritedContext {
     }
@@ -94,13 +96,16 @@ public class Lab1TreeClasses {
         public EPrimeContext() {
             super("ePrime");
         }
+        public double res;
     }
     public static class EPrimeInherited implements InheritedContext {
+        public double res;
     }
     public static class TContext extends BaseNonTerminal {
         public TContext() {
             super("t");
         }
+        public double res;
     }
     public static class TInherited implements InheritedContext {
     }
@@ -108,6 +113,7 @@ public class Lab1TreeClasses {
         public TPrimeContext() {
             super("tPrime");
         }
+        public double res;
     }
     public static class TPrimeInherited implements InheritedContext {
     }
@@ -115,6 +121,7 @@ public class Lab1TreeClasses {
         public FContext() {
             super("f");
         }
+        public double res;
     }
     public static class FInherited implements InheritedContext {
     }

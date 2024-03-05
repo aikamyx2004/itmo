@@ -7,14 +7,11 @@ import ru.ainur.generator.tree.TreeToken;
 import java.text.ParseException;
 
 import static ru.ainur.calculator.CalculatorTreeClasses.*;
-
 public class CalculatorParser {
     private final CalculatorLexer lexer;
-
     public CalculatorParser(CalculatorLexer lexer) {
         this.lexer = lexer;
     }
-
     public StartRuleContext startRule(StartRuleInherited startRuleInherited) throws ParseException {
         StartRuleContext startRuleContext = new StartRuleContext();
         switch (lexer.getCurrentToken()) {
@@ -27,12 +24,10 @@ public class CalculatorParser {
 
                 startRuleContext.res = _child0.res;
             }
-            default ->
-                    throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
+            default -> throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
         }
         return startRuleContext;
     }
-
     public EContext e(EInherited eInherited) throws ParseException {
         EContext eContext = new EContext();
         switch (lexer.getCurrentToken()) {
@@ -42,18 +37,16 @@ public class CalculatorParser {
                 eContext.addChildren(_child0);
 
                 var _in1 = new EPrimeInherited();
-                _in1.res = _child0.res;
+                _in1.res=_child0.res;
                 var _child1 = ePrime(_in1);
                 eContext.addChildren(_child1);
 
                 eContext.res = _child1.res;
             }
-            default ->
-                    throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
+            default -> throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
         }
         return eContext;
     }
-
     public EPrimeContext ePrime(EPrimeInherited ePrimeInherited) throws ParseException {
         EPrimeContext ePrimeContext = new EPrimeContext();
         switch (lexer.getCurrentToken()) {
@@ -88,12 +81,10 @@ public class CalculatorParser {
             case RPAREN, EOF -> {
                 ePrimeContext.res = ePrimeInherited.res;
             }
-            default ->
-                    throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
+            default -> throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
         }
         return ePrimeContext;
     }
-
     public TContext t(TInherited tInherited) throws ParseException {
         TContext tContext = new TContext();
         switch (lexer.getCurrentToken()) {
@@ -109,12 +100,10 @@ public class CalculatorParser {
 
                 tContext.res = _child1.res;
             }
-            default ->
-                    throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
+            default -> throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
         }
         return tContext;
     }
-
     public TPrimeContext tPrime(TPrimeInherited tPrimeInherited) throws ParseException {
         TPrimeContext tPrimeContext = new TPrimeContext();
         switch (lexer.getCurrentToken()) {
@@ -149,12 +138,10 @@ public class CalculatorParser {
             case RPAREN, EOF, PLUS, MINUS -> {
                 tPrimeContext.res = tPrimeInherited.res;
             }
-            default ->
-                    throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
+            default -> throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
         }
         return tPrimeContext;
     }
-
     public FContext f(FInherited fInherited) throws ParseException {
         FContext fContext = new FContext();
         switch (lexer.getCurrentToken()) {
@@ -183,12 +170,10 @@ public class CalculatorParser {
 
                 fContext.res = Integer.parseInt(_child0.getText());
             }
-            default ->
-                    throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
+            default -> throw new ParseException("unexpected token: " + lexer.getCurrentTokenString(), lexer.getPosition());
         }
         return fContext;
     }
-
     private TreeToken expect(CalculatorToken token, BaseNonTerminal nt) throws ParseException {
         if (!token.equals(lexer.getCurrentToken())) {
             throw new ParseException(

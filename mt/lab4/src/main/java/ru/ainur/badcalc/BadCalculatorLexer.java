@@ -1,4 +1,4 @@
-package ru.ainur.calculator;
+package ru.ainur.badcalc;
 
 
 import ru.ainur.generator.info.Terminal;
@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 import java.text.ParseException;
 import java.util.stream.Collectors;
 
-public class CalculatorLexer {
+public class BadCalculatorLexer {
     public static final List<Terminal> TERMINALS = List.of(
             new Terminal("EOF", "$"),
             new Terminal("PLUS", "\\+"),
@@ -24,10 +24,10 @@ public class CalculatorLexer {
     private final String input;
     private final Pattern regex;
     private final Matcher matcher;
-    private CalculatorToken currentToken;
+    private BadCalculatorToken currentToken;
     private String currentTokenString;
 
-    public CalculatorLexer(String input) throws ParseException {
+    public BadCalculatorLexer(String input) throws ParseException {
         this.input = input;
         this.regex = Pattern.compile(
                 TERMINALS.stream()
@@ -40,20 +40,22 @@ public class CalculatorLexer {
 
     public void nextToken() throws ParseException {
         if (!matcher.find()) {
-            if (currentToken != CalculatorToken.EOF) {
+            if (currentToken != BadCalculatorToken.EOF) {
                 throw new ParseException("it is not token", matcher.start());
             }
         }
         for (int i = 0; i < TERMINALS.size(); i++) {
             String match = matcher.group(TERMINALS.get(i).name());
             if (match != null) {
-                currentToken = CalculatorToken.values()[i];
+                currentToken = BadCalculatorToken.values()[i];
                 currentTokenString = match;
             }
         }
     }
+    // 1 skldfjs 2
+    // 1
 
-    public CalculatorToken getCurrentToken() {
+    public BadCalculatorToken getCurrentToken() {
         return currentToken;
     }
 

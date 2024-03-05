@@ -11,8 +11,8 @@ import java.util.function.Supplier;
 
 public class CalculatorTreeClasses {
     public static final Map<CalculatorToken, Supplier<TreeToken>> NAME_TO_CTOR = new HashMap<>();
-
     static {
+        NAME_TO_CTOR.put(CalculatorToken.EOF, EOF::new);
         NAME_TO_CTOR.put(CalculatorToken.PLUS, PLUS::new);
         NAME_TO_CTOR.put(CalculatorToken.MINUS, MINUS::new);
         NAME_TO_CTOR.put(CalculatorToken.NUMBER, NUMBER::new);
@@ -22,7 +22,6 @@ public class CalculatorTreeClasses {
         NAME_TO_CTOR.put(CalculatorToken.LPAREN, LPAREN::new);
         NAME_TO_CTOR.put(CalculatorToken.RPAREN, RPAREN::new);
     }
-
     public static class EOF extends TreeToken {
         public EOF() {
             super("EOF");
@@ -81,67 +80,50 @@ public class CalculatorTreeClasses {
         public StartRuleContext() {
             super("startRule");
         }
-
         public double res;
     }
-
     public static class StartRuleInherited implements InheritedContext {
     }
-
     public static class EContext extends BaseNonTerminal {
         public EContext() {
             super("e");
         }
-
         public double res;
     }
-
     public static class EInherited implements InheritedContext {
     }
-
     public static class EPrimeContext extends BaseNonTerminal {
         public EPrimeContext() {
             super("ePrime");
         }
-
         public double res;
     }
-
     public static class EPrimeInherited implements InheritedContext {
         public double res;
     }
-
     public static class TContext extends BaseNonTerminal {
         public TContext() {
             super("t");
         }
-
         public double res;
     }
-
     public static class TInherited implements InheritedContext {
     }
-
     public static class TPrimeContext extends BaseNonTerminal {
         public TPrimeContext() {
             super("tPrime");
         }
-
         public double res;
     }
-
     public static class TPrimeInherited implements InheritedContext {
         public double res;
     }
-
     public static class FContext extends BaseNonTerminal {
         public FContext() {
             super("f");
         }
-
         public double res;
     }
-
     public static class FInherited implements InheritedContext {
     }
 }

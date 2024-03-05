@@ -1,0 +1,52 @@
+grammar BadCalculator;
+
+@package = ru.ainur.badcalc;
+
+startRule @synt(double res)
+    :   e EOF
+        {startRuleContext.res = _child0.res;}
+    ;
+e @synt(double res)
+    :   t ePrime[_in1.res=_child0.res;]
+        {eContext.res = _child1.res;}
+    ;
+
+ePrime @inh(double res) @synt(double res)
+    :   PLUS t ePrime [_in2.res = ePrimeInherited.res + _child1.res;]
+        {ePrimeContext.res = _child2.res;}
+
+    |   MINUS t ePrime[_in2.res = ePrimeInherited.res - _child1.res;]
+        {ePrimeContext.res = _child2.res;}
+
+    |    {ePrimeContext.res = ePrimeInherited.res;}
+    ;
+
+t @synt(double res)
+    :   f tPrime
+        {tContext.res = _child0.res * _child1.res;}
+    ;
+
+tPrime @synt(double res)
+    :   DIVIDE f tPrime
+                {tPrimeContext.res = 1 / (_child1.res *  _child2.res);}
+
+    |   MULTIPLY f tPrime
+                {tPrimeContext.res =_child1.res * _child2.res;}
+
+    |   {tPrimeContext.res = 1;}
+    ;
+
+f   @synt(double res)
+    :   LPAREN e RPAREN {fContext.res = _child1.res;}
+    |   MINUS f         {fContext.res = -_child1.res;}
+    |   NUMBER          {fContext.res = Integer.parseInt(_child0.getText());}
+    ;
+
+PLUS: "\\+";
+MINUS: "-";
+NUMBER: "\\d+";
+MULTIPLY: "\\*";
+DIVIDE: "/";
+FUNC: "\\w+";
+LPAREN: "\\(";
+RPAREN: "\\)";

@@ -1,7 +1,6 @@
 package ru.ainur.test;
 
 import org.junit.jupiter.api.Test;
-import ru.ainur.calculator.CalculatorLexer;
 
 import java.text.ParseException;
 
