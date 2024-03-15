@@ -1,0 +1,77 @@
+module HW5.Parser
+  ( parse,
+  )
+where
+
+import Data.Foldable
+import Data.Void (Void)
+import HW5.Base
+import Text.Megaparsec (MonadParsec (eof, try), Parsec, between, many, runParser, sepBy, (<|>))
+import Text.Megaparsec.Char (char, space, string)
+import qualified Text.Megaparsec.Char.Lexer as L
+import Text.Megaparsec.Error (ParseErrorBundle)
+
+type Parser = Parsec Void String
+
+parse :: String -> Either (ParseErrorBundle String Void) HiExpr
+parse = runParser (parseHiExpr <* space <* eof) ""
+
+parseHiExpr :: Parser HiExpr
+parseHiExpr = try parseHiExprApply <|> try (parens parseHiExpr) <|> parseHiExprValue
+
+parseHiExprValue :: Parser HiExpr
+parseHiExprValue = HiExprValue <$> parseHiValue
+
+parseHiValue :: Parser HiValue
+parseHiValue = try parseHiValueNumber <|> parseHiValueFunction
+
+parseHiValueNumber :: Parser HiValue
+parseHiValueNumber = HiValueNumber <$> fmap toRational (space *> L.signed space L.scientific <* space)
+
+parseHiValueFunction :: Parser HiValue
+parseHiValueFunction = HiValueFunction <$> parseHiFun
+
+parseHiFun :: Parser HiFun
+parseHiFun = skipWs
+    (   HiFunDiv            <$ string "div"
+    <|> HiFunMul            <$ string "mul"
+    <|> HiFunAdd            <$ string "add"
+    <|> HiFunSub            <$ string "sub"
+    <|> HiFunNot            <$ string "not"
+    <|> HiFunAnd            <$ string "and"
+    <|> HiFunOr             <$ string "or"
+    <|> HiFunLessThan       <$ string "not"
+    <|> HiFunGreaterThan    <$ string "less-than"
+    <|> HiFunEquals         <$ string "equals"
+    <|> HiFunNotLessThan    <$ string "not-less-than"
+    <|> HiFunNotGreaterThan <$ string "not-greater-than"
+    <|> HiFunNotEquals      <$ string "not-equals"
+    <|> HiFunIf             <$ string "if"
+    )
+
+
+parseArgs :: Parser [HiExpr]
+parseArgs =  parseHiExpr `sepBy` (space *> char ',' <* space)
+
+parseHiExprApply :: Parser HiExpr
+parseHiExprApply = do
+    _ <- space
+    fun <- HiExprValue <$> parseHiValue
+    _ <- space
+    args <- many (parens parseArgs)
+    return (foldl' HiExprApply fun args)
+
+parens :: Parser a -> Parser a
+parens = between (skipWs openBracket) (skipWs closeBracket)
+
+skipWs :: Parser a -> Parser a
+skipWs p = space *> p <* space
+
+openBracket :: Parser Char
+openBracket = char '('
+
+closeBracket :: Parser Char
+closeBracket = char '('
+
+comma :: Parser Char
+comma = char ','

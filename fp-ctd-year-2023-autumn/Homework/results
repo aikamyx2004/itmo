@@ -1,0 +1,165 @@
+
+hw3-assessor> === prop_assoc_Option from HW3T3_assessor.hs:161 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_left_id_Option from HW3T3_assessor.hs:164 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_right_id_Option from HW3T3_assessor.hs:167 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_dist_join_Option from HW3T3_assessor.hs:170 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_assoc_Annotated from HW3T3_assessor.hs:173 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_left_id_Annotated from HW3T3_assessor.hs:176 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_right_id_Annotated from HW3T3_assessor.hs:179 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_dist_join_Annotated from HW3T3_assessor.hs:182 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_assoc_Except from HW3T3_assessor.hs:185 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_left_id_Except from HW3T3_assessor.hs:188 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_right_id_Except from HW3T3_assessor.hs:191 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_dist_join_Except from HW3T3_assessor.hs:194 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_assoc_List from HW3T3_assessor.hs:197 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_left_id_List from HW3T3_assessor.hs:200 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_right_id_List from HW3T3_assessor.hs:203 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_dist_join_List from HW3T3_assessor.hs:206 ===
+hw3-assessor> +++ OK, passed 100 tests.
+hw3-assessor> 
+hw3-assessor> === prop_assoc_Fun from HW3T3_assessor.hs:209 ===
+hw3-assessor> *** Failed! (after 1 test):
+hw3-assessor> Exception:
+hw3-assessor>   Prelude.undefined
+hw3-assessor>   CallStack (from HasCallStack):
+hw3-assessor>     error, called at libraries/base/GHC/Err.hs:79:14 in base:GHC.Err
+hw3-assessor>     undefined, called at src/HW3/T3.hs:40:11 in hw3-0.1.0.0-HP23Jk0x6Mh9E2XHwf7tHg:HW3.T3
+hw3-assessor> (((0,0),(0,0)),((0,0),(0,0)))
+hw3-assessor> 
+hw3-assessor> === prop_left_id_Fun from HW3T3_assessor.hs:212 ===
+hw3-assessor> *** Failed! (after 1 test):
+hw3-assessor> Exception:
+hw3-assessor>   Prelude.undefined
+hw3-assessor>   CallStack (from HasCallStack):
+hw3-assessor>     error, called at libraries/base/GHC/Err.hs:79:14 in base:GHC.Err
+hw3-assessor>     undefined, called at src/HW3/T3.hs:40:11 in hw3-0.1.0.0-HP23Jk0x6Mh9E2XHwf7tHg:HW3.T3
+hw3-assessor> (0,0)
+hw3-assessor> 
+hw3-assessor> === prop_right_id_Fun from HW3T3_assessor.hs:215 ===
+hw3-assessor> *** Failed! (after 1 test):
+hw3-assessor> Exception:
+hw3-assessor>   Prelude.undefined
+hw3-assessor>   CallStack (from HasCallStack):
+hw3-assessor>     error, called at libraries/base/GHC/Err.hs:79:14 in base:GHC.Err
+hw3-assessor>     undefined, called at src/HW3/T3.hs:40:11 in hw3-0.1.0.0-HP23Jk0x6Mh9E2XHwf7tHg:HW3.T3
+hw3-assessor> (0,0)
+hw3-assessor> 
+hw3-assessor> === prop_dist_join_Fun from HW3T3_assessor.hs:218 ===
+hw3-assessor> *** Failed! (after 1 test and 2 shrinks):
+hw3-assessor> Exception:
+hw3-assessor>   Prelude.undefined
+hw3-assessor>   CallStack (from HasCallStack):
+hw3-assessor>     error, called at libraries/base/GHC/Err.hs:79:14 in base:GHC.Err
+hw3-assessor>     undefined, called at src/HW3/T3.hs:40:11 in hw3-0.1.0.0-HP23Jk0x6Mh9E2XHwf7tHg:HW3.T3
+hw3-assessor> (0,0)
+hw3-assessor> ('a','a')
+hw3-assessor> 
+hw3-assessor> Test suite hw3-t3-assessor failed
+Completed 3 action(s).
+hw3         > test (suite: hw3-test)
+
+hw3-assessor> configure (test)
+hw3         > Test suite not yet implemented
+hw3         > Test suite hw3-test passed
+hw3-assessor> Configuring hw3-assessor-0...
+hw3-assessor> build (test)
+hw3-assessor> Preprocessing test suite 'hw3-t4-assessor' for hw3-assessor-0..
+hw3-assessor> Building test suite 'hw3-t4-assessor' for hw3-assessor-0..
+hw3-assessor> [1 of 1] Compiling Main
+hw3-assessor> 
+hw3-assessor> /data/assessor/HW3T4_assessor.hs:136:11: warning: [-Wunused-matches]
+hw3-assessor>     Defined but not used: ‘d’
+hw3-assessor>     |
+hw3-assessor> 136 | showsExpr d (Val x) = showsPrec 11 x
+hw3-assessor>     |           ^
+hw3-assessor> 
+hw3-assessor> /data/assessor/HW3T4_assessor.hs:137:11: warning: [-Wunused-matches]
+hw3-assessor>     Defined but not used: ‘d’
+hw3-assessor>     |
+hw3-assessor> 137 | showsExpr d (Op p) = showsPrim showsExpr 11 p
+hw3-assessor>     |           ^
+hw3-assessor> Linking .stack-work/dist/x86_64-linux/Cabal-3.2.1.0/build/hw3-t4-assessor/hw3-t4-assessor ...
+hw3-assessor> test (suite: hw3-t4-assessor)
+
+hw3-assessor> === prop_mapState from HW3T4_assessor.hs:89 ===
+hw3-assessor> *** Failed! (after 1 test):
+hw3-assessor> Exception:
+hw3-assessor>   Prelude.undefined
+hw3-assessor>   CallStack (from HasCallStack):
+hw3-assessor>     error, called at libraries/base/GHC/Err.hs:79:14 in base:GHC.Err
+hw3-assessor>     undefined, called at src/HW3/T4.hs:17:12 in hw3-0.1.0.0-HP23Jk0x6Mh9E2XHwf7tHg:HW3.T4
+hw3-assessor> 
+hw3-assessor> === prop_wrapState from HW3T4_assessor.hs:95 ===
+hw3-assessor> *** Failed! (after 1 test):
+hw3-assessor> Exception:
+hw3-assessor>   Prelude.undefined
+hw3-assessor>   CallStack (from HasCallStack):
+hw3-assessor>     error, called at libraries/base/GHC/Err.hs:79:14 in base:GHC.Err
+hw3-assessor>     undefined, called at src/HW3/T4.hs:20:13 in hw3-0.1.0.0-HP23Jk0x6Mh9E2XHwf7tHg:HW3.T4
+hw3-assessor> 
+hw3-assessor> === prop_joinState from HW3T4_assessor.hs:101 ===
+hw3-assessor> *** Failed! (after 1 test):
+hw3-assessor> Exception:
+hw3-assessor>   Prelude.undefined
+hw3-assessor>   CallStack (from HasCallStack):
+hw3-assessor>     error, called at libraries/base/GHC/Err.hs:79:14 in base:GHC.Err
+hw3-assessor>     undefined, called at src/HW3/T4.hs:23:13 in hw3-0.1.0.0-HP23Jk0x6Mh9E2XHwf7tHg:HW3.T4
+hw3-assessor> 
+hw3-assessor> === prop_agfx_State from HW3T4_assessor.hs:107 ===
+hw3-assessor> *** Failed! (after 1 test):
+hw3-assessor> Exception:
+hw3-assessor>   Prelude.undefined
+hw3-assessor>   CallStack (from HasCallStack):
+hw3-assessor>     error, called at libraries/base/GHC/Err.hs:79:14 in base:GHC.Err
+hw3-assessor>     undefined, called at src/HW3/T4.hs:36:11 in hw3-0.1.0.0-HP23Jk0x6Mh9E2XHwf7tHg:HW3.T4
+hw3-assessor> 
+hw3-assessor> === prop_eval_value from HW3T4_assessor.hs:195 ===
+hw3-assessor> *** Failed! (after 1 test and 14 shrinks):
+hw3-assessor> Exception:
+hw3-assessor>   Prelude.undefined
+hw3-assessor>   CallStack (from HasCallStack):
+hw3-assessor>     error, called at libraries/base/GHC/Err.hs:79:14 in base:GHC.Err
+hw3-assessor>     undefined, called at src/HW3/T4.hs:63:8 in hw3-0.1.0.0-HP23Jk0x6Mh9E2XHwf7tHg:HW3.T4
+hw3-assessor> 0.0
+hw3-assessor> 
+hw3-assessor> === prop_eval_trace from HW3T4_assessor.hs:200 ===
+hw3-assessor> *** Failed! (after 1 test and 13 shrinks):
+hw3-assessor> Exception:
+hw3-assessor>   Prelude.undefined
+hw3-assessor>   CallStack (from HasCallStack):
+hw3-assessor>     error, called at libraries/base/GHC/Err.hs:79:14 in base:GHC.Err
+hw3-assessor>     undefined, called at src/HW3/T4.hs:63:8 in hw3-0.1.0.0-HP23Jk0x6Mh9E2XHwf7tHg:HW3.T4
+hw3-assessor> 0.0
+hw3-assessor> 
+hw3-assessor> Test suite hw3-t4-assessor failed
+Completed 3 action(s).

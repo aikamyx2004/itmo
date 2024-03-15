@@ -1,0 +1,4 @@
+.stack-work/
+stack.yaml.lock
+src/HW2/prev/
+*~
